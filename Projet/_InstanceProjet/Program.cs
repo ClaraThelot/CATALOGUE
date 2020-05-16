@@ -92,7 +92,6 @@ namespace _InstanceProjet
                 note = double.Parse(information[4]);
                 acheve = bool.Parse(information[5]);
 
-
                 int i = 6;
                 
                 while(i<information.Length)

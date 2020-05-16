@@ -5,48 +5,97 @@ using System.Text;
 using System.Threading.Tasks;
 using _projet;
 
-namespace _AffichageListes // Pour factoriser les codes d'affichage des différentes listes
-{
+namespace _AffichageListes{ // Version Clara
     public class Program
     {
         static void Main(string[] args)
         {
         }
-
-        public void AfficheEleves()
+        public static string RecupRole(int codeProj, string choixP)
         {
-            Console.WriteLine("Voilà la liste des élèves répertoriés !");
-            List<Eleve> TousEleves2 = new List<Eleve>();
-            TousEleves2 = _InstancePersonne.Program.instancieEleve();
-            foreach (Eleve element in TousEleves2)
+            Console.WriteLine("Quel est le rôle de cette personne ?");
+            string role = Console.ReadLine();
+            role = role + "*" + codeProj + "*" + choixP;
+            return role;
+        }
+        public static void AfficheParAn(string annee, List<Eleve> ListeE)
+        {
+            Console.WriteLine(annee + " :");
+            foreach (Eleve element in ListeE)
             {
-                Console.Write(element._nom);
-                Console.WriteLine("     Si vous sélectionnez cet elève, tapez " + TousEleves2.IndexOf(element));
+                if (element._annee == annee)
+                {
+                    Console.Write(element._nom);
+                    Console.WriteLine("     Si vous voulez en savoir plus sur cet élève, tapez " + ListeE.IndexOf(element));
+                }
             }
         }
-        /*public static List<Eleve> instancieEleve()
+        public static void ProjetparPromo(int prom, List<Projet> ListeP)
         {
-            char separateur = '*';
-            List<Eleve> Eleves = new List<Eleve>();
-            string line;
-            string nomeleve;
-            string prenomeleve;
-            string annee;
-            int promo;
-            int TD;
-            System.IO.StreamReader file = new System.IO.StreamReader("Eleves.txt");
-            while ((line = file.ReadLine()) != null)
+            foreach (Projet element in ListeP)
             {
-                String[] information = line.Split(separateur);
-                nomeleve = information[0];
-                prenomeleve = information[1];
-                annee = information[2];
-                promo = int.Parse(information[3]);                                          //Pour ces deux lignes, un transtypage est nécessaire pour pouvoir construire l'objet à partir de la lecture du fichier
-                TD = int.Parse(information[4]);
-                Eleve eleve = new Eleve(nomeleve, prenomeleve, annee, promo, TD);
-                Eleves.Add(eleve);
+                if (element._chefprojet._promo == prom)
+                {
+                    Console.Write(element._nomProjet + " (Chef de projet :" + element._chefprojet._nom + ")");
+                    Console.WriteLine("     Si vous voulez en savoir plus sur ce projet, tapez " + ListeP.IndexOf(element));
+                }
             }
-            return Eleves;
-        }*/
+        }
+        public static void EnSavoirPlusEx(List<Exterieur> ListeE)
+        {
+            foreach (Exterieur element in ListeE)
+            {
+                {
+                    Console.Write(element._nom);
+                    Console.WriteLine("     Si vous voulez sélectionner cet intervenant en particulier, tapez " + ListeE.IndexOf(element));
+                }
+            }
+        }
+        public static void EnSavoirPlusMat(List<Matiere> ListeM)
+        {
+            foreach (Matiere element in ListeM)
+            {
+                {
+                    Console.Write(element._nom);
+                    Console.WriteLine("     Si vous voulez sélectionner cette matière en particulier, tapez " + ListeM.IndexOf(element));
+                }
+            }
+        }
+        public static void EnSavoirPlusE(List<Eleve> ListeE)
+        {
+            foreach (Eleve element in ListeE)
+            {
+                {
+                    Console.Write(element._nom);
+                    Console.WriteLine("     Si vous voulez sélectionner cet élève en particulier, tapez " + ListeE.IndexOf(element));
+                }
+            }
+        }
+        public static void EnSavoirPlusProf(List<Professeur> ListeP)
+        {
+            foreach (Professeur element in ListeP)
+            {
+                {
+                    Console.Write(element._nom);
+                    Console.WriteLine("     Si vous voulez sélectionner ce prof en particulier, tapez " + ListeP.IndexOf(element));
+                }
+            }
+        }
+        public static void CreaCode(string file, string ligne)
+        {
+            try
+            {
+                using (System.IO.StreamWriter writer = new System.IO.StreamWriter(file, append: true))
+                {
+
+                    writer.Write("\r\n" + ligne);
+                }
+            }
+            catch (Exception exp)
+            {
+                Console.Write("Erreur");
+            }
+        }
+
     }
 }

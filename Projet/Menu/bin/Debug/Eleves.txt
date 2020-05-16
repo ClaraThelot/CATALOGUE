@@ -21,5 +21,6 @@ Sonja Haddad*Rime*3A*2020*2
 Simonnet*Cyril*3A*2020*2
 Hache*Louis*3A*2020*3
 Toniutti*André*3A*2020*1
-Picsou*Balthazar*1A*2022*2*
-D'Arc*Jehanne*1600*1515*3*
+Picsou*Balthazar*1A*2022*2
+D'Arc*Jehanne*1600*1515*3
+Flop*Flip*2A*2019*3

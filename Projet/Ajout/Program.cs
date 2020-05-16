@@ -10,28 +10,16 @@ using _InstancePersonne;
 using _projet;
 using System.IO;
 
-namespace Ajout
+namespace Ajout// V Clara
 {
     public class Program
     {
         static void Main(string[] args)
         { }
-        public void AfficheEleves()
-        {
-            Console.WriteLine("Voilà la liste des élèves répertoriés !");
-            List<Eleve> TousEleves2 = new List<Eleve>();
-            TousEleves2 = _InstancePersonne.Program.instancieEleve();
-            foreach (Eleve element in TousEleves2)
-            {
-                Console.Write(element._nom);
-                Console.WriteLine("     Si vous sélectionnez cet elève, tapez " + TousEleves2.IndexOf(element));
-            }
-        }
-        
+       
         public static bool MenuAjout()
-        {
-
-            int totalLignes = File.ReadLines("Projets.txt").Count();                                     //Permettra d'identifier le projet
+        {                
+            int codeProj = _InstanceRole.Program.CompteProjet() + 1;
             Console.WriteLine("Bienvenue sur le menu des ajouts !");
             Console.WriteLine("Vous allez pouvoir créer un projet. D'abord, saisissez-en le nom.");
             string nom = Console.ReadLine();
@@ -68,11 +56,7 @@ namespace Ajout
                 {
                     Console.WriteLine("Tapez le code associé à la matière n°" + i + "du projet.");
                     Console.WriteLine("Voilà la liste des matières !");
-                    foreach (Matiere element in TousMatieres)
-                    {
-                        Console.Write(element._nom);
-                        Console.WriteLine("     Si vous sélectionnez cette matière, tapez " + TousMatieres.IndexOf(element));
-                    }
+                    _AffichageListes.Program.EnSavoirPlusMat(TousMatieres);
                     Console.WriteLine("Si la matière que vous voulez sélectionner n'apparaît pas à l'écran, il va falloir la créer ! Dans ce cas, tapez 000");
 
                     int numerochoisi = int.Parse(Console.ReadLine());
@@ -83,7 +67,7 @@ namespace Ajout
                         Console.WriteLine("Comment s'appelle cette nouvelle matière ?");
                         string nvlLigneM = Console.ReadLine();
                         string nomchoisiM = nvlLigneM;
-                        Console.WriteLine("Quelle est son numéro associé ?");
+                        Console.WriteLine("Quel est son numéro associé ?");
                         string num = Console.ReadLine();
                         nvlLigneM = nvlLigneM + "*" + num;
                         Console.WriteLine("A quelle UE appartient-elle ?");
@@ -91,20 +75,7 @@ namespace Ajout
                         nvlLigneM = nvlLigneM + "*" + UE + "*";
                         Matiere nvlMatiere = new Matiere(nomchoisiM,num, UE);
                         TousMatieres.Add(nvlMatiere);
-                        string fileNameM = "Matieres.txt";
-                        // Création du code :
-                        try
-                        {
-                            using (System.IO.StreamWriter writer = new System.IO.StreamWriter(fileNameM, append: true))
-                            {
-
-                                writer.Write("\r\n" + nvlLigneM);
-                            }
-                        }
-                        catch (Exception exp)
-                        {
-                            Console.Write("Erreur");
-                        }
+                        _AffichageListes.Program.CreaCode("Matieres.txt", nvlLigneM);
                         ligne = ligne + "A" + nomchoisiM + "*";
                     }
                     if (numerochoisi != 000)
@@ -130,9 +101,8 @@ namespace Ajout
                 }
             }
 
-            List<Eleve> participant = new List<Eleve>();
-
             //Sélection des élèves
+            List<Eleve> participant = new List<Eleve>();
             Console.WriteLine("Combien d'élèves travaillent sur ce projet ?");
             List<Eleve> TousEleves2 = new List<Eleve>();
             TousEleves2 = _InstancePersonne.Program.instancieEleve();
@@ -146,14 +116,8 @@ namespace Ajout
                 {
                     Console.WriteLine("Tapez le code associé à l'élève du projet.");
                     Console.WriteLine("Voilà la liste des élèves répertoriés !");
-                    
-                    foreach (Eleve element in TousEleves2)
-                    {
-                        Console.Write(element._nom);
-                        Console.WriteLine("     Si vous sélectionnez cet elève, tapez " + TousEleves2.IndexOf(element));
-                    }
-
-                    Console.WriteLine("Si l'élève que vous voulez sélectionner n'apparaît pas à l'écran, il va falloir le créer ! Dans ce cas, tapez creer");
+                    _AffichageListes.Program.EnSavoirPlusE(TousEleves2);
+                    Console.WriteLine("Si l'élève que vous voulez sélectionner n'apparaît pas à l'écran, il va falloir le créer ! Dans ce cas, tapez 000");
 
                     int numerochoisiE = int.Parse(Console.ReadLine());
                     if (numerochoisiE == 000)
@@ -175,25 +139,12 @@ namespace Ajout
                         int numpromo = int.Parse(promotion);
                         Console.WriteLine("Son groupe de TD ?");
                         string gp = Console.ReadLine();
-                        nvlLigneE = nvlLigneE  + gp + "*";
+                        nvlLigneE = nvlLigneE  + gp;
                         int groupe = int.Parse(gp);
                         Eleve nvlEleve = new Eleve(nomchoisiE,prenom,annee,numpromo,groupe);
                         TousEleves2.Add(nvlEleve);
                         participant.Add(nvlEleve);
-                        string fileNameM = "Eleves.txt";
-                        // Création du code :
-                        try
-                        {
-                            using (System.IO.StreamWriter writer = new System.IO.StreamWriter(fileNameM, append: true))
-                            {
-
-                                writer.Write("\r\n" + nvlLigneE);
-                            }
-                        }
-                        catch (Exception exp)
-                        {
-                            Console.Write("Erreur");
-                        }
+                        _AffichageListes.Program.CreaCode("Eleves.txt", nvlLigneE);
                         ligne = ligne + "E" + nomchoisiE + "*";
                     }
                     foreach (Eleve element in TousEleves2)
@@ -232,35 +183,43 @@ namespace Ajout
                 {
                     Console.WriteLine("Tapez le code associé à l'extérieur du projet.");
                     Console.WriteLine("Voilà la liste des extérieurs répertoriés !");
-                    foreach (Exterieur element in TousExte)
+                    _AffichageListes.Program.EnSavoirPlusEx(TousExte);
+                    Console.WriteLine("Si l'intervenant que vous voulez sélectionner n'apparaît pas à l'écran, il va falloir le créer ! Dans ce cas, tapez creer");
+                    int numerochoisi1 = int.Parse(Console.ReadLine());
+                    if (numerochoisi1 == 000)
                     {
-                        Console.Write(element._nom);
-                        Console.WriteLine("     Si vous sélectionnez cet elève, tapez " + TousExte.IndexOf(element));
+                        Console.WriteLine("C'est parti pour la création d'intervenant extérieur !");
+                        Console.WriteLine("Quel est le nom de famille de cet intervenant ?");
+                        string nvlLigneEx = Console.ReadLine();
+                        string nomchoisiEx = nvlLigneEx;
+                        Console.WriteLine("Son prénom ?");
+                        string prenom = Console.ReadLine();
+                        nvlLigneEx = nvlLigneEx + "*" + prenom;
+                        Console.WriteLine("Son métier ? (en dehors de ses interventions à l'ENSC)");
+                        string emploi = Console.ReadLine();
+                        nvlLigneEx = nvlLigneEx + "*" + emploi + "*";
+                        Console.WriteLine("L'établissement dans lequel il exerce sa fonction ?");
+                        string etablissement = Console.ReadLine();
+                        nvlLigneEx = nvlLigneEx + etablissement;
+                        Exterieur nvlEx = new Exterieur(nomchoisiEx, prenom, emploi, etablissement);
+                        TousExte.Add(nvlEx);
+                        _AffichageListes.Program.CreaCode("Exterieurs.txt", nvlLigneEx);
+                        ligne = ligne + "P" + nomchoisiEx + "*";
                     }
-                    int numerochoisi1 = int.Parse(Console.ReadLine()); // fin de la fonction à factoriser
-
-                    foreach (Exterieur element in TousExte)
+                    else
                     {
-                        if (numerochoisi1 == TousExte.IndexOf(element))
+                        foreach (Exterieur element in TousExte)
                         {
-                            ligne = ligne + "P" + TousExte[numerochoisi1]._nom + "*";
+                            if (numerochoisi1 == TousExte.IndexOf(element))
+                            {
+                                ligne = ligne + "P" + TousExte[numerochoisi1]._nom + "*";
+                            }
                         }
-
                     }
                     Console.WriteLine("Quel est le rôle de cette personne ?");
                     string role = Console.ReadLine();
-                    try
-                    {
-                        using (System.IO.StreamWriter writer = new System.IO.StreamWriter("Rôles.txt", append: true))
-                        {
-
-                            writer.Write("\r\n" + role + "*" + totalLignes + "*" + TousExte[numerochoisi1]._nom + nom);
-                        }
-                    }
-                    catch (Exception exp)
-                    {
-                        Console.Write("Erreur");
-                    }
+                    role = role + "*" + codeProj + "*" + TousExte[numerochoisi1]._nom;
+                    _AffichageListes.Program.CreaCode("Rôles.txt", role);
                 }
                 else
                 {
@@ -268,35 +227,16 @@ namespace Ajout
                     {
                         if (choixI == element._nom) ligne = ligne + "P" + choixI + "*";
                     }
-                    Console.WriteLine("Quel est le rôle de cette personne ?");
-                    string role = Console.ReadLine();
-                    try
-                    {
-                        using (System.IO.StreamWriter writer = new System.IO.StreamWriter("Rôles.txt", append: true))
-                        {
-
-                            writer.Write("\r\n" + role + "*" + totalLignes + "*" + choixI + "*" + nom);
-                        }
-                    }
-                    catch (Exception exp)
-                    {
-                        Console.Write("Erreur");
-                    }
+                    string role = _AffichageListes.Program.RecupRole(codeProj, choixI);
+                    _AffichageListes.Program.CreaCode("Rôles.txt", role);
                 }
                 
-
-
             }
             //Séléction du chef de projet :
             Console.WriteLine("Tapez le code associé au chef du projet.");
             Console.WriteLine("Voilà la liste des élèves participant !");
-            foreach (Eleve element in participant)
-            {
-                Console.Write(element._nom);
-                Console.WriteLine("     Si vous sélectionnez cet elève, tapez " + participant.IndexOf(element));
-            }
-            int numerochoisi4 = int.Parse(Console.ReadLine()); // fin de la fonction à factoriser
-
+            _AffichageListes.Program.EnSavoirPlusE(participant);
+            int numerochoisi4 = int.Parse(Console.ReadLine()); 
             foreach (Matiere element in TousMatieres)
             {
                 if (numerochoisi4 == TousMatieres.IndexOf(element))
@@ -310,24 +250,12 @@ namespace Ajout
             int NbL = int.Parse(Console.ReadLine());
             for (int i = 1; i < NbL + 1; i++)
             {
-                Console.WriteLine("Quel est le nom de votre livrable ?");
+                Console.WriteLine("Quelle est la nature du livrable n° "+i+" ?");
                 string _nom = Console.ReadLine();
                 Console.WriteLine("Quelle est l'échéance de ce livrable ? (de la forme AAAA/MM/JJ)");
                 string _date = Console.ReadLine();
-                string nv = _nom + "*" + _date + "*" + totalLignes + "*";
-                try
-                {
-                    using (System.IO.StreamWriter writer = new System.IO.StreamWriter("Livrables.txt", append: true))
-                    {
-
-                        writer.Write("\r\n" +nv );
-                    }
-                }
-                catch (Exception exp)
-                {
-                    Console.Write("Erreur");
-                }
-
+                string nv = _nom + "*" + _date + "*" + codeProj + "*";
+                _AffichageListes.Program.CreaCode("Livrables.txt", nv);
             }
 
             //Sélection des profs
@@ -342,15 +270,14 @@ namespace Ajout
                 string choixP = Console.ReadLine();
                 if (choixP == "oui")
                 {
-                    Console.WriteLine("Tapez le code associé au premier professeur du projet.");
+                    Console.WriteLine("Tapez le code associé au professeur n°"+i+" du projet.");
                     Console.WriteLine("Voilà la liste des professeurs répertoriés !");
                     foreach (Professeur element in TousProfs)
                     {
                         Console.Write(element._nom);
                         Console.WriteLine("     Si vous sélectionnez ce professeur, tapez " + TousProfs.IndexOf(element));
                     }
-                    int numerochoisi2 = int.Parse(Console.ReadLine()); // fin de la fonction à factoriser
-
+                    int numerochoisi2 = int.Parse(Console.ReadLine()); 
                     foreach (Professeur element in TousProfs)
                     {
                         if (numerochoisi2 == TousProfs.IndexOf(element))
@@ -360,18 +287,8 @@ namespace Ajout
                     }
                     Console.WriteLine("Quel est le rôle de cette personne ?");
                     string role = Console.ReadLine();
-                    try
-                    {
-                        using (System.IO.StreamWriter writer = new System.IO.StreamWriter("Rôles.txt", append: true))
-                        {
-
-                            writer.Write("\r\n" + role + "*" + totalLignes + "*" + TousProfs[numerochoisi2]._nom + nom);
-                        }
-                    }
-                    catch (Exception exp)
-                    {
-                        Console.Write("Erreur");
-                    }
+                    role = role + "*" + codeProj + "*" + TousProfs[numerochoisi2]._nom;
+                    _AffichageListes.Program.CreaCode("Rôles.txt", role);
                 }
                 else
                 {
@@ -382,40 +299,14 @@ namespace Ajout
                             ligne = ligne + "M" + element._nom;
                         }
                     }
-                    Console.WriteLine("Quel est le rôle de cette personne ?");
-                    string role = Console.ReadLine();
-                    try
-                    {
-                        using (System.IO.StreamWriter writer = new System.IO.StreamWriter("Rôles.txt", append: true))
-                        {
-
-                            writer.Write("\r\n" + role + "*" + totalLignes + "*" +choixP + nom);
-                        }
-                    }
-                    catch (Exception exp)
-                    {
-                        Console.Write("Erreur");
-                    }
+                    string role = _AffichageListes.Program.RecupRole(codeProj, choixP);
+                    _AffichageListes.Program.CreaCode("Rôles.txt", role);
                 }
             }
 
-
-                //Ecriture dans le fichier Projets.txt
-                string fileName = "Projets.txt";
-            // Création du code :
-            string ecrire = totalLignes + "*" + ligne;
-            try
-                {
-                using (System.IO.StreamWriter writer = new System.IO.StreamWriter(fileName, append: true))
-                {
-                  
-                    writer.Write("\r\n"+ecrire);
-                }
-                }
-                catch (Exception exp)
-                {
-                    Console.Write("Erreur");
-            }
+            //Ecriture dans le fichier Projets.txt
+            string ecrire = codeProj + "*" + ligne;
+            _AffichageListes.Program.CreaCode("Projets.txt", ecrire);
             //Affichage de la création 
             Console.Clear();
             Console.WriteLine("Vous avez créé le projet suivant !");
@@ -424,7 +315,6 @@ namespace Ajout
             Projet ajout = bdd.Last();
             ajout.Affichage(ajout);
             return true;
-
             }
         }
     

@@ -19,3 +19,5 @@
 18*16/05*2*false*12*true*ABases de la cognition*AConnaissance et représentation*EPradal*EThelot*PUnno*PSorita*CPradal*MLespinet
 19*Rôles*2*true*0*false*AAnglais*EPradal*PSorita*CPradal*MSolomas
 20*Boo*1*true*0*false*AAnglais*EPradal*PSorita*CPradal*MFavier
+21*TestJ*3*true*0*false*AFH, UX et utilisabilité*ABingewatching*ESimonnet*EFlop*EThelot*PBasvert*CSimonnet*MSaracco
+22*nvTest*98*true*0*false*AAnglais*ABingewatching*EDilleman*PBaptiste*PDelanoix*CDilleman

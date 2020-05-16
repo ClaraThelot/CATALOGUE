@@ -21,3 +21,16 @@ C:\Users\Installation\Desktop\ENSC\S6\Progra avancée\Projet\Projet_Prog_Avancee
 C:\Users\Installation\Desktop\ENSC\S6\Progra avancée\Projet\Projet_Prog_Avancee\Projet\_InstancieProf\obj\Debug\_InstancieProf.csproj.CopyComplete
 C:\Users\Installation\Desktop\ENSC\S6\Progra avancée\Projet\Projet_Prog_Avancee\Projet\_InstancieProf\obj\Debug\_InstancieProf.exe
 C:\Users\Installation\Desktop\ENSC\S6\Progra avancée\Projet\Projet_Prog_Avancee\Projet\_InstancieProf\obj\Debug\_InstancieProf.pdb
+C:\Users\Installation\Desktop\ENSC\S6\Progra avancée\Projet catalogue\CATALOGUE\Projet\_InstancieProf\bin\Debug\_InstancieProf.exe.config
+C:\Users\Installation\Desktop\ENSC\S6\Progra avancée\Projet catalogue\CATALOGUE\Projet\_InstancieProf\bin\Debug\_InstancieProf.exe
+C:\Users\Installation\Desktop\ENSC\S6\Progra avancée\Projet catalogue\CATALOGUE\Projet\_InstancieProf\bin\Debug\_InstancieProf.pdb
+C:\Users\Installation\Desktop\ENSC\S6\Progra avancée\Projet catalogue\CATALOGUE\Projet\_InstancieProf\bin\Debug\_InstanceMatiere.exe
+C:\Users\Installation\Desktop\ENSC\S6\Progra avancée\Projet catalogue\CATALOGUE\Projet\_InstancieProf\bin\Debug\_projet.exe
+C:\Users\Installation\Desktop\ENSC\S6\Progra avancée\Projet catalogue\CATALOGUE\Projet\_InstancieProf\bin\Debug\_InstanceMatiere.pdb
+C:\Users\Installation\Desktop\ENSC\S6\Progra avancée\Projet catalogue\CATALOGUE\Projet\_InstancieProf\bin\Debug\_InstanceMatiere.exe.config
+C:\Users\Installation\Desktop\ENSC\S6\Progra avancée\Projet catalogue\CATALOGUE\Projet\_InstancieProf\bin\Debug\_projet.pdb
+C:\Users\Installation\Desktop\ENSC\S6\Progra avancée\Projet catalogue\CATALOGUE\Projet\_InstancieProf\bin\Debug\_projet.exe.config
+C:\Users\Installation\Desktop\ENSC\S6\Progra avancée\Projet catalogue\CATALOGUE\Projet\_InstancieProf\obj\Debug\_InstancieProf.csprojAssemblyReference.cache
+C:\Users\Installation\Desktop\ENSC\S6\Progra avancée\Projet catalogue\CATALOGUE\Projet\_InstancieProf\obj\Debug\_InstancieProf.csproj.CopyComplete
+C:\Users\Installation\Desktop\ENSC\S6\Progra avancée\Projet catalogue\CATALOGUE\Projet\_InstancieProf\obj\Debug\_InstancieProf.exe
+C:\Users\Installation\Desktop\ENSC\S6\Progra avancée\Projet catalogue\CATALOGUE\Projet\_InstancieProf\obj\Debug\_InstancieProf.pdb

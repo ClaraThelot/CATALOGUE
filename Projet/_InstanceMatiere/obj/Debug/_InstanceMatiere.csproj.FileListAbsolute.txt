@@ -16,3 +16,13 @@ C:\Users\Installation\Desktop\ENSC\S6\Progra avancée\Projet\Projet_Prog_Avancee
 C:\Users\Installation\Desktop\ENSC\S6\Progra avancée\Projet\Projet_Prog_Avancee\Projet\_InstanceMatiere\obj\Debug\_InstanceMatiere.csproj.CopyComplete
 C:\Users\Installation\Desktop\ENSC\S6\Progra avancée\Projet\Projet_Prog_Avancee\Projet\_InstanceMatiere\obj\Debug\_InstanceMatiere.exe
 C:\Users\Installation\Desktop\ENSC\S6\Progra avancée\Projet\Projet_Prog_Avancee\Projet\_InstanceMatiere\obj\Debug\_InstanceMatiere.pdb
+C:\Users\Installation\Desktop\ENSC\S6\Progra avancée\Projet catalogue\CATALOGUE\Projet\_InstanceMatiere\bin\Debug\_InstanceMatiere.exe.config
+C:\Users\Installation\Desktop\ENSC\S6\Progra avancée\Projet catalogue\CATALOGUE\Projet\_InstanceMatiere\bin\Debug\_InstanceMatiere.exe
+C:\Users\Installation\Desktop\ENSC\S6\Progra avancée\Projet catalogue\CATALOGUE\Projet\_InstanceMatiere\bin\Debug\_InstanceMatiere.pdb
+C:\Users\Installation\Desktop\ENSC\S6\Progra avancée\Projet catalogue\CATALOGUE\Projet\_InstanceMatiere\bin\Debug\_projet.exe
+C:\Users\Installation\Desktop\ENSC\S6\Progra avancée\Projet catalogue\CATALOGUE\Projet\_InstanceMatiere\bin\Debug\_projet.pdb
+C:\Users\Installation\Desktop\ENSC\S6\Progra avancée\Projet catalogue\CATALOGUE\Projet\_InstanceMatiere\bin\Debug\_projet.exe.config
+C:\Users\Installation\Desktop\ENSC\S6\Progra avancée\Projet catalogue\CATALOGUE\Projet\_InstanceMatiere\obj\Debug\_InstanceMatiere.csprojAssemblyReference.cache
+C:\Users\Installation\Desktop\ENSC\S6\Progra avancée\Projet catalogue\CATALOGUE\Projet\_InstanceMatiere\obj\Debug\_InstanceMatiere.csproj.CopyComplete
+C:\Users\Installation\Desktop\ENSC\S6\Progra avancée\Projet catalogue\CATALOGUE\Projet\_InstanceMatiere\obj\Debug\_InstanceMatiere.exe
+C:\Users\Installation\Desktop\ENSC\S6\Progra avancée\Projet catalogue\CATALOGUE\Projet\_InstanceMatiere\obj\Debug\_InstanceMatiere.pdb

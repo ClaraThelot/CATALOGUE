@@ -26,3 +26,19 @@ C:\Users\THELOT\Desktop\Projet_Prog_Avancee\Projet\_InstanceEleve\bin\Debug\_Ins
 C:\Users\THELOT\Desktop\Projet_Prog_Avancee\Projet\_InstanceEleve\obj\Debug\_AffichageListes.csprojResolveAssemblyReference.cache
 C:\Users\THELOT\Desktop\Projet_Prog_Avancee\Projet\_InstanceEleve\obj\Debug\_InstanceEleve.exe
 C:\Users\THELOT\Desktop\Projet_Prog_Avancee\Projet\_InstanceEleve\obj\Debug\_InstanceEleve.pdb
+C:\Users\Installation\Desktop\ENSC\S6\Progra avancée\Projet catalogue\CATALOGUE\Projet\_InstanceEleve\bin\Debug\_InstanceEleve.exe.config
+C:\Users\Installation\Desktop\ENSC\S6\Progra avancée\Projet catalogue\CATALOGUE\Projet\_InstanceEleve\bin\Debug\_InstanceEleve.exe
+C:\Users\Installation\Desktop\ENSC\S6\Progra avancée\Projet catalogue\CATALOGUE\Projet\_InstanceEleve\bin\Debug\_InstanceEleve.pdb
+C:\Users\Installation\Desktop\ENSC\S6\Progra avancée\Projet catalogue\CATALOGUE\Projet\_InstanceEleve\bin\Debug\_InstanceExterieur.exe
+C:\Users\Installation\Desktop\ENSC\S6\Progra avancée\Projet catalogue\CATALOGUE\Projet\_InstanceEleve\bin\Debug\_projet.exe
+C:\Users\Installation\Desktop\ENSC\S6\Progra avancée\Projet catalogue\CATALOGUE\Projet\_InstanceEleve\bin\Debug\_InstanceMatiere.exe
+C:\Users\Installation\Desktop\ENSC\S6\Progra avancée\Projet catalogue\CATALOGUE\Projet\_InstanceEleve\bin\Debug\_InstanceExterieur.pdb
+C:\Users\Installation\Desktop\ENSC\S6\Progra avancée\Projet catalogue\CATALOGUE\Projet\_InstanceEleve\bin\Debug\_InstanceExterieur.exe.config
+C:\Users\Installation\Desktop\ENSC\S6\Progra avancée\Projet catalogue\CATALOGUE\Projet\_InstanceEleve\bin\Debug\_projet.pdb
+C:\Users\Installation\Desktop\ENSC\S6\Progra avancée\Projet catalogue\CATALOGUE\Projet\_InstanceEleve\bin\Debug\_projet.exe.config
+C:\Users\Installation\Desktop\ENSC\S6\Progra avancée\Projet catalogue\CATALOGUE\Projet\_InstanceEleve\bin\Debug\_InstanceMatiere.pdb
+C:\Users\Installation\Desktop\ENSC\S6\Progra avancée\Projet catalogue\CATALOGUE\Projet\_InstanceEleve\bin\Debug\_InstanceMatiere.exe.config
+C:\Users\Installation\Desktop\ENSC\S6\Progra avancée\Projet catalogue\CATALOGUE\Projet\_InstanceEleve\obj\Debug\_AffichageListes.csprojAssemblyReference.cache
+C:\Users\Installation\Desktop\ENSC\S6\Progra avancée\Projet catalogue\CATALOGUE\Projet\_InstanceEleve\obj\Debug\_AffichageListes.csproj.CopyComplete
+C:\Users\Installation\Desktop\ENSC\S6\Progra avancée\Projet catalogue\CATALOGUE\Projet\_InstanceEleve\obj\Debug\_InstanceEleve.exe
+C:\Users\Installation\Desktop\ENSC\S6\Progra avancée\Projet catalogue\CATALOGUE\Projet\_InstanceEleve\obj\Debug\_InstanceEleve.pdb

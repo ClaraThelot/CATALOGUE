@@ -11,11 +11,13 @@ namespace _projet
     {
         public List<Matiere> _matieres { get; set; }                                                       // J'ai temporairement enlevé le fait que c'est un tableau
 
-        public Professeur(string Nom, string Prenom, List<Matiere> Matieres) : base(Nom, Prenom) {
+        public Professeur(string Nom, string Prenom, List<Matiere> Matieres) : base(Nom, Prenom) 
+        {
             _matieres = Matieres;
         }
         
-        public Professeur(string Nom, string Prenom, List<Projet> Proj) : base(Nom, Prenom, Proj) {
+        public Professeur(string Nom, string Prenom, List<Projet> Proj) : base(Nom, Prenom, Proj) 
+        {
             _matieres = new List<Matiere>();
         }
 

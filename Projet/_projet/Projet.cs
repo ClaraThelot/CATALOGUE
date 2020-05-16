@@ -67,7 +67,7 @@ namespace _projet
             } // Supprime un élève, par contre laisse un trou dans le tableau à l'endroit considéré
         }
 
-        public void ajoutMatiere(Matiere M1)
+       /* public void ajoutMatiere(Matiere M1)
         {
             int counter = 0;
             foreach(Matiere element in _matieres)
@@ -75,7 +75,6 @@ namespace _projet
                 if (element != null) { _matieres[counter] = M1; }
                 counter++;
             }
-
         }
       
        public void supprimeMatiere(Matiere M1)
@@ -86,7 +85,7 @@ namespace _projet
                 counter++;
             } 
         }
-
+        */
    
         public void ajoutIntervenant(Exterieur Ex1)
         {
@@ -161,7 +160,7 @@ namespace _projet
         public void Affichage(object obj)
         {
             Console.WriteLine("Nom du projet: " + _nomProjet + "\n");
-            Console.WriteLine("Durée du projet :" + _duree + " mois \n");
+            Console.WriteLine("Durée du projet : " + _duree + " mois \n");
             if (_sujetLibre == true) Console.WriteLine("Sujet imposé" +"\r\n");
             Console.WriteLine("Eleves participant : ");
             foreach (Eleve element in _eleves)
@@ -183,10 +182,10 @@ namespace _projet
                 Console.Write(element._nom);
                 Console.WriteLine("     Si vous voulez en savoir plus sur cet intervenant, tapez 2" + _professeurs.IndexOf(element));
             }
-            Console.WriteLine("\r\n Détail des rôles de chacun des intervenants");
+            Console.WriteLine("\r\nDétail des rôles de chacun des intervenants");
             Role.RattacheRole(_code);
 
-            Console.WriteLine(" \r\n Matières concernées :");
+            Console.WriteLine(" \r\nMatières concernées :");
             foreach(Matiere element in _matieres)
             { Console.WriteLine(element._nom); } 
             Console.WriteLine("\r\n");
@@ -208,9 +207,6 @@ namespace _projet
             string determiner = saisienum.Substring(0,1);
             saisienum = saisienum.Substring(1);
             int numerochoisi = int.Parse(saisienum);
-            
-            
-            
             if (determiner == "0")
             {
                 foreach (Eleve element in _eleves)

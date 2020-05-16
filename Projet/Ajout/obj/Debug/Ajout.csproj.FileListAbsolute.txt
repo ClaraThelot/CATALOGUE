@@ -51,3 +51,34 @@ C:\Users\Installation\Desktop\ENSC\S6\Progra avancée\Projet\Projet_Prog_Avancee
 C:\Users\Installation\Desktop\ENSC\S6\Progra avancée\Projet\Projet_Prog_Avancee\Projet\Ajout\obj\Debug\Ajout.csproj.CopyComplete
 C:\Users\Installation\Desktop\ENSC\S6\Progra avancée\Projet\Projet_Prog_Avancee\Projet\Ajout\obj\Debug\Ajout.exe
 C:\Users\Installation\Desktop\ENSC\S6\Progra avancée\Projet\Projet_Prog_Avancee\Projet\Ajout\obj\Debug\Ajout.pdb
+C:\Users\Installation\Desktop\ENSC\S6\Progra avancée\Projet catalogue\CATALOGUE\Projet\Ajout\bin\Debug\Ajout.exe.config
+C:\Users\Installation\Desktop\ENSC\S6\Progra avancée\Projet catalogue\CATALOGUE\Projet\Ajout\bin\Debug\Ajout.exe
+C:\Users\Installation\Desktop\ENSC\S6\Progra avancée\Projet catalogue\CATALOGUE\Projet\Ajout\bin\Debug\Ajout.pdb
+C:\Users\Installation\Desktop\ENSC\S6\Progra avancée\Projet catalogue\CATALOGUE\Projet\Ajout\bin\Debug\_InstanceEleve.exe
+C:\Users\Installation\Desktop\ENSC\S6\Progra avancée\Projet catalogue\CATALOGUE\Projet\Ajout\bin\Debug\_InstanceExterieur.exe
+C:\Users\Installation\Desktop\ENSC\S6\Progra avancée\Projet catalogue\CATALOGUE\Projet\Ajout\bin\Debug\_InstanceLivrable.exe
+C:\Users\Installation\Desktop\ENSC\S6\Progra avancée\Projet catalogue\CATALOGUE\Projet\Ajout\bin\Debug\_InstanceMatiere.exe
+C:\Users\Installation\Desktop\ENSC\S6\Progra avancée\Projet catalogue\CATALOGUE\Projet\Ajout\bin\Debug\_InstanceProjet.exe
+C:\Users\Installation\Desktop\ENSC\S6\Progra avancée\Projet catalogue\CATALOGUE\Projet\Ajout\bin\Debug\_InstanceRole.exe
+C:\Users\Installation\Desktop\ENSC\S6\Progra avancée\Projet catalogue\CATALOGUE\Projet\Ajout\bin\Debug\_InstancieProf.exe
+C:\Users\Installation\Desktop\ENSC\S6\Progra avancée\Projet catalogue\CATALOGUE\Projet\Ajout\bin\Debug\_projet.exe
+C:\Users\Installation\Desktop\ENSC\S6\Progra avancée\Projet catalogue\CATALOGUE\Projet\Ajout\bin\Debug\_InstanceEleve.pdb
+C:\Users\Installation\Desktop\ENSC\S6\Progra avancée\Projet catalogue\CATALOGUE\Projet\Ajout\bin\Debug\_InstanceEleve.exe.config
+C:\Users\Installation\Desktop\ENSC\S6\Progra avancée\Projet catalogue\CATALOGUE\Projet\Ajout\bin\Debug\_InstanceExterieur.pdb
+C:\Users\Installation\Desktop\ENSC\S6\Progra avancée\Projet catalogue\CATALOGUE\Projet\Ajout\bin\Debug\_InstanceExterieur.exe.config
+C:\Users\Installation\Desktop\ENSC\S6\Progra avancée\Projet catalogue\CATALOGUE\Projet\Ajout\bin\Debug\_InstanceLivrable.pdb
+C:\Users\Installation\Desktop\ENSC\S6\Progra avancée\Projet catalogue\CATALOGUE\Projet\Ajout\bin\Debug\_InstanceLivrable.exe.config
+C:\Users\Installation\Desktop\ENSC\S6\Progra avancée\Projet catalogue\CATALOGUE\Projet\Ajout\bin\Debug\_InstanceMatiere.pdb
+C:\Users\Installation\Desktop\ENSC\S6\Progra avancée\Projet catalogue\CATALOGUE\Projet\Ajout\bin\Debug\_InstanceMatiere.exe.config
+C:\Users\Installation\Desktop\ENSC\S6\Progra avancée\Projet catalogue\CATALOGUE\Projet\Ajout\bin\Debug\_InstanceProjet.pdb
+C:\Users\Installation\Desktop\ENSC\S6\Progra avancée\Projet catalogue\CATALOGUE\Projet\Ajout\bin\Debug\_InstanceProjet.exe.config
+C:\Users\Installation\Desktop\ENSC\S6\Progra avancée\Projet catalogue\CATALOGUE\Projet\Ajout\bin\Debug\_InstanceRole.pdb
+C:\Users\Installation\Desktop\ENSC\S6\Progra avancée\Projet catalogue\CATALOGUE\Projet\Ajout\bin\Debug\_InstanceRole.exe.config
+C:\Users\Installation\Desktop\ENSC\S6\Progra avancée\Projet catalogue\CATALOGUE\Projet\Ajout\bin\Debug\_InstancieProf.pdb
+C:\Users\Installation\Desktop\ENSC\S6\Progra avancée\Projet catalogue\CATALOGUE\Projet\Ajout\bin\Debug\_InstancieProf.exe.config
+C:\Users\Installation\Desktop\ENSC\S6\Progra avancée\Projet catalogue\CATALOGUE\Projet\Ajout\bin\Debug\_projet.pdb
+C:\Users\Installation\Desktop\ENSC\S6\Progra avancée\Projet catalogue\CATALOGUE\Projet\Ajout\bin\Debug\_projet.exe.config
+C:\Users\Installation\Desktop\ENSC\S6\Progra avancée\Projet catalogue\CATALOGUE\Projet\Ajout\obj\Debug\Ajout.csprojAssemblyReference.cache
+C:\Users\Installation\Desktop\ENSC\S6\Progra avancée\Projet catalogue\CATALOGUE\Projet\Ajout\obj\Debug\Ajout.csproj.CopyComplete
+C:\Users\Installation\Desktop\ENSC\S6\Progra avancée\Projet catalogue\CATALOGUE\Projet\Ajout\obj\Debug\Ajout.exe
+C:\Users\Installation\Desktop\ENSC\S6\Progra avancée\Projet catalogue\CATALOGUE\Projet\Ajout\obj\Debug\Ajout.pdb

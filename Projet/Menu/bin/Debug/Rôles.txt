@@ -5,3 +5,13 @@ Client*19*Sorita*Rôles
 Monstre*20*Sorita*BOOOO
 Monstre*20*Sorita*BOOO
 Monstre*20*Sorita*Boo
+Médecin*21*Basvert*TestJ
+Prof*21*Saracco*TestJ
+Regarder*22*Baptiste*nvTest
+Manger des noix*22*Delanoix*nvTest
+Prof*22*Favier*nvTest
+Directeur ?*22*Leblanc*nvTest
+Flop*23*Lajoie
+Prof*23*Solomas
+Manger des pommes*24*Lajoie
+Rire*24*Favier

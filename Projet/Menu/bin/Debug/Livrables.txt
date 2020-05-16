@@ -14,3 +14,8 @@ Soutient*2020/20/20*19*
 Peur*6666/66/66*20*
 Cri*666/66/66*20*
 Hurlement*666/66/66*20*
+Soutenance*2020/04/04*21*
+Cdc*2020/20/01*22*
+Pleurer devant jury*2020/09/01*22*
+Soutenance*2020/04/04*23*
+Blague*2020/05/16*24*
