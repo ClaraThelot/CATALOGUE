@@ -1,0 +1,17 @@
+0*Info*3*false*18*true*AProbabilités*EPradal*EThelot*PLajoie*PDelanoix*CPradal*MSolomas
+1*Maths*1*true*12*false*AProbabilités*EThelot*PBertrand*CThelot*MMougin
+2*GCCO*2*true*0*false*AAnglais*EThelot*PDelanoix*CThelot*MSolomas
+3*RAO*4*false*0*true*AGCCo*EPradal*EPetit*EVincent*CPradal*MAriès
+4*PFE*6*true*18*true*ASignaux et systèmes*EHache*CHache*PGillon*MMougin
+5*PFE*6*false*0*false*ASignaux et systèmes*ESimmonet*CSimmonet*PUnno*MMougin
+6*Info Individuel*3*true*18*true*ASignaux et systèmes*EPradal*CPradal*PBasvert*MFavier
+7*Essai*2*false*0*false*ACommunication Web*EThelot*EPradal*PSorita*CThelot*L2020/05/04*MSolomas
+8*Essai9*2*true*0*false*EToniutti*PSorita*CToniutti*MAries
+9*EssaiEncore*2*false*0*false*AProgrammation avancée*ERabii*PSorita*CRabii*MLespinet
+10*Projet*2*true*0*false*ACommunication Web*EHache*PSorita*CHache*MAries
+11*2NE1*1*true*0*false*AAnglais*ACommunication Web*EThelot*PLajoie*CThelot*MSaracco
+12*Testf*2*true*0*false*AAnglais*AProbabilités*EThelot*EPradal*PLajoie*CThelot*MFavier
+13*TestM*2*true*0*false*ABrosserdeslicornes*EThelot*EPradal*PLajoie*CThelot*MSolomas
+14*Tesma*1*true*0*false*AChevaucherLicornes*AAnglais*AAnglais*EPetit*PUnno*CPetit*MFavier
+15*TestPics*40*false*0*false*ABases de la cognition*EPicsou*EThelot*EHache*PSorita*CPicsou*MArsac
+16*tes*2*false*0*false*AGCCo*AProgrammation avancée*ED'Arc*EThelot*PSorita*CD'Arc*MFaïta-Ainseba

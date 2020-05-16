@@ -1,0 +1,18 @@
+C:\Users\THELOT\Desktop\Projet_Prog_Avancee\Projet\_InstanceEleve\obj\Debug\_InstanceEleve.csprojResolveAssemblyReference.cache
+C:\Users\THELOT\Desktop\Projet_Prog_Avancee\Projet\_InstanceEleve\bin\Debug\_InstanceEleve.exe.config
+C:\Users\THELOT\Desktop\Projet_Prog_Avancee\Projet\_InstanceEleve\bin\Debug\_InstanceEleve.exe
+C:\Users\THELOT\Desktop\Projet_Prog_Avancee\Projet\_InstanceEleve\bin\Debug\_InstanceEleve.pdb
+C:\Users\THELOT\Desktop\Projet_Prog_Avancee\Projet\_InstanceEleve\bin\Debug\_projet.exe
+C:\Users\THELOT\Desktop\Projet_Prog_Avancee\Projet\_InstanceEleve\bin\Debug\_projet.pdb
+C:\Users\THELOT\Desktop\Projet_Prog_Avancee\Projet\_InstanceEleve\obj\Debug\_InstanceEleve.exe
+C:\Users\THELOT\Desktop\Projet_Prog_Avancee\Projet\_InstanceEleve\obj\Debug\_InstanceEleve.pdb
+C:\Users\Installation\Desktop\ENSC\S6\Progra avancée\Projet\Projet_Prog_Avancee\Projet\_InstanceEleve\bin\Debug\_InstanceEleve.exe.config
+C:\Users\Installation\Desktop\ENSC\S6\Progra avancée\Projet\Projet_Prog_Avancee\Projet\_InstanceEleve\bin\Debug\_InstanceEleve.exe
+C:\Users\Installation\Desktop\ENSC\S6\Progra avancée\Projet\Projet_Prog_Avancee\Projet\_InstanceEleve\bin\Debug\_InstanceEleve.pdb
+C:\Users\Installation\Desktop\ENSC\S6\Progra avancée\Projet\Projet_Prog_Avancee\Projet\_InstanceEleve\bin\Debug\_projet.exe
+C:\Users\Installation\Desktop\ENSC\S6\Progra avancée\Projet\Projet_Prog_Avancee\Projet\_InstanceEleve\bin\Debug\_projet.pdb
+C:\Users\Installation\Desktop\ENSC\S6\Progra avancée\Projet\Projet_Prog_Avancee\Projet\_InstanceEleve\bin\Debug\_projet.exe.config
+C:\Users\Installation\Desktop\ENSC\S6\Progra avancée\Projet\Projet_Prog_Avancee\Projet\_InstanceEleve\obj\Debug\_InstanceEleve.csprojAssemblyReference.cache
+C:\Users\Installation\Desktop\ENSC\S6\Progra avancée\Projet\Projet_Prog_Avancee\Projet\_InstanceEleve\obj\Debug\_InstanceEleve.csproj.CopyComplete
+C:\Users\Installation\Desktop\ENSC\S6\Progra avancée\Projet\Projet_Prog_Avancee\Projet\_InstanceEleve\obj\Debug\_InstanceEleve.exe
+C:\Users\Installation\Desktop\ENSC\S6\Progra avancée\Projet\Projet_Prog_Avancee\Projet\_InstanceEleve\obj\Debug\_InstanceEleve.pdb

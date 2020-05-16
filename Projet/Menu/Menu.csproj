@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E38251CF-75F3-4C93-A871-56086F9C326F}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Menu</RootNamespace>
+    <AssemblyName>Menu</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Ajout\Ajout.csproj">
+      <Project>{9e7bc385-7cce-4833-bdea-64625cd1fe45}</Project>
+      <Name>Ajout</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Rattachement\Rattachement.csproj">
+      <Project>{deb269bd-7d56-478c-88d7-d4e07b841fe1}</Project>
+      <Name>Rattachement</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RechercheLibre\RechercheLibre.csproj">
+      <Project>{611535bb-6c83-4cb5-b941-58ed976da93a}</Project>
+      <Name>RechercheLibre</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\_InstanceEleve\_AffichageListes.csproj">
+      <Project>{9d3b58de-9f5c-4847-994c-8b155cd1993d}</Project>
+      <Name>_AffichageListes</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\_InstanceExterieur\_InstancePersonne.csproj">
+      <Project>{b48dd257-baf7-42db-b104-910abe60056d}</Project>
+      <Name>_InstancePersonne</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\_InstanceLivrable\_InstanceLivrable.csproj">
+      <Project>{7df3992f-891c-4b0f-a9cb-048753acb924}</Project>
+      <Name>_InstanceLivrable</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\_InstanceMatiere\_InstanceMatiere.csproj">
+      <Project>{d30ccd61-734b-4736-8cb0-106997467f66}</Project>
+      <Name>_InstanceMatiere</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\_InstanceProjet\_InstanceProjet.csproj">
+      <Project>{7b0e5a82-11a8-42ab-8d0f-b07074e7d90d}</Project>
+      <Name>_InstanceProjet</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\_InstanceRole\_InstanceRole.csproj">
+      <Project>{440a892a-d89b-4e63-87ff-2b863a4b3608}</Project>
+      <Name>_InstanceRole</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\_InstancieProf\_InstancieProf.csproj">
+      <Project>{58d60e80-88b0-4c1e-906d-1e382c13abf6}</Project>
+      <Name>_InstancieProf</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\_projet\_projet.csproj">
+      <Project>{0a02fe91-42b8-40e2-85f9-9b960c2eabcc}</Project>
+      <Name>_projet</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

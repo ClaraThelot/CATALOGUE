@@ -1,0 +1,10 @@
+C:\Users\Installation\Desktop\ENSC\S6\ProjetWeb\Projet_Prog_Avancee\Projet\ConsoleApp1\bin\Debug\netcoreapp3.1\ConsoleApp1.exe
+C:\Users\Installation\Desktop\ENSC\S6\ProjetWeb\Projet_Prog_Avancee\Projet\ConsoleApp1\bin\Debug\netcoreapp3.1\ConsoleApp1.deps.json
+C:\Users\Installation\Desktop\ENSC\S6\ProjetWeb\Projet_Prog_Avancee\Projet\ConsoleApp1\bin\Debug\netcoreapp3.1\ConsoleApp1.runtimeconfig.json
+C:\Users\Installation\Desktop\ENSC\S6\ProjetWeb\Projet_Prog_Avancee\Projet\ConsoleApp1\bin\Debug\netcoreapp3.1\ConsoleApp1.runtimeconfig.dev.json
+C:\Users\Installation\Desktop\ENSC\S6\ProjetWeb\Projet_Prog_Avancee\Projet\ConsoleApp1\bin\Debug\netcoreapp3.1\ConsoleApp1.dll
+C:\Users\Installation\Desktop\ENSC\S6\ProjetWeb\Projet_Prog_Avancee\Projet\ConsoleApp1\bin\Debug\netcoreapp3.1\ConsoleApp1.pdb
+C:\Users\Installation\Desktop\ENSC\S6\ProjetWeb\Projet_Prog_Avancee\Projet\ConsoleApp1\obj\Debug\netcoreapp3.1\ConsoleApp1.AssemblyInfoInputs.cache
+C:\Users\Installation\Desktop\ENSC\S6\ProjetWeb\Projet_Prog_Avancee\Projet\ConsoleApp1\obj\Debug\netcoreapp3.1\ConsoleApp1.AssemblyInfo.cs
+C:\Users\Installation\Desktop\ENSC\S6\ProjetWeb\Projet_Prog_Avancee\Projet\ConsoleApp1\obj\Debug\netcoreapp3.1\ConsoleApp1.dll
+C:\Users\Installation\Desktop\ENSC\S6\ProjetWeb\Projet_Prog_Avancee\Projet\ConsoleApp1\obj\Debug\netcoreapp3.1\ConsoleApp1.pdb

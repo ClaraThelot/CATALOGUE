@@ -1,0 +1,12 @@
+Anglais*CO5INANO*Culture Ingénieur et Langue
+Probabilités*CO5SFON0*Sciences Fondamentales
+FH, UX et utilisabilité*CO5SCFH0*Ingénierie Cognitique
+Bases Biologie Humaine*CO5SCBIO*Ingénierie Cognitique
+Bases de la cognition*CO5SCCC0*Ingénierie Cognitique
+Introduction à la programmation*CO5SFIN0*Sciences Fondamentales
+GCCO*CO6SCCC0*Ingénierie Cognitique
+Connaissance et représentation*CO6SCC50*Ingénierie Cognitique
+Signaux et systèmes* CO6SFSS0*Sciences Fondamentales
+Statistique inférentielle* CO6SFMA0*Sciences Fondamentales
+Programmation avancée*CO6SFPA0*Sciences Fondamentales
+Communication Web*CO6SFCW0*Sciences Fondamentales

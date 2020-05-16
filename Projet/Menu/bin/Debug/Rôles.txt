@@ -1,0 +1,7 @@
+Client*0*Lajoie*Info
+Tuteur*0*Delanoix*Info
+Professeur*0*Solomas*Info
+Client*19*Sorita*Rôles
+Monstre*20*Sorita*BOOOO
+Monstre*20*Sorita*BOOO
+Monstre*20*Sorita*Boo
