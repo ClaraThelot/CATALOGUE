@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace _projet
 {
 
-        public class Eleve : Personne,IAffichable
+        public class Eleve : Personne, IAffichable
         {
             public string _annee { get; set; }
             public int _promo { get; set; }

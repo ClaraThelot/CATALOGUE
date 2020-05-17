@@ -11,6 +11,19 @@ namespace _AffichageListes{ // Version Clara
         static void Main(string[] args)
         {
         }
+
+        public static void triAlpha(List<Personne> eDesordre)
+        {
+            IEnumerable<Personne> Alpha = from student in eDesordre
+                                          orderby student._nom ascending
+                                          select student;
+            foreach (Personne p in Alpha)
+            {
+                Console.Write(p._nom);
+                Console.WriteLine("     Si vous voulez sélectionner cet intervenant en particulier, tapez " + eDesordre.IndexOf(p));
+            }
+        }
+
         public static string RecupRole(int codeProj, string choixP)
         {
             Console.WriteLine("Quel est le rôle de cette personne ?");
@@ -41,13 +54,30 @@ namespace _AffichageListes{ // Version Clara
                 }
             }
         }
-        public static void EnSavoirPlusEx(List<Exterieur> ListeE)
-        {
-            foreach (Exterieur element in ListeE)
+
+        public static void Choixnum(int numchois, List<Personne> pers)
             {
+            foreach (Personne element in pers)
+            {
+                if (numchois == pers.IndexOf(element)) Console.WriteLine(element.ToString());
+            }
+        }
+        public static void EnSavoirplus(List<Personne> pers) 
+        {
+            foreach (Personne element in pers)
+            {
+                Console.Write(element._nom);
+                Console.WriteLine("     Si vous voulez sélectionner cet intervenant en particulier, tapez " + pers.IndexOf(element));
+            }
+        }
+
+        public static void CreaLigne(int num, List<Personne> pers, string identification, string ligne)
+        {
+            foreach (Personne element in pers)
+            {
+                if (num== pers.IndexOf(element))
                 {
-                    Console.Write(element._nom);
-                    Console.WriteLine("     Si vous voulez sélectionner cet intervenant en particulier, tapez " + ListeE.IndexOf(element));
+                    ligne = ligne + identification + pers[num]._nom + "*";
                 }
             }
         }
@@ -55,32 +85,11 @@ namespace _AffichageListes{ // Version Clara
         {
             foreach (Matiere element in ListeM)
             {
-                {
-                    Console.Write(element._nom);
-                    Console.WriteLine("     Si vous voulez sélectionner cette matière en particulier, tapez " + ListeM.IndexOf(element));
-                }
+                Console.Write(element._nom);
+                Console.WriteLine("     Si vous voulez sélectionner cette matière en particulier, tapez " + ListeM.IndexOf(element));
             }
         }
-        public static void EnSavoirPlusE(List<Eleve> ListeE)
-        {
-            foreach (Eleve element in ListeE)
-            {
-                {
-                    Console.Write(element._nom);
-                    Console.WriteLine("     Si vous voulez sélectionner cet élève en particulier, tapez " + ListeE.IndexOf(element));
-                }
-            }
-        }
-        public static void EnSavoirPlusProf(List<Professeur> ListeP)
-        {
-            foreach (Professeur element in ListeP)
-            {
-                {
-                    Console.Write(element._nom);
-                    Console.WriteLine("     Si vous voulez sélectionner ce prof en particulier, tapez " + ListeP.IndexOf(element));
-                }
-            }
-        }
+        
         public static void CreaCode(string file, string ligne)
         {
             try
@@ -96,6 +105,5 @@ namespace _AffichageListes{ // Version Clara
                 Console.Write("Erreur");
             }
         }
-
     }
 }

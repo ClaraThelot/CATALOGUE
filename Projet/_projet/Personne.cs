@@ -9,7 +9,7 @@ namespace _projet
 {
     public class Personne : IAffichable
     {
-
+       
         public string _nom { get; }
         public string _prenom { get; }
         public List<Projet> _projet { get; set; }

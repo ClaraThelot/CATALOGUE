@@ -66,12 +66,9 @@ namespace Menu
                     switch(Console.ReadLine())
                     {
                         case "1":
-                            _AffichageListes.Program.EnSavoirPlusE(Eleves);
+                            _AffichageListes.Program.triAlpha(Eleves.ToList<Personne>());
                             int numero = int.Parse(Console.ReadLine()); // On convertit en un entier
-                            foreach (Eleve element in Eleves)
-                            { 
-                                if (numero == Eleves.IndexOf(element)) Console.WriteLine(element.ToString()); 
-                            }
+                            _AffichageListes.Program.Choixnum(numero, Eleves.ToList<Personne>());
                             return true;
                         case "2":
                             _AffichageListes.Program.AfficheParAn("1A", Eleves);
@@ -87,10 +84,7 @@ namespace Menu
                                 }
                             }
                             numero = int.Parse(Console.ReadLine()); // On convertit en un entier
-                            foreach (Eleve element in Eleves)
-                            { 
-                                if (numero == Eleves.IndexOf(element)) Console.WriteLine(element.ToString()); 
-                            }
+                            _AffichageListes.Program.Choixnum(numero, Eleves.ToList<Personne>());
                             return true;
                         default: return false;
                     }
@@ -102,12 +96,9 @@ namespace Menu
                     Projet = _InstanceProjet.Program.instancieProjet();
                     List<Exterieur> Exte = new List<Exterieur>();
                     Exte = Rattachement.Program.ConnexionExte();
-                    _AffichageListes.Program.EnSavoirPlusEx(Exte);
+                    _AffichageListes.Program.triAlpha(Exte.ToList<Personne>());
                     int numerochoisi = int.Parse(Console.ReadLine()); // On convertit en un entier
-                    foreach (Exterieur element in Exte)
-                    {
-                        if (numerochoisi == Exte.IndexOf(element)) Console.WriteLine(element.ToString());
-                    }
+                    _AffichageListes.Program.Choixnum(numerochoisi, Exte.ToList<Personne>());
                     return true;
 
                 
@@ -120,12 +111,9 @@ namespace Menu
                     if (choixE == 1)
                     {
                         Console.WriteLine("Voici la liste des professeurs de l'école");
-                        _AffichageListes.Program.EnSavoirPlusProf(prof);
+                        _AffichageListes.Program.triAlpha(prof.ToList<Personne>());
                         int numerochoisiP = int.Parse(Console.ReadLine()); // On convertit en un entier
-                        foreach (Professeur element in prof)
-                        { 
-                            if (numerochoisiP == prof.IndexOf(element)) Console.WriteLine(element.ToString()); 
-                        }
+                        _AffichageListes.Program.Choixnum(numerochoisiP, prof.ToList<Personne>());
                     }
                     else 
                     {
@@ -143,10 +131,7 @@ namespace Menu
                             }
                         }
                         int numerochoisiP = int.Parse(Console.ReadLine()); // On convertit en un entier
-                        foreach (Professeur p in prof)
-                        {
-                            if (numerochoisiP == prof.IndexOf(p)) Console.WriteLine(p.ToString());
-                        }
+                        _AffichageListes.Program.Choixnum(numerochoisiP, prof.ToList<Personne>());
                     }
                     return true;  
                     

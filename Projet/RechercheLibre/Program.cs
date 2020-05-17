@@ -86,7 +86,6 @@ namespace RechercheLibre
                                 if (element._nom == m._nom) Console.WriteLine(proj._nomProjet + " (Chef de projet : " + proj._chefprojet._nom + ")");
                             }
                         }
-
                     }
                 }
             }

@@ -116,7 +116,7 @@ namespace Ajout// V Clara
                 {
                     Console.WriteLine("Tapez le code associé à l'élève du projet.");
                     Console.WriteLine("Voilà la liste des élèves répertoriés !");
-                    _AffichageListes.Program.EnSavoirPlusE(TousEleves2);
+                    _AffichageListes.Program.triAlpha(TousEleves2.ToList<Personne>());
                     Console.WriteLine("Si l'élève que vous voulez sélectionner n'apparaît pas à l'écran, il va falloir le créer ! Dans ce cas, tapez 000");
 
                     int numerochoisiE = int.Parse(Console.ReadLine());
@@ -183,7 +183,7 @@ namespace Ajout// V Clara
                 {
                     Console.WriteLine("Tapez le code associé à l'extérieur du projet.");
                     Console.WriteLine("Voilà la liste des extérieurs répertoriés !");
-                    _AffichageListes.Program.EnSavoirPlusEx(TousExte);
+                    _AffichageListes.Program.triAlpha(TousExte.ToList<Personne>());
                     Console.WriteLine("Si l'intervenant que vous voulez sélectionner n'apparaît pas à l'écran, il va falloir le créer ! Dans ce cas, tapez creer");
                     int numerochoisi1 = int.Parse(Console.ReadLine());
                     if (numerochoisi1 == 000)
@@ -208,13 +208,7 @@ namespace Ajout// V Clara
                     }
                     else
                     {
-                        foreach (Exterieur element in TousExte)
-                        {
-                            if (numerochoisi1 == TousExte.IndexOf(element))
-                            {
-                                ligne = ligne + "P" + TousExte[numerochoisi1]._nom + "*";
-                            }
-                        }
+                        _AffichageListes.Program.CreaLigne(numerochoisi1, TousExte.ToList<Personne>(), "P", ligne);
                     }
                     Console.WriteLine("Quel est le rôle de cette personne ?");
                     string role = Console.ReadLine();
@@ -235,7 +229,7 @@ namespace Ajout// V Clara
             //Séléction du chef de projet :
             Console.WriteLine("Tapez le code associé au chef du projet.");
             Console.WriteLine("Voilà la liste des élèves participant !");
-            _AffichageListes.Program.EnSavoirPlusE(participant);
+            _AffichageListes.Program.EnSavoirplus(participant.ToList<Personne>());
             int numerochoisi4 = int.Parse(Console.ReadLine()); 
             foreach (Matiere element in TousMatieres)
             {
@@ -272,19 +266,9 @@ namespace Ajout// V Clara
                 {
                     Console.WriteLine("Tapez le code associé au professeur n°"+i+" du projet.");
                     Console.WriteLine("Voilà la liste des professeurs répertoriés !");
-                    foreach (Professeur element in TousProfs)
-                    {
-                        Console.Write(element._nom);
-                        Console.WriteLine("     Si vous sélectionnez ce professeur, tapez " + TousProfs.IndexOf(element));
-                    }
+                    _AffichageListes.Program.triAlpha(TousProfs.ToList<Personne>());
                     int numerochoisi2 = int.Parse(Console.ReadLine()); 
-                    foreach (Professeur element in TousProfs)
-                    {
-                        if (numerochoisi2 == TousProfs.IndexOf(element))
-                        {
-                            ligne = ligne + "M" + TousProfs[numerochoisi2]._nom;
-                        }
-                    }
+                     _AffichageListes.Program.CreaLigne(numerochoisi2, TousProfs.ToList<Personne>(), "M", ligne);
                     Console.WriteLine("Quel est le rôle de cette personne ?");
                     string role = Console.ReadLine();
                     role = role + "*" + codeProj + "*" + TousProfs[numerochoisi2]._nom;
