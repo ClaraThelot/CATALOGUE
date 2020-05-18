@@ -30,6 +30,7 @@ namespace _InstanceLivrable
                 Livrable liv = new Livrable(type, echeance, projet);
                 Livrables.Add(liv);
             }
+            file3.Close();
             return Livrables;
         }
     }

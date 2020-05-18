@@ -22,3 +22,5 @@
 21*TestJ*3*true*0*false*AFH, UX et utilisabilité*ABingewatching*ESimonnet*EFlop*EThelot*PBasvert*CSimonnet*MSaracco
 22*nvTest*98*true*0*false*AAnglais*ABingewatching*EDilleman*PBaptiste*PDelanoix*CDilleman
 23*tst*2*true*0*false*AConnaissance et représentation*ELanusse-Malhéné*EBinet*CBinet
+24*Réussi*1*false*0*false*AAnglais*EThelot*PSorita*CThelot*MSolomas
+25*Coucou*1*false*0*false*AProbabilités*EPradal*PSorita*CPradal*MSolomas

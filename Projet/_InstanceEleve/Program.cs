@@ -4,12 +4,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using _projet;
+using System.IO;
 
 namespace _AffichageListes{ // Version Clara
     public class Program
     {
         static void Main(string[] args)
         {
+            string coucou = "coucou c'est moi";
+            CreaCode("Rôles.txt", coucou);
         }
 
         public static void triAlpha(List<Personne> eDesordre)
@@ -105,17 +108,18 @@ namespace _AffichageListes{ // Version Clara
         
         public static void CreaCode(string file, string ligne)
         {
+            
             try
-            {
+           {
                 using (System.IO.StreamWriter writer = new System.IO.StreamWriter(file, append: true))
                 {
 
-                    writer.Write("\r\n" + ligne);
+                    writer.Write("\n" + ligne);
                 }
             }
             catch (Exception exp)
             {
-                Console.Write("Erreur");
+               Console.Write("Erreur");
             }
         }
     }

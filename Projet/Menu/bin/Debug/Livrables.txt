@@ -1,22 +1,23 @@
-Soutenance *2020/05/04*1*
-Rapport *2020/15/06*2*
-Cahier des charges*2020/06/05*3*
-Rapport*2020/06/05*4*
-Livre des connaissances*2020/06/05*5*
-Analyse de données*2020/06/12*6*
-Soutenance*2020/05/18*7*
-Soutenance*2020/01/19*0*
-Cahier des Charges*2019/12/02*0*
-Soutenance*2020/08/08*17*
-Danse*2020/20/20*18*
-Site Web*2020/08/08*18*
-Soutient*2020/20/20*19*
-Peur*6666/66/66*20*
-Cri*666/66/66*20*
-Hurlement*666/66/66*20*
-Soutenance*2020/04/04*21*
-Cdc*2020/20/01*22*
-Pleurer devant jury*2020/09/01*22*
-Soutenance*2020/04/04*23*
-Blague*2020/05/16*24*
-Soutenance*2222/22/22*23*
+Soutenance *2020/05/04*1
+Rapport *2020/15/06*2
+Cahier des charges*2020/06/05*3
+Rapport*2020/06/05*4
+Livre des connaissances*2020/06/05*5
+Analyse de données*2020/06/12*6
+Soutenance*2020/05/18*7
+Soutenance*2020/01/19*0
+Cahier des Charges*2019/12/02*0
+Soutenance*2020/08/08*17
+Danse*2020/20/20*17
+Site Web*2020/08/08*18
+Soutient*2020/20/20*19
+Peur*6666/66/66*20
+Cri*666/66/66*20
+Hurlement*666/66/66*20
+Soutenance*2020/04/04*21
+Cdc*2020/20/01*22
+Pleurer devant jury*2020/09/01*22
+Soutenance*2020/04/04*23
+Blague*2020/05/16*24
+Show*2020/02/02*24*
+BLEU*UN JOUR*25*

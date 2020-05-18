@@ -19,3 +19,7 @@ bleuh*23*Delanoix
 tester*23*Unno
 RIRE*23*Arsac
 Danser le flamenco*23*Solomas
+Gogo danseur*24*Sorita
+Spectateur*24*Solomas
+OUI*25*Sorita
+AIDJA*25*Solomas

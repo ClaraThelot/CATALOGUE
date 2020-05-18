@@ -16,9 +16,9 @@ namespace Ajout// V Clara
     {
         static void Main(string[] args)
         { }
-       
+
         public static bool MenuAjout()
-        {                
+        {
             int codeProj = _InstanceRole.Program.CompteProjet() + 1;
             Console.WriteLine("Bienvenue sur le menu des ajouts !");
             Console.WriteLine("Vous allez pouvoir créer un projet. D'abord, saisissez-en le nom.");
@@ -60,10 +60,11 @@ namespace Ajout// V Clara
                     Console.WriteLine("Si la matière que vous voulez sélectionner n'apparaît pas à l'écran, il va falloir la créer ! Dans ce cas, tapez 000");
 
                     int numerochoisi = int.Parse(Console.ReadLine());
-                    if(numerochoisi==000)
+                    if (numerochoisi == 000)
                     {
                         Console.WriteLine("C'est parti pour la création de matière !");
                         int totalLignesM = File.ReadLines("Matieres.txt").Count();
+                        Console.WriteLine(totalLignesM);
                         Console.WriteLine("Comment s'appelle cette nouvelle matière ?");
                         string nvlLigneM = Console.ReadLine();
                         string nomchoisiM = nvlLigneM;
@@ -73,8 +74,9 @@ namespace Ajout// V Clara
                         Console.WriteLine("A quelle UE appartient-elle ?");
                         string UE = Console.ReadLine();
                         nvlLigneM = nvlLigneM + "*" + UE + "*";
-                        Matiere nvlMatiere = new Matiere(nomchoisiM,num, UE);
+                        Matiere nvlMatiere = new Matiere(nomchoisiM, num, UE);
                         TousMatieres.Add(nvlMatiere);
+                        Console.WriteLine(nvlLigneM);
                         _AffichageListes.Program.CreaCode("Matieres.txt", nvlLigneM);
                         ligne = ligne + "A" + nomchoisiM + "*";
                     }
@@ -91,9 +93,9 @@ namespace Ajout// V Clara
                 }
                 else
                 {
-                    foreach(Matiere element in TousMatieres)
+                    foreach (Matiere element in TousMatieres)
                     {
-                        if(choixM==element._nom)
+                        if (choixM == element._nom)
                         {
                             ligne = ligne + "A" + choixM + "*";
                         }
@@ -139,9 +141,9 @@ namespace Ajout// V Clara
                         int numpromo = int.Parse(promotion);
                         Console.WriteLine("Son groupe de TD ?");
                         string gp = Console.ReadLine();
-                        nvlLigneE = nvlLigneE  + gp;
+                        nvlLigneE = nvlLigneE + gp;
                         int groupe = int.Parse(gp);
-                        Eleve nvlEleve = new Eleve(nomchoisiE,prenom,annee,numpromo,groupe);
+                        Eleve nvlEleve = new Eleve(nomchoisiE, prenom, annee, numpromo, groupe);
                         TousEleves2.Add(nvlEleve);
                         participant.Add(nvlEleve);
                         _AffichageListes.Program.CreaCode("Eleves.txt", nvlLigneE);
@@ -217,25 +219,25 @@ namespace Ajout// V Clara
                 }
                 else
                 {
-                    foreach(Exterieur element in TousExte)
+                    foreach (Exterieur element in TousExte)
                     {
                         if (choixI == element._nom) ligne = ligne + "P" + choixI + "*";
                     }
                     string role = _AffichageListes.Program.RecupRole(codeProj, choixI);
                     _AffichageListes.Program.CreaCode("Rôles.txt", role);
                 }
-                
+
             }
             //Séléction du chef de projet :
             Console.WriteLine("Tapez le code associé au chef du projet.");
             Console.WriteLine("Voilà la liste des élèves participant !");
             _AffichageListes.Program.EnSavoirplus(participant.ToList<Personne>());
-            int numerochoisi4 = int.Parse(Console.ReadLine()); 
+            int numerochoisi4 = int.Parse(Console.ReadLine());
             foreach (Matiere element in TousMatieres)
             {
                 if (numerochoisi4 == TousMatieres.IndexOf(element))
                 {
-                    ligne = ligne +"C"+ participant[numerochoisi4]._nom + "*";
+                    ligne = ligne + "C" + participant[numerochoisi4]._nom + "*";
                 }
             }
 
@@ -244,7 +246,7 @@ namespace Ajout// V Clara
             int NbL = int.Parse(Console.ReadLine());
             for (int i = 1; i < NbL + 1; i++)
             {
-                Console.WriteLine("Quelle est la nature du livrable n° "+i+" ?");
+                Console.WriteLine("Quelle est la nature du livrable n° " + i + " ?");
                 string _nom = Console.ReadLine();
                 Console.WriteLine("Quelle est l'échéance de ce livrable ? (de la forme AAAA/MM/JJ)");
                 string _date = Console.ReadLine();
@@ -264,11 +266,11 @@ namespace Ajout// V Clara
                 string choixP = Console.ReadLine();
                 if (choixP == "oui")
                 {
-                    Console.WriteLine("Tapez le code associé au professeur n°"+i+" du projet.");
+                    Console.WriteLine("Tapez le code associé au professeur n°" + i + " du projet.");
                     Console.WriteLine("Voilà la liste des professeurs répertoriés !");
                     _AffichageListes.Program.triAlpha(TousProfs.ToList<Personne>());
-                    int numerochoisi2 = int.Parse(Console.ReadLine()); 
-                     _AffichageListes.Program.CreaLigne(numerochoisi2, TousProfs.ToList<Personne>(), "M", ligne);
+                    int numerochoisi2 = int.Parse(Console.ReadLine());
+                    _AffichageListes.Program.CreaLigne(numerochoisi2, TousProfs.ToList<Personne>(), "M", ligne);
                     Console.WriteLine("Quel est le rôle de cette personne ?");
                     string role = Console.ReadLine();
                     role = role + "*" + codeProj + "*" + TousProfs[numerochoisi2]._nom;
@@ -299,8 +301,7 @@ namespace Ajout// V Clara
             Projet ajout = bdd.Last();
             ajout.Affichage(ajout);
             return true;
-            }
         }
-    
-}
+    }
 
+}

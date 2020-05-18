@@ -49,6 +49,7 @@ namespace _InstancePersonne
                 Professeur profe = new Professeur(nomprof, prénomprof, mate);
                 Prof.Add(profe);
             }
+            fichier2.Close();
             return Prof;
         }
         public static List<Eleve> instancieEleve()
@@ -73,6 +74,7 @@ namespace _InstancePersonne
                 Eleve eleve = new Eleve(nomeleve, prenomeleve, annee, promo, TD);
                 Eleves.Add(eleve);
             }
+            file.Close();
             return Eleves;
         }
 
@@ -96,6 +98,7 @@ namespace _InstancePersonne
                 Exterieur exte = new Exterieur(nomexterieur, prenomexterieur, metier, entreprise);
                 Exterieurs.Add(exte);
             }
+            file2.Close();
             return Exterieurs;
         }
 

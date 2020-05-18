@@ -170,9 +170,11 @@ namespace Menu
                     Matieres = _InstanceMatiere.Program.instancieMatiere();
                     List<Projet> Projets = new List<Projet>();
                     Projets = _InstanceProjet.Program.instancieProjet();
+                    Console.Clear();
                     foreach (Matiere element in Matieres)
                     {
-                        Console.WriteLine(element._nom + " Si vous voulez afficher les projets de cette matière, tapez " + Matieres.IndexOf(element));
+                        Console.WriteLine(element._nom + " si vous voulez afficher les projets de cette matière, tapez " + Matieres.IndexOf(element));
+                        Console.WriteLine("\n");
                         string pos = Convert.ToString(Matieres.IndexOf(element));
                         possible.Add(pos);
                     }

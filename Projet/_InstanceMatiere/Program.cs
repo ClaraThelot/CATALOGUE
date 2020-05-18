@@ -28,7 +28,9 @@ namespace _InstanceMatiere
                     Matiere matiere = new Matiere(nommatiere, code, ue);                          // Construction de la matière 
                     Matieres.Add(matiere);                                                        // Ajout de la matière créée à la liste des matières
                 }
+                fichier.Close();
                 return Matieres;
+            
             }
         }
     }

@@ -207,6 +207,7 @@ namespace _InstanceProjet
                 Projets.Add(nouveau);
                 
             }
+            file4.Close();
             return Projets;
         }
     }
