@@ -26,3 +26,11 @@ C:\Users\Installation\Desktop\ENSC\S6\Progra avancée\Projet catalogue\CATALOGUE
 C:\Users\Installation\Desktop\ENSC\S6\Progra avancée\Projet catalogue\CATALOGUE\Projet\_InstanceLivrable\obj\Debug\_InstanceLivrable.csproj.CopyComplete
 C:\Users\Installation\Desktop\ENSC\S6\Progra avancée\Projet catalogue\CATALOGUE\Projet\_InstanceLivrable\obj\Debug\_InstanceLivrable.exe
 C:\Users\Installation\Desktop\ENSC\S6\Progra avancée\Projet catalogue\CATALOGUE\Projet\_InstanceLivrable\obj\Debug\_InstanceLivrable.pdb
+C:\Users\THELOT\Desktop\CATALOGUE\Projet\_InstanceLivrable\bin\Debug\_InstanceLivrable.exe.config
+C:\Users\THELOT\Desktop\CATALOGUE\Projet\_InstanceLivrable\bin\Debug\_InstanceLivrable.exe
+C:\Users\THELOT\Desktop\CATALOGUE\Projet\_InstanceLivrable\bin\Debug\_InstanceLivrable.pdb
+C:\Users\THELOT\Desktop\CATALOGUE\Projet\_InstanceLivrable\bin\Debug\_projet.exe
+C:\Users\THELOT\Desktop\CATALOGUE\Projet\_InstanceLivrable\bin\Debug\_projet.pdb
+C:\Users\THELOT\Desktop\CATALOGUE\Projet\_InstanceLivrable\obj\Debug\_InstanceLivrable.csprojResolveAssemblyReference.cache
+C:\Users\THELOT\Desktop\CATALOGUE\Projet\_InstanceLivrable\obj\Debug\_InstanceLivrable.exe
+C:\Users\THELOT\Desktop\CATALOGUE\Projet\_InstanceLivrable\obj\Debug\_InstanceLivrable.pdb

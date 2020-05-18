@@ -32,7 +32,7 @@ namespace _projet
             _prenom = Prenom;
             _projet = Proj;
         }
-        public override string ToString()
+        public virtual void Affiche()
         {
             string res = " ";
             res = res + "Nom : " + _nom + "\n";
@@ -45,8 +45,9 @@ namespace _projet
                 i++;
             }
 
-            return res;
+            Console.WriteLine(res);
         }
+
 
         public void Affichage(object obj)
         {

@@ -13,6 +13,7 @@ using _projet;
 using RechercheLibre;
 using Rattachement;
 using Ajout;
+using Verification;
 
 namespace Menu
 {
@@ -43,13 +44,14 @@ namespace Menu
  
         static bool MenuRecherche()
         {
-            Console.WriteLine("Bienvenue sur votre application de recherche de projets de l'ENSC ! \nComment souhaitez-vous effectuer votre recherche ?\n");
+            Console.WriteLine("Bienvenue sur votre application de recherche de projets de l'ENSC ! \n Quel filtre souhaitez-vous ajouter à votre recherche ?\n");
             Console.WriteLine("Si vous voulez faire une recherche libre, tapez d'abord 1 sur votre clavier numérique !");
-            Console.WriteLine("Si vous voulez parcourir les élèves, tapez 2");
-            Console.WriteLine("Si vous voulez parcourir les intervenants extérieurs, tapez 3");
-            Console.WriteLine("Si vous voulez parcourir les professeurs, tapez 4");
-            Console.WriteLine("Si vous voulez parcourir les projets, tapez 5");
-          
+            Console.WriteLine("Si vous voulez parcourir les projets selon les élèves, tapez 2");
+            Console.WriteLine("Si vous voulez parcourir les projets selon les intervenants extérieurs, tapez 3");
+            Console.WriteLine("Si vous voulez parcourir les projets selon les professeurs, tapez 4");
+            Console.WriteLine("Si vous voulez parcourir les projets selon les matières, tapez 5");
+            Console.WriteLine("Si vous voulez simplement parcourir les projets, tapez 6");
+            List<string> possible = new List<string>();
             switch (Console.ReadLine())
             {
                 case "1":
@@ -63,30 +65,50 @@ namespace Menu
                     Eleves = Rattachement.Program.RattacheEleve();
                     Console.WriteLine("Souhaitez-vous voir apparaître tous les élèves par ordre alphabétique ? Tapez 1 !"); // Il faut vraiment que je trouve comment on fait
                     Console.WriteLine("Ou par année ? (1A, 2A, 3A) Dans ce cas, tapez 2");
-                    switch(Console.ReadLine())
+                    possible.Add("1");
+                    possible.Add("2");
+                    string entree3 = Console.ReadLine();
+                    bool verification3 = Verification.Program.Verification(entree3, possible);
+                    if (verification3 == true)
                     {
-                        case "1":
-                            _AffichageListes.Program.triAlpha(Eleves.ToList<Personne>());
-                            int numero = int.Parse(Console.ReadLine()); // On convertit en un entier
-                            _AffichageListes.Program.Choixnum(numero, Eleves.ToList<Personne>());
-                            return true;
-                        case "2":
-                            _AffichageListes.Program.AfficheParAn("1A", Eleves);
-                            _AffichageListes.Program.AfficheParAn("2A", Eleves);
-                            _AffichageListes.Program.AfficheParAn("3A", Eleves);
-                            Console.WriteLine("Eleves ayant un autre statut :");
-                            foreach (Eleve element in Eleves)
-                            {
-                                if (element._annee != "1A" && element._annee != "2A" && element._annee != "3A")
+                        List<string> choisir = new List<string>();
+                        switch (entree3)
+                        {
+                            case "1":
+                                _AffichageListes.Program.triAlpha(Eleves.ToList<Personne>());
+                                int numero = int.Parse(Console.ReadLine()); // On convertit en un entier
+                                _AffichageListes.Program.Choixnum(numero, Eleves.ToList<Personne>());
+                                return true;
+                            case "2":
+                                _AffichageListes.Program.AfficheParAn("1A", Eleves);
+                                _AffichageListes.Program.AfficheParAn("2A", Eleves);
+                                _AffichageListes.Program.AfficheParAn("3A", Eleves);
+                                Console.WriteLine("Eleves ayant un autre statut :");
+                                foreach (Eleve element in Eleves)
                                 {
-                                    Console.Write(element._nom);
-                                    Console.WriteLine("     Si vous voulez en savoir plus sur cet élève, tapez " + Eleves.IndexOf(element) + "\r\n");
+                                    if (element._annee != "1A" && element._annee != "2A" && element._annee != "3A")
+                                    {
+                                        Console.Write(element._nom);
+                                        Console.WriteLine("     Si vous voulez en savoir plus sur cet élève, tapez " + Eleves.IndexOf(element) + "\r\n");
+                                        string pos = Convert.ToString(Eleves.IndexOf(element));
+                                        choisir.Add(pos);
+
+                                    }
                                 }
-                            }
-                            numero = int.Parse(Console.ReadLine()); // On convertit en un entier
-                            _AffichageListes.Program.Choixnum(numero, Eleves.ToList<Personne>());
-                            return true;
-                        default: return false;
+                                string entree4 = Console.ReadLine();
+                                bool verification4 = Verification.Program.Verification(entree4, choisir);
+                                    if (verification4 == true)
+                                { numero = int.Parse(entree4); // On convertit en un entier
+                                    _AffichageListes.Program.Choixnum(numero, Eleves.ToList<Personne>());
+                                    return true; }
+                                    else
+                                { return false; }
+                            default: return false;
+                        }
+                    }
+                    else
+                    {
+                        return false;
                     }
                     
                 
@@ -127,16 +149,82 @@ namespace Menu
                                 foreach (Matiere m in p._matieres)
                                 {
                                     if (m._nom == toutesM._nom) Console.WriteLine("     "+p._nom+ "     Si vous voulez sélectionner ce professeur en particulier, tapez " + prof.IndexOf(p));
+                                    string choix = Convert.ToString(prof.IndexOf(p));
+                                    possible.Add(choix;)
                                 }
                             }
                         }
-                        int numerochoisiP = int.Parse(Console.ReadLine()); // On convertit en un entier
-                        _AffichageListes.Program.Choixnum(numerochoisiP, prof.ToList<Personne>());
+                        string entree7 = Console.ReadLine();
+                        bool verification7 = Verification.Program.Verification(entree7, possible);
+                        if (verification7 == true)
+                        {
+                            int numerochoisiP = int.Parse(entree7); // On convertit en un entier
+                            _AffichageListes.Program.Choixnum(numerochoisiP, prof.ToList<Personne>());
+                        }
+                        else
+                        { }
                     }
-                    return true;  
-                    
-                   
+                    return true;
+
                 case "5":
+                    List<Matiere> Matieres = new List<Matiere>();
+                    Matieres = _InstanceMatiere.Program.instancieMatiere();
+                    List<Projet> Projets = new List<Projet>();
+                    Projets = _InstanceProjet.Program.instancieProjet();
+                    foreach (Matiere element in Matieres)
+                    {
+                        Console.WriteLine(element._nom + " Si vous voulez afficher les projets de cette matière, tapez " + Matieres.IndexOf(element));
+                        string pos = Convert.ToString(Matieres.IndexOf(element));
+                        possible.Add(pos);
+                    }
+                    string entree5 = Console.ReadLine();
+                    bool verification5 = Verification.Program.Verification(entree5, possible);
+                    if (verification5 == true)
+                    {
+
+                        List<string> choisir = new List<string>();
+                        int matchoix = int.Parse(entree5);
+                        string choix = "";
+                        foreach (Matiere m in Matieres)
+                        {
+                            if (matchoix == Matieres.IndexOf(m))
+                            {
+                                choix = m._nom;
+                            }
+                        }
+                        Console.Clear();
+                        foreach (Projet p in Projets)
+                        {
+                            foreach (Matiere ma in p._matieres)
+                            {
+                                if (choix == ma._nom)
+                                {
+                                    Console.Write(p._nomProjet + " (Chef de projet :" + p._chefprojet._nom + ")");
+                                    Console.WriteLine("     Si vous voulez en savoir plus sur ce projet, tapez " + Projets.IndexOf(p));
+                                    string pos = Convert.ToString(Projets.IndexOf(p));
+                                    choisir.Add(pos);
+                                }
+                            }
+                        }
+                        string entree6 = Console.ReadLine();
+                        bool verification6 = Verification.Program.Verification(entree6, choisir);
+                        if (verification6 == true)
+                        {
+                            int choixpro = int.Parse(entree6); // On convertit en un entier
+                            foreach (Projet element in Projets)
+                            {
+                                if (choixpro == Projets.IndexOf(element)) { Console.Clear(); element.Affichage(element); }
+                            }
+                            return true;
+                        }
+
+                        else { return false; }
+                    }
+                    else { return false; }
+
+
+
+                case "6":
                     List<Projet> Proj = new List<Projet>();
                     Proj = _InstanceProjet.Program.instancieProjet();
                     Console.WriteLine("Vous avez choisi d'afficher les projets ! Si vous voulez les voir s'afficher tous, tapez 1");
@@ -144,17 +232,46 @@ namespace Menu
                     switch (Console.ReadLine())
                     {
                         case "1":
+                            Console.WriteLine("Voici les projets achevés : ");
+                            Console.WriteLine("\r\n");
                             foreach (Projet element in Proj)
                             {
-                                Console.Write(element._nomProjet + " (Chef de projet :" + element._chefprojet._nom + ")");
-                                Console.WriteLine("     Si vous voulez en savoir plus sur ce projet, tapez " + Proj.IndexOf(element));
+                                if (element._sujetAcheve)
+                                {
+                                    Console.Write(element._nomProjet + " (Chef de projet :" + element._chefprojet._nom + ")");
+                                    Console.WriteLine("     Si vous voulez en savoir plus sur ce projet, tapez " + Proj.IndexOf(element));
+                                    string pos = Convert.ToString(Proj.IndexOf(element));
+                                    possible.Add(pos);
+                                }
                             }
-                            numerochoisi = int.Parse(Console.ReadLine()); // On convertit en un entier
+                            Console.WriteLine("\r\n");
+                            Console.WriteLine("Voici les projets qui ne sont pas encore achevés : ");
+                            Console.WriteLine("\r\n");
                             foreach (Projet element in Proj)
                             {
-                                if (numerochoisi == Proj.IndexOf(element)) element.Affichage(element);
+                                if (element._sujetAcheve==false)
+                                {
+                                    Console.Write(element._nomProjet + " (Chef de projet :" + element._chefprojet._nom + ")");
+                                    Console.WriteLine("     Si vous voulez en savoir plus sur ce projet, tapez " + Proj.IndexOf(element));
+                                    string pos = Convert.ToString(Proj.IndexOf(element));
+                                    possible.Add(pos);
+                                }
                             }
-                            return true;
+                            string entree = Console.ReadLine();
+                            bool verification = Verification.Program.Verification(entree, possible);
+                            if (verification==true)
+                            {
+                                numerochoisi = int.Parse(entree); // On convertit en un entier
+                                foreach (Projet element in Proj)
+                                {
+                                    if (numerochoisi == Proj.IndexOf(element)) element.Affichage(element);
+                                }
+                                return true;
+                            }
+                            else
+                            {
+                                return false;
+                            }
                         case "2":
                             Console.WriteLine("Promo 2022 :");
                             _AffichageListes.Program.ProjetparPromo(2022, Proj);
@@ -169,14 +286,25 @@ namespace Menu
                                 {
                                     Console.Write(element._nomProjet + " (Chef de projet :" + element._chefprojet._nom + ")");
                                     Console.WriteLine("     Si vous voulez en savoir plus sur ce projet, tapez " + Proj.IndexOf(element));
+                                    string pos = Convert.ToString(Proj.IndexOf(element));
+                                    possible.Add(pos);
                                 }
                             }
-                            int numerochoisip = int.Parse(Console.ReadLine()); // On convertit en un entier
-                            foreach (Projet element in Proj)
+                            string entree2 = Console.ReadLine();
+                            bool verification2 = Verification.Program.Verification(entree2, possible);
+                            if (verification2 == true)
                             {
-                                if (numerochoisip == Proj.IndexOf(element)) element.Affichage(element);
+                                int numerochoisip = int.Parse(Console.ReadLine()); // On convertit en un entier
+                                foreach (Projet element in Proj)
+                                {
+                                    if (numerochoisip == Proj.IndexOf(element)) element.Affichage(element);
+                                }
+                                return true;
                             }
-                            return true;
+                            else
+                            {
+                                return false;
+                            }
                         default: return false;
                     }
                 default: return false;

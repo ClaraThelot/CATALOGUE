@@ -57,10 +57,23 @@ namespace _AffichageListes{ // Version Clara
 
         public static void Choixnum(int numchois, List<Personne> pers)
             {
-            foreach (Personne element in pers)
+            List<String> possible = new List<string>();
+            foreach(Personne element2 in pers)
             {
-                if (numchois == pers.IndexOf(element)) Console.WriteLine(element.ToString());
+                string pos = Convert.ToString(pers.IndexOf(element2));
+                possible.Add(pos);
             }
+            string choix = Convert.ToString(numchois);
+            bool verification = Verification.Program.Verification(choix, possible);
+            if (verification == true)
+            {
+                foreach (Personne element in pers)
+                {
+                    if (numchois == pers.IndexOf(element)) { element.Affiche(); }
+                }
+            }
+            else
+            { }
         }
         public static void EnSavoirplus(List<Personne> pers) 
         {

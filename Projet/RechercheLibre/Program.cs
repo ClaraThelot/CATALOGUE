@@ -44,17 +44,17 @@ namespace RechercheLibre
                 int nombre;
                 if (int.TryParse(recherche, out nombre))                        //Vérification pour voir si la conversion en int est possible
                 {
-                    if (int.Parse(recherche) == element._promo) element.Affichage(element);
+                    if (int.Parse(recherche) == element._promo) element.Affiche();
                 }
                 if (recherche == element._prenom|| recherche == element._nom||recherche== element._annee)
                 {
-                   element.Affichage(element);
+                   element.Affiche();
                 }
             }
             
             foreach (Exterieur element in Exte)
             {
-                if (recherche == element._nom || recherche ==element._prenom || recherche ==element._metier || recherche ==element._entreprise) element.Affichage(element);
+                if (recherche == element._nom || recherche ==element._prenom || recherche ==element._metier || recherche ==element._entreprise) element.Affiche();
             }
 
             foreach (Matiere element in Matieres)
@@ -92,7 +92,7 @@ namespace RechercheLibre
 
             foreach (Professeur element in Prof)
             {
-                if (recherche == element._nom|| recherche == element._prenom) element.Affichage(element);
+                if (recherche == element._nom|| recherche == element._prenom) element.Affiche();
             }
 
             foreach (Livrable element in Livrables)

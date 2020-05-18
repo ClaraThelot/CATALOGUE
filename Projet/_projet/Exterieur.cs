@@ -25,7 +25,7 @@ namespace _projet
             _entreprise = Entreprise;
         }
         
-        public override string ToString()
+        public override void Affiche()
         {
             string res = "";
             res = res + "Nom : " + _nom + "\n";
@@ -36,11 +36,19 @@ namespace _projet
             int i = 0;
             foreach (Projet element in _projet)
             {
-                res = res + "Projet n°" + (i+1) + " : " + element._nomProjet + "\n";
+                res = res + "Projet n°" + (i + 1) + " : " + element._nomProjet + "\n     Si vous voulez en savoir plus sur ce projet, tapez " + _projet.IndexOf(element) + "\n";
                 i++;
             }
+            Console.WriteLine(res);
 
-            return res;
+            int numerochoisi = int.Parse(Console.ReadLine()); // On convertit en un entier
+            foreach (Projet element2 in _projet)
+            {
+                if (numerochoisi == _projet.IndexOf(element2)) element2.Affichage(element2);
+            }
+
+           
         }
+
     }
 }

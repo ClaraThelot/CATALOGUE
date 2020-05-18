@@ -34,3 +34,13 @@ C:\Users\Installation\Desktop\ENSC\S6\Progra avancée\Projet catalogue\CATALOGUE
 C:\Users\Installation\Desktop\ENSC\S6\Progra avancée\Projet catalogue\CATALOGUE\Projet\_InstanceExterieur\obj\Debug\_InstancePersonne.csproj.CopyComplete
 C:\Users\Installation\Desktop\ENSC\S6\Progra avancée\Projet catalogue\CATALOGUE\Projet\_InstanceExterieur\obj\Debug\_InstanceExterieur.exe
 C:\Users\Installation\Desktop\ENSC\S6\Progra avancée\Projet catalogue\CATALOGUE\Projet\_InstanceExterieur\obj\Debug\_InstanceExterieur.pdb
+C:\Users\THELOT\Desktop\CATALOGUE\Projet\_InstanceExterieur\bin\Debug\_InstanceExterieur.exe.config
+C:\Users\THELOT\Desktop\CATALOGUE\Projet\_InstanceExterieur\bin\Debug\_InstanceExterieur.exe
+C:\Users\THELOT\Desktop\CATALOGUE\Projet\_InstanceExterieur\bin\Debug\_InstanceExterieur.pdb
+C:\Users\THELOT\Desktop\CATALOGUE\Projet\_InstanceExterieur\bin\Debug\_InstanceMatiere.exe
+C:\Users\THELOT\Desktop\CATALOGUE\Projet\_InstanceExterieur\bin\Debug\_projet.exe
+C:\Users\THELOT\Desktop\CATALOGUE\Projet\_InstanceExterieur\bin\Debug\_InstanceMatiere.pdb
+C:\Users\THELOT\Desktop\CATALOGUE\Projet\_InstanceExterieur\bin\Debug\_projet.pdb
+C:\Users\THELOT\Desktop\CATALOGUE\Projet\_InstanceExterieur\obj\Debug\_InstancePersonne.csprojResolveAssemblyReference.cache
+C:\Users\THELOT\Desktop\CATALOGUE\Projet\_InstanceExterieur\obj\Debug\_InstanceExterieur.exe
+C:\Users\THELOT\Desktop\CATALOGUE\Projet\_InstanceExterieur\obj\Debug\_InstanceExterieur.pdb

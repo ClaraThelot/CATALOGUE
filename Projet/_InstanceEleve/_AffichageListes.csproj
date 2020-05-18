@@ -50,6 +50,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Verification\Verification.csproj">
+      <Project>{9ba23f4b-9a3d-4680-9ea1-9d0cbaa6ae47}</Project>
+      <Name>Verification</Name>
+    </ProjectReference>
     <ProjectReference Include="..\_InstanceExterieur\_InstancePersonne.csproj">
       <Project>{b48dd257-baf7-42db-b104-910abe60056d}</Project>
       <Name>_InstancePersonne</Name>
