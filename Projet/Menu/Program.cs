@@ -90,10 +90,9 @@ namespace Menu
                                     {
                                         Console.Write(element._nom);
                                         Console.WriteLine("     Si vous voulez en savoir plus sur cet élève, tapez " + Eleves.IndexOf(element) + "\r\n");
-                                        string pos = Convert.ToString(Eleves.IndexOf(element));
-                                        choisir.Add(pos);
-
                                     }
+                                    string pos = Convert.ToString(Eleves.IndexOf(element));
+                                    choisir.Add(pos);
                                 }
                                 string entree4 = Console.ReadLine();
                                 bool verification4 = Verification.Program.Verification(entree4, choisir);
@@ -150,7 +149,7 @@ namespace Menu
                                 {
                                     if (m._nom == toutesM._nom) Console.WriteLine("     "+p._nom+ "     Si vous voulez sélectionner ce professeur en particulier, tapez " + prof.IndexOf(p));
                                     string choix = Convert.ToString(prof.IndexOf(p));
-                                    possible.Add(choix;)
+                                    possible.Add(choix);
                                 }
                             }
                         }
@@ -286,15 +285,15 @@ namespace Menu
                                 {
                                     Console.Write(element._nomProjet + " (Chef de projet :" + element._chefprojet._nom + ")");
                                     Console.WriteLine("     Si vous voulez en savoir plus sur ce projet, tapez " + Proj.IndexOf(element));
-                                    string pos = Convert.ToString(Proj.IndexOf(element));
-                                    possible.Add(pos);
                                 }
+                                string pos = Convert.ToString(Proj.IndexOf(element));
+                                possible.Add(pos);
                             }
                             string entree2 = Console.ReadLine();
                             bool verification2 = Verification.Program.Verification(entree2, possible);
                             if (verification2 == true)
                             {
-                                int numerochoisip = int.Parse(Console.ReadLine()); // On convertit en un entier
+                                int numerochoisip = int.Parse(entree2); // On convertit en un entier
                                 foreach (Projet element in Proj)
                                 {
                                     if (numerochoisip == Proj.IndexOf(element)) element.Affichage(element);

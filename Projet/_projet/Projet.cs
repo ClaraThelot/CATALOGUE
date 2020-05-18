@@ -210,7 +210,7 @@ namespace _projet
             if (determiner == "0")
             {
                 foreach (Eleve element in _eleves)
-                {if (numerochoisi == _eleves.IndexOf(element)) Console.WriteLine(element.ToString());  }
+                {if (numerochoisi == _eleves.IndexOf(element)) element.Affiche();  }
             }
 
             else 
@@ -218,7 +218,7 @@ namespace _projet
                 if (determiner =="1")
                 {
                     foreach (Exterieur element in _intervenants)
-                    {  if (numerochoisi == _intervenants.IndexOf(element)) Console.WriteLine(element.ToString());  }
+                    {  if (numerochoisi == _intervenants.IndexOf(element)) element.Affiche();  }
                 }
                 else
                 {
@@ -226,7 +226,7 @@ namespace _projet
                     {
                         foreach (Professeur element in _professeurs)
                         {  
-                            if (numerochoisi == _professeurs.IndexOf(element)) Console.WriteLine(element.ToString());  }
+                            if (numerochoisi == _professeurs.IndexOf(element)) element.Affiche();  }
                     }
 
                     else Console.WriteLine("Désolée, nous ne pouvons afficher cela, vous avez du faire une erreur !");
