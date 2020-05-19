@@ -28,3 +28,5 @@ C:\Users\THELOT\Desktop\CATALOGUE\Projet\_projet\bin\Debug\_projet.pdb
 C:\Users\THELOT\Desktop\CATALOGUE\Projet\_projet\obj\Debug\_projet.csprojResolveAssemblyReference.cache
 C:\Users\THELOT\Desktop\CATALOGUE\Projet\_projet\obj\Debug\_projet.exe
 C:\Users\THELOT\Desktop\CATALOGUE\Projet\_projet\obj\Debug\_projet.pdb
+C:\Users\THELOT\Desktop\CATALOGUE\Projet\_projet\bin\Debug\Verification.exe
+C:\Users\THELOT\Desktop\CATALOGUE\Projet\_projet\bin\Debug\Verification.pdb

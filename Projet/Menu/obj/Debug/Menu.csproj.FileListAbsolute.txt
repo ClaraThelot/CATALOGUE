@@ -139,3 +139,5 @@ C:\Users\THELOT\Desktop\CATALOGUE\Projet\Menu\bin\Debug\_projet.pdb
 C:\Users\THELOT\Desktop\CATALOGUE\Projet\Menu\obj\Debug\Menu.csprojResolveAssemblyReference.cache
 C:\Users\THELOT\Desktop\CATALOGUE\Projet\Menu\bin\Debug\Verification.exe
 C:\Users\THELOT\Desktop\CATALOGUE\Projet\Menu\bin\Debug\Verification.pdb
+C:\Users\THELOT\Desktop\CATALOGUE\Projet\Menu\bin\Debug\Creation.exe
+C:\Users\THELOT\Desktop\CATALOGUE\Projet\Menu\bin\Debug\Creation.pdb

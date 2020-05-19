@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace _projet
 {
 
-        public class Eleve : Personne, IAffichable
+        public class Eleve : Personne, IAffichable, IAppartenance
         {
             public string _annee { get; set; }
             public int _promo { get; set; }
@@ -29,8 +29,24 @@ namespace _projet
                 _promo = Promo;
                 _groupeTD = Groupe;
             }
+        public bool Appartenir(List<object> liste, string entree)
+        {
+            int occur = 0;
+            foreach (Eleve element in liste)
+            {
+                if (element._nom == entree)
+                {
+                    occur++;
+                }
+            }
+            if (occur == 0)
+            { return false; }
+            else
+            { return true; }
+        }
 
-            public void supprimeProjet(Projet P1)
+
+        public void supprimeProjet(Projet P1)
             {
                 int i = 0;
                 int place = 0;
@@ -66,6 +82,27 @@ namespace _projet
             }
 
 
+        }
+        public static Object conversion(Eleve e)
+        {
+            Object o = e as Object;
+            return o;
+        }
+
+        public bool Appartenir(List<Eleve> liste, string entree)
+        {
+            int occur = 0;
+            foreach (Eleve element in liste)
+            {
+                if (element._nom == entree)
+                {
+                    occur++;
+                }
+            }
+            if (occur == 0)
+            { return false; }
+            else
+            { return true; }
         }
 
     }

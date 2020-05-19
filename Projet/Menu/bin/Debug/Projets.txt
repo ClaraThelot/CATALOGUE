@@ -24,3 +24,9 @@
 23*tst*2*true*0*false*AConnaissance et représentation*ELanusse-Malhéné*EBinet*CBinet
 24*Réussi*1*false*0*false*AAnglais*EThelot*PSorita*CThelot*MSolomas
 25*Coucou*1*false*0*false*AProbabilités*EPradal*PSorita*CPradal*MSolomas
+26*Aujourd'hui*2*false*0*false*ABases Biologie Humaine*ERoger*EThelot*PRobert*CRoger*MSolomas
+27*NON*4*false*12*true*AAnglais*EFRFRF*EFRFRF*PSorita*CFRFRF*MSolomas
+28*Coucou*2*false*0*false*AAnglais*EDeray*EDeray*PSorita*CDeray*MAries
+29*Non*1*true*0*false*AAnglais*Eoui*PSorita*Coui*MSolomas
+30*Hope*1*false*0*false*ALicorne*EThelot*PSorita*CThelot*MSolomas
+31*Joie*1*false*0*false*AAnglais*EThelot*PSorita*CThelot*

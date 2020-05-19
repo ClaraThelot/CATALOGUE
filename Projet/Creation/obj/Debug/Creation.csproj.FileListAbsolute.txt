@@ -1,0 +1,12 @@
+C:\Users\THELOT\Desktop\CATALOGUE\Projet\Creation\bin\Debug\Creation.exe.config
+C:\Users\THELOT\Desktop\CATALOGUE\Projet\Creation\bin\Debug\Creation.exe
+C:\Users\THELOT\Desktop\CATALOGUE\Projet\Creation\bin\Debug\Creation.pdb
+C:\Users\THELOT\Desktop\CATALOGUE\Projet\Creation\bin\Debug\_InstanceEleve.exe
+C:\Users\THELOT\Desktop\CATALOGUE\Projet\Creation\bin\Debug\_projet.exe
+C:\Users\THELOT\Desktop\CATALOGUE\Projet\Creation\bin\Debug\Verification.exe
+C:\Users\THELOT\Desktop\CATALOGUE\Projet\Creation\bin\Debug\_InstanceEleve.pdb
+C:\Users\THELOT\Desktop\CATALOGUE\Projet\Creation\bin\Debug\_projet.pdb
+C:\Users\THELOT\Desktop\CATALOGUE\Projet\Creation\bin\Debug\Verification.pdb
+C:\Users\THELOT\Desktop\CATALOGUE\Projet\Creation\obj\Debug\Creation.csprojResolveAssemblyReference.cache
+C:\Users\THELOT\Desktop\CATALOGUE\Projet\Creation\obj\Debug\Creation.exe
+C:\Users\THELOT\Desktop\CATALOGUE\Projet\Creation\obj\Debug\Creation.pdb

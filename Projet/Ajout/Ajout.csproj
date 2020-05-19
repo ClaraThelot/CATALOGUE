@@ -50,6 +50,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Creation\Creation.csproj">
+      <Project>{f6798427-dd8c-4e10-8322-8745b7ab5d01}</Project>
+      <Name>Creation</Name>
+    </ProjectReference>
     <ProjectReference Include="..\_InstanceEleve\_AffichageListes.csproj">
       <Project>{9d3b58de-9f5c-4847-994c-8b155cd1993d}</Project>
       <Name>_AffichageListes</Name>

@@ -65,6 +65,7 @@ namespace _projet
             int numero = int.Parse(Console.ReadLine());
            if (numero == 1) Console.WriteLine(obj.ToString());
         }
+
     }
 
 }

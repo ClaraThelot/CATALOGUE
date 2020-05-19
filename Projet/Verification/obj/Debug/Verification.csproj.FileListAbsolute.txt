@@ -3,3 +3,4 @@ C:\Users\THELOT\Desktop\CATALOGUE\Projet\Verification\bin\Debug\Verification.exe
 C:\Users\THELOT\Desktop\CATALOGUE\Projet\Verification\bin\Debug\Verification.pdb
 C:\Users\THELOT\Desktop\CATALOGUE\Projet\Verification\obj\Debug\Verification.exe
 C:\Users\THELOT\Desktop\CATALOGUE\Projet\Verification\obj\Debug\Verification.pdb
+C:\Users\THELOT\Desktop\CATALOGUE\Projet\Verification\obj\Debug\Verification.csprojResolveAssemblyReference.cache

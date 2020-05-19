@@ -106,3 +106,5 @@ C:\Users\THELOT\Desktop\CATALOGUE\Projet\Ajout\obj\Debug\Ajout.exe
 C:\Users\THELOT\Desktop\CATALOGUE\Projet\Ajout\obj\Debug\Ajout.pdb
 C:\Users\THELOT\Desktop\CATALOGUE\Projet\Ajout\bin\Debug\Verification.exe
 C:\Users\THELOT\Desktop\CATALOGUE\Projet\Ajout\bin\Debug\Verification.pdb
+C:\Users\THELOT\Desktop\CATALOGUE\Projet\Ajout\bin\Debug\Creation.exe
+C:\Users\THELOT\Desktop\CATALOGUE\Projet\Ajout\bin\Debug\Creation.pdb

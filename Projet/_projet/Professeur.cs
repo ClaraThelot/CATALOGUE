@@ -4,10 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-
 namespace _projet
 {
-    public class Professeur : Personne
+    public class Professeur : Personne, IAppartenance
     {
         public List<Matiere> _matieres { get; set; }                                                       // J'ai temporairement enlevé le fait que c'est un tableau
 
@@ -58,6 +57,26 @@ namespace _projet
             }
 
             
+        }
+        public static Object conversion(Professeur e)
+        {
+            Object o = e as Object;
+            return o;
+        }
+        public bool Appartenir(List<object> liste, string entree)
+        {
+            int occur = 0;
+            foreach (Professeur element in liste)
+            {
+                if (element._nom == entree)
+                {
+                    occur++;
+                }
+            }
+            if (occur == 0)
+            { return false; }
+            else
+            { return true; }
         }
 
     }
