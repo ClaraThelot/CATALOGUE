@@ -58,10 +58,6 @@
       <Project>{7b0e5a82-11a8-42ab-8d0f-b07074e7d90d}</Project>
       <Name>_InstanceProjet</Name>
     </ProjectReference>
-    <ProjectReference Include="..\_InstancieProf\_InstancieProf.csproj">
-      <Project>{58d60e80-88b0-4c1e-906d-1e382c13abf6}</Project>
-      <Name>_InstancieProf</Name>
-    </ProjectReference>
     <ProjectReference Include="..\_projet\_projet.csproj">
       <Project>{0a02fe91-42b8-40e2-85f9-9b960c2eabcc}</Project>
       <Name>_projet</Name>

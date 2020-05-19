@@ -4,7 +4,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using _InstanceProjet;
-using _InstancieProf;
 using _AffichageListes;
 using _InstancePersonne;
 using _projet;
@@ -20,7 +19,7 @@ namespace Ajout// V Clara
         static void Main(string[] args)
         { }
 
-        public static bool MenuAjout()
+        public static bool MenuAjout()                                                                                  //Permet de créer un nouveau projet et l'ajouter dans la 'base de données'
         {
             int codeProj = _InstanceRole.Program.CompteProjet() + 1;
             Console.WriteLine("Bienvenue sur le menu des ajouts !");
@@ -44,7 +43,7 @@ namespace Ajout// V Clara
                 Console.WriteLine("Si vous laissez de la liberté à vos élèves et que votre sujet est libre, tapez 'oui', sinon, tapez 'non'");
                 choix = Console.ReadLine();
             }
-            while (!Verification.Program.Verification(choix, possible)) ;
+            while (!Verification.Program.Verification(choix, possible)) ;                                                                   //Permet de s'assurer que la donnée correspond bien à une des données à attendues
                 if (choix == "oui") { ligne = ligne + "true*"; }
              else { ligne = ligne + "false*"; }
 
@@ -53,7 +52,7 @@ namespace Ajout// V Clara
             string fini = "";
             do
             {
-                Console.WriteLine("Mais dîtes moi, vous ne parlez pas d'un sujet déjà achevé ? (tapez 'si' ou 'non')");
+                Console.WriteLine("Mais dîtes moi, vous ne parlez pas d'un sujet déjà achevé ? (tapez 'si' ou 'non')");                 // Perrmet de statuer si le projet est achevé
                 fini = Console.ReadLine();
             }
             while (!Verification.Program.Verification(fini, possible));
@@ -63,29 +62,29 @@ namespace Ajout// V Clara
                 int note2;
                 while (!int.TryParse(note, out note2))
                 {
-                    Console.WriteLine("Quelle note avez-vous attribué à ces élèves acharnés ?");
+                    Console.WriteLine("Quelle note avez-vous attribué à ces élèves acharnés ?");                                    // Permet d'attribuer la note, le  cas échéant
                     note = Console.ReadLine();
                 }
                 ligne = ligne + note + "*true*";
             }
             else
             {
-                ligne = ligne + "0*false*";
+                ligne = ligne + "0*false*";                                                                                     // Cas où le projet n'est pas achevé
             }
             //Sélection des matières :
             List<Matiere> TousMatieres = new List<Matiere>();
             TousMatieres = _InstanceMatiere.Program.instancieMatiere();
             List<string> possible1 = new List<string>();
-            foreach(Matiere element in TousMatieres)                                        //Construction du champ des possibles
+            foreach(Matiere element in TousMatieres)                                                                         //Construction du champ des possibles
             {
                 possible1.Add(Convert.ToString(TousMatieres.IndexOf(element)));
             }
-            possible1.Add("000");
+            possible1.Add("000");                                                                                       
             int NbM;
             string nombre = "";
             while (!int.TryParse(nombre, out NbM))
             {
-                Console.WriteLine("Combien de matières concernent ce projet ?");
+                Console.WriteLine("Combien de matières concernent ce projet ?");            
                 nombre = Console.ReadLine();
             }
             NbM = int.Parse(nombre);
@@ -94,7 +93,7 @@ namespace Ajout// V Clara
                 Console.WriteLine("Occupons-nous de la matière n°" + i);
                 Console.WriteLine("Voulez vous sélectionner la matière parmi une liste ou créer une nouvelle matière ? Si c'est le cas, tapez oui. Si vous pouvez écrire directement le nom de la matière, faîtes le !");
                 string choixM = Console.ReadLine();
-                if (choixM == "oui")
+                if (choixM == "oui")                                                                                        //Permet de choisir la matière parmi la liste
                 {
                     int numerochoisi;
                     string saisie = "";
@@ -110,7 +109,7 @@ namespace Ajout// V Clara
                         numerochoisi = int.Parse(saisie);
                     if (numerochoisi == 000)
                     {
-                        ligne = ligne + Creation.Program.AjoutMatiere(TousMatieres);
+                        ligne = ligne + Creation.Program.AjoutMatiere(TousMatieres);                                        // Permet d'ajouter une nouvelle matière
                     }
                     if (numerochoisi != 000)
                     {
@@ -125,6 +124,9 @@ namespace Ajout// V Clara
                 }
                 else
                 {
+                                                                                                            // Permet d'ajouter la matière lorsqu'elle est rentrée directement
+                }
+                {
                     int occur = 0;
                     List<Object> objet = TousMatieres.ConvertAll(
                     new Converter<Matiere, Object>(_projet.Matiere.conversion));
@@ -136,7 +138,7 @@ namespace Ajout// V Clara
                             occur++;
                             if (choixM.ToLower() == element._nom.ToLower())
                             {
-                                ligne = ligne + "A" + choixM + "*";
+                                ligne = ligne + "A" + choixM + "*";                                 
                             }
                         }
                     }
@@ -162,8 +164,8 @@ namespace Ajout// V Clara
             nombre = "";
             while (!int.TryParse(nombre, out NbE))
             {
-                Console.WriteLine("Combien d'élèves travaillent sur ce projet ?");
-                nombre = Console.ReadLine();
+                Console.WriteLine("Combien d'élèves travaillent sur ce projet ?");          // Permet de déterminer le nombre d'élève afin de pouvoir faire tourner la boucle
+                nombre = Console.ReadLine();    
             }
             NbE = int.Parse(nombre);
             for (int i = 1; i < NbE + 1; i++)
@@ -177,7 +179,7 @@ namespace Ajout// V Clara
                     string saisie = "";
                     do
                     {
-                        Console.WriteLine("Tapez le code associé à l'élève du projet.");
+                        Console.WriteLine("Tapez le code associé à l'élève du projet.");                                            //Permet de choisir l'élément à l'aide du code
                         Console.WriteLine("Voilà la liste des élèves répertoriés !");
                         _AffichageListes.Program.triAlpha(TousEleves2.ToList<Personne>());
                         Console.WriteLine("Si l'élève que vous voulez sélectionner n'apparaît pas à l'écran, il va falloir le créer ! Dans ce cas, tapez 999");
@@ -187,7 +189,7 @@ namespace Ajout// V Clara
                         numerochoisiE = int.Parse(saisie);
                     if (numerochoisiE==999)
                     {
-                        ligne = ligne + Creation.Program.AjoutEleve(TousEleves2, participant);
+                        ligne = ligne + Creation.Program.AjoutEleve(TousEleves2, participant);                                  // Permet de créer un élève
                     }
                     else
                     {
@@ -276,10 +278,10 @@ namespace Ajout// V Clara
                     }
 
 
-                    Console.WriteLine("Quel est le rôle de cette personne ?");
+                    Console.WriteLine("Quel est le rôle de cette personne ?");                                      // Permet d'attribuer le rôle à l'intervenant
                     string role = Console.ReadLine();
                     role = role + "*" + codeProj + "*" + TousExte[numerochoisi1]._nom;
-                    _AffichageListes.Program.CreaCode("Rôles.txt", role);
+                    _AffichageListes.Program.CreaCode("Rôles.txt", role);                                           //Permet d'écrire le nouveau rôle
                 }
                 else
                 {
@@ -314,7 +316,7 @@ namespace Ajout// V Clara
             string chef = "";
             while (!Verification.Program.Verification(chef, possible4))
             {
-                Console.WriteLine("Tapez le code associé au chef du projet.");
+                Console.WriteLine("Tapez le code associé au chef du projet.");                      //Permet de sélectionner lee chef de projet parmi les élèves participants au projet
                 Console.WriteLine("Voilà la liste des élèves participant !");
                 _AffichageListes.Program.EnSavoirplus(participant.ToList<Personne>());
                 chef = Console.ReadLine();
@@ -333,7 +335,7 @@ namespace Ajout// V Clara
             string liv = "";
             while (!int.TryParse(liv, out NbL))
             {
-                Console.WriteLine("Combien de livrables sont attendus dans ce projet ?");
+                Console.WriteLine("Combien de livrables sont attendus dans ce projet ?");                       //Permet de créer les livrables
                 liv = Console.ReadLine();
             }
              NbL = int.Parse(liv);
@@ -344,15 +346,15 @@ namespace Ajout// V Clara
                 Console.WriteLine("Quelle est l'échéance de ce livrable ? (de la forme AAAA/MM/JJ)");
                 string _date = Console.ReadLine();
                 string nv = _nom + "*" + _date + "*" + codeProj + "*";
-                _AffichageListes.Program.CreaCode("Livrables.txt", nv);
+                _AffichageListes.Program.CreaCode("Livrables.txt", nv);                                 // Permet d'ajouter le livrable dans le fichier Livrables 
             }
 
-            //Sélection des profs
+            //Sélection des profs (même processus que pour les intervenants)
             int NbProf;
             string pr = "";
             while (!int.TryParse(pr, out NbProf))
             {
-                Console.WriteLine("Combien de professeurs gèrent ce projet ?");
+                Console.WriteLine("Combien de professeurs gèrent ce projet ?");                             
                 pr = Console.ReadLine();
             }
             NbProf = int.Parse(pr);

@@ -8,7 +8,6 @@ using _AffichageListes;
 using _InstancePersonne;
 using _InstanceMatiere;
 using _InstanceLivrable;
-using _InstancieProf;
 
 
 namespace _InstanceProjet
@@ -17,9 +16,8 @@ namespace _InstanceProjet
     {
         static void Main(string[] args)
         {
-            instancieProjet();
         }
-        public static List<Exterieur> RattacheExte(List<Exterieur> e, Projet p)
+        public static List<Exterieur> RattacheExte(List<Exterieur> e, Projet p)                         // Cette fonction permet de rettacher les extérieurs à leurs projets
         {
 
             foreach (Exterieur element in e)
@@ -36,7 +34,7 @@ namespace _InstanceProjet
             
             return e;
         }
-        public static List<Professeur> RattacheProf(List<Professeur> prof, Projet p)
+        public static List<Professeur> RattacheProf(List<Professeur> prof, Projet p)                   // Cette fonction permet de rattacher les professeurs à leurs projets
         {
 
             foreach (Professeur element in prof)
@@ -54,7 +52,7 @@ namespace _InstanceProjet
             return prof;
         }
 
-        public static List<Projet> instancieProjet()
+        public static List<Projet> instancieProjet()                                            // Cette fonction permet de lire le fichier et de créer les objets Projets correspondants
         {
             char separateur = '*';
             string ligneP;
@@ -181,7 +179,7 @@ namespace _InstanceProjet
                 }
                 int repere = 0;
                 int parcours = 0; 
-                foreach(Livrable element in Livrables)
+                foreach(Livrable element in Livrables)                                               // Permet d'associer les livrables au projet, grâce au code
                 {
                     if(element._refprojet==code)
                     {
@@ -190,10 +188,10 @@ namespace _InstanceProjet
                     parcours++;
                 }
                 llivrable.Add(Livrables[repere]);
-                Projet ajout = new Projet(code,nom, duree, sujetlibre, note, acheve, llivrable, eparticipant, pparticipant, prof, matconcernee, chef);
-                foreach(Eleve element in eparticipant)
+                Projet ajout = new Projet(code,nom, duree, sujetlibre, note, acheve, llivrable, eparticipant, pparticipant, prof, matconcernee, chef); //crée le projet avec les élèves non reliés
+                foreach(Eleve element in eparticipant)                                              
                 {
-                    foreach (Eleve element2 in Eleves)
+                    foreach (Eleve element2 in Eleves)                                          // Permet de relier les élèves au projet
                     {
                         if (element2._nom ==element._nom)
                         {
@@ -203,7 +201,7 @@ namespace _InstanceProjet
                 }
                 pparticipant = RattacheExte(pparticipant,ajout);
                 prof = RattacheProf(prof, ajout);
-                Projet nouveau = new Projet(code,nom, duree, sujetlibre, note, acheve, llivrable, eparticipant, pparticipant, prof, matconcernee, chef);
+                Projet nouveau = new Projet(code,nom, duree, sujetlibre, note, acheve, llivrable, eparticipant, pparticipant, prof, matconcernee, chef); // Crée le projet avec les élèves reliés
                 Projets.Add(nouveau);
                 
             }

@@ -9,7 +9,6 @@ using _InstanceLivrable;
 using _InstanceMatiere;
 using _InstanceProjet;
 using _InstanceRole;
-using _InstancieProf;
 using _projet;
 using Rattachement;
 
@@ -21,12 +20,12 @@ namespace RechercheLibre
         { }
 
       
-        public static void Recherche()
+        public static void Recherche()                                                              //Cette fonction permet de recherche un terme libre
         {
             Console.WriteLine("Veuillez saisir ce que vous recherchez");
             string recherche = Console.ReadLine();
             List<Exterieur> Exte = new List<Exterieur>();
-            Exte = Rattachement.Program.ConnexionExte(); // Pareil avec les intervenants exté
+            Exte = Rattachement.Program.ConnexionExte();                                            // Pareil avec les intervenants exté
             List<Professeur> Prof = new List<Professeur>();
             Prof = Rattachement.Program.ConnexionProf();
             List<Matiere> Matieres = new List<Matiere>();
@@ -34,15 +33,15 @@ namespace RechercheLibre
             List<Eleve> Eleves = new List<Eleve>();
             Eleves = Rattachement.Program.RattacheEleve();
             List<Projet> Projets = new List<Projet>();
-            Projets = _InstanceProjet.Program.instancieProjet(); // On instancie la liste des projets.
+            Projets = _InstanceProjet.Program.instancieProjet();                                    // On instancie la liste des projets.
             List<Livrable> Livrables = new List<Livrable>();
             Livrables = _InstanceLivrable.Program.instancieLivrable();
 
             
-            foreach (Eleve element in Eleves)
+            foreach (Eleve element in Eleves)                                               //Rechercher l'élément dans la liste d'élèves
             {
                 int nombre;
-                if (int.TryParse(recherche, out nombre))                        //Vérification pour voir si la conversion en int est possible
+                if (int.TryParse(recherche, out nombre))                                            //Vérification pour voir si la conversion en int est possible
                 {
                     if (int.Parse(recherche) == element._promo) element.Affiche();
                 }
@@ -52,13 +51,13 @@ namespace RechercheLibre
                 }
             }
             
-            foreach (Exterieur element in Exte)
+            foreach (Exterieur element in Exte)                                             // Rechercher l'élément de la liste d'extérieurs
             {
                 if (recherche.ToLower() == element._nom.ToLower() || recherche.ToLower() ==element._prenom.ToLower() || recherche.ToLower() ==element._metier.ToLower() || recherche.ToLower() ==element._entreprise.ToLower()) element.Affiche();
             }
 
-            foreach (Matiere element in Matieres)
-            {
+            foreach (Matiere element in Matieres)                                           // Rechercher l'élément de matières
+            {   
                 if (recherche.ToLower() == element._nom.ToLower() || recherche.ToLower() == element._code.ToLower()|| recherche.ToLower() == element._UE.ToLower())
                 {
                     element.Affichage(element);

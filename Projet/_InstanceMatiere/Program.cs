@@ -11,7 +11,7 @@ namespace _InstanceMatiere
     {
         static void Main(string[] args)
         { }
-        public static List<Matiere> instancieMatiere()
+        public static List<Matiere> instancieMatiere()                                              //Cette fonction permet de lire le fichier de matières et de créer les objets associés
         {
                 char separateur = '*';                                                             // Définition du caractère séparateur (utile lors de l'analyse de fichier)
                                                                                                    // Création de la liste des matières à partir du fichier Matieres.txt

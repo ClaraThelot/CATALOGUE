@@ -11,13 +11,13 @@ namespace Verification
         static void Main(string[] args)
         {
         }
-        public static bool Verification(string entree, List<string> possible)
+        public static bool Verification(string entree, List<string> possible)               //Permet de vérifier qu'une chaîne de caractère rentrée fait bien partie d'une liste de possibilités
         {
             bool valide = true;
             int occur = 0;
             foreach (string element in possible)
             {
-                int compare = String.Compare(element, entree);
+                int compare = String.Compare(element, entree);                              //Compare les chaînes de carctères
                 if (compare == 0)
                 {
                     occur++;

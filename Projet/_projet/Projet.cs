@@ -67,25 +67,6 @@ namespace _projet
             } // Supprime un élève, par contre laisse un trou dans le tableau à l'endroit considéré
         }
 
-       /* public void ajoutMatiere(Matiere M1)
-        {
-            int counter = 0;
-            foreach(Matiere element in _matieres)
-            {
-                if (element != null) { _matieres[counter] = M1; }
-                counter++;
-            }
-        }
-      
-       public void supprimeMatiere(Matiere M1)
-        {
-            int counter = 0;
-            foreach(Matiere element in _matieres)
-            { if (element == M1) _matieres[counter] = null;
-                counter++;
-            } 
-        }
-        */
    
         public void ajoutIntervenant(Exterieur Ex1)
         {

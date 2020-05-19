@@ -7,7 +7,6 @@ using _AffichageListes;
 using _InstanceProjet;
 using _projet;
 using _InstancePersonne;
-using _InstancieProf;
 using _InstanceMatiere;
 using _InstanceRole;
 
@@ -15,7 +14,7 @@ namespace Rattachement
 {
     public class Program
     {
-        public static List<Eleve> RattacheEleve()
+        public static List<Eleve> RattacheEleve()                                   //Permet de rattacher les élèves aux projets ( sans avoir besoin d'instancier les projets au préalable)
         {
             List<Eleve> Eleves = new List<Eleve>();
             Eleves = _InstancePersonne.Program.instancieEleve();
@@ -37,7 +36,7 @@ namespace Rattachement
             return Eleves;
         }
         
-        public static List<Professeur> ConnexionProf()
+        public static List<Professeur> ConnexionProf()                          //  Permet de rattacher les professeurs à leurs     ( sans avoir besoin d'instancier les projets au préalable)
         {
             List<Professeur> professeur= new List<Professeur>();
             professeur = _InstancePersonne.Program.instancieProfesseur();
@@ -56,7 +55,7 @@ namespace Rattachement
             return professeur;
         }
 
-        public static List<Exterieur> ConnexionExte()
+        public static List<Exterieur> ConnexionExte()                           //Permet de connecter les extérieurs et leurs projets ( sans avoir besoin d'instancier les projets au préalable)                        
         {
             List<Exterieur> exterieur = new List<Exterieur>();
             exterieur = _InstancePersonne.Program.instancieIntervenantE();

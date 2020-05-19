@@ -12,7 +12,7 @@ namespace _InstancePersonne
         static void Main(string[] args)
         {
         }
-        public static List<Professeur> instancieProfesseur()
+        public static List<Professeur> instancieProfesseur()                                    //Cette fonction lit le fichier, crée les objets professeurs 
         {
             char separateur = '*';
             List<Matiere> Matieres = new List<Matiere>();
@@ -26,7 +26,7 @@ namespace _InstancePersonne
             while ((ligne2 = fichier2.ReadLine()) != null)
             {
                 List<Matiere> mate = new List<Matiere>();
-                String[] information = ligne2.Split(separateur);                                                          // Cet entier permettra de retenir le numéro de l'élément correspondant à la matière recherchée
+                String[] information = ligne2.Split(separateur);                              // Cet entier permettra de retenir le numéro de l'élément correspondant à la matière recherchée
                 nomprof = information[0];
                 prénomprof = information[1];
                 int i = 2;
@@ -52,7 +52,7 @@ namespace _InstancePersonne
             fichier2.Close();
             return Prof;
         }
-        public static List<Eleve> instancieEleve()
+        public static List<Eleve> instancieEleve()                                              //Cette fonction permet de lire le fichier et de créer les objets Eleve correspondants
         {
             char separateur = '*';
             List<Eleve> Eleves = new List<Eleve>();
@@ -69,7 +69,7 @@ namespace _InstancePersonne
                 nomeleve = information[0];
                 prenomeleve = information[1];
                 annee = information[2];
-                promo = int.Parse(information[3]);                                          //Pour ces deux lignes, un transtypage est nécessaire pour pouvoir construire l'objet à partir de la lecture du fichier
+                promo = int.Parse(information[3]);                                              //Pour ces deux lignes, un transtypage est nécessaire pour pouvoir construire l'objet à partir de la lecture du fichier
                 TD = int.Parse(information[4]);
                 Eleve eleve = new Eleve(nomeleve, prenomeleve, annee, promo, TD);
                 Eleves.Add(eleve);
@@ -78,7 +78,7 @@ namespace _InstancePersonne
             return Eleves;
         }
 
-        public static List<Exterieur> instancieIntervenantE()
+        public static List<Exterieur> instancieIntervenantE()                                   //Cette fonction permet de lire le fichier et de créer les objets Exterieur correspondants
         {
             char separateur = '*';
             List<Exterieur> Exterieurs = new List<Exterieur>();
