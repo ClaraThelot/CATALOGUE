@@ -6,3 +6,4 @@ Bases de la cognition*CO5SCCC0*Ingénierie Cognitique
 Introduction à la programmation*CO5SFIN0*Sciences Fondamentales
 GCCO*CO6SCCC0*Ingénierie Cognitique
 Licorne*12*ADR*
+Locorne*12*AZ*

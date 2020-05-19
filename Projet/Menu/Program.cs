@@ -22,9 +22,18 @@ namespace Menu
         
         static void Main(string[] args)
         {
-            Console.WriteLine("Bienvenue dans votre application ! Aujourd'hui, si vous souhaitez faire une recherche, tapez 1");
-            Console.WriteLine("Si vous souhaitez rajouter un projet, tapez 2");
-            int choixUt = int.Parse(Console.ReadLine());
+            List<string> accueil = new List<string>();
+            accueil.Add("1");
+            accueil.Add("2");
+            string select = "";
+            do
+            {
+                Console.WriteLine("Bienvenue dans votre application ! Aujourd'hui, si vous souhaitez faire une recherche, tapez 1");
+                Console.WriteLine("Si vous souhaitez rajouter un projet, tapez 2");
+                select = Console.ReadLine();
+            }
+            while (!Verification.Program.Verification(select, accueil));
+                int choixUt = int.Parse(select);
             if (choixUt==1) MenuRecherche();
             if (choixUt == 2) Ajout.Program.MenuAjout();
             RetourMenu();

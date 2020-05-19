@@ -29,4 +29,13 @@
 28*Coucou*2*false*0*false*AAnglais*EDeray*EDeray*PSorita*CDeray*MAries
 29*Non*1*true*0*false*AAnglais*Eoui*PSorita*Coui*MSolomas
 30*Hope*1*false*0*false*ALicorne*EThelot*PSorita*CThelot*MSolomas
-31*Joie*1*false*0*false*AAnglais*EThelot*PSorita*CThelot*
+31*Joie*1*false*0*false*AAnglais*EThelot*PSorita*CThelot
+32*COUCOU*1*false*0*false*AAnglais*EThelot*PSorita*CThelot*MSolomas
+33*DODO*1*false*0*false*AAnglais*EThelot*PSorita*CThelot*MSolomas
+34*coucou*1*true*0*false*ALicorne*EThelot*PSorita*CThelot
+35*Coucou*1*false*12*true*ALicorne*EThelot*PSorita*CThelot
+36*couco*1*false*0*false*ALicorne*EPradal*CPradal
+37*Coucoutoi*1*false*12*true*ALicorne*EThelot*CThelot
+38*Heyheyhey*1*true*0*false*ALicorne*EThelot*PUnno*CThelot
+39*Bouh*1*false*0*false*ALocorne*EThelot*PSorita*CThelot*MSaracco
+40*Raye le mot impossible*1*false*0*false*ALicorne*EThelot*PSorita*CThelot*MSaracco

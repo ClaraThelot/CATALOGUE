@@ -87,15 +87,9 @@ namespace _AffichageListes{ // Version Clara
             }
         }
 
-        public static void CreaLigne(int num, List<Personne> pers, string identification, string ligne)
+        public static string CreaLigne(int num, List<Personne> pers, string identification, string ligne)
         {
-            foreach (Personne element in pers)
-            {
-                if (num== pers.IndexOf(element))
-                {
-                    ligne = ligne + identification + pers[num]._nom + "*";
-                }
-            }
+            return ligne = ligne + identification + pers[num]._nom + "*";
         }
         public static void EnSavoirPlusMat(List<Matiere> ListeM)
         {

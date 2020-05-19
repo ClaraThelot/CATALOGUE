@@ -46,7 +46,7 @@ namespace RechercheLibre
                 {
                     if (int.Parse(recherche) == element._promo) element.Affiche();
                 }
-                if (recherche == element._prenom|| recherche == element._nom||recherche== element._annee)
+                if (recherche.ToLower() == element._prenom.ToLower()|| recherche.ToLower() == element._nom.ToLower()||recherche.ToLower()== element._annee.ToLower())
                 {
                    element.Affiche();
                 }
@@ -54,12 +54,12 @@ namespace RechercheLibre
             
             foreach (Exterieur element in Exte)
             {
-                if (recherche == element._nom || recherche ==element._prenom || recherche ==element._metier || recherche ==element._entreprise) element.Affiche();
+                if (recherche.ToLower() == element._nom.ToLower() || recherche.ToLower() ==element._prenom.ToLower() || recherche.ToLower() ==element._metier.ToLower() || recherche.ToLower() ==element._entreprise.ToLower()) element.Affiche();
             }
 
             foreach (Matiere element in Matieres)
             {
-                if (recherche == element._nom || recherche == element._code || recherche == element._UE)
+                if (recherche.ToLower() == element._nom.ToLower() || recherche.ToLower() == element._code.ToLower()|| recherche.ToLower() == element._UE.ToLower())
                 {
                     element.Affichage(element);
                     Console.WriteLine("Si vous voulez voir s'afficher les professeurs enseignant cette matière, tapez 1");
@@ -92,17 +92,17 @@ namespace RechercheLibre
 
             foreach (Professeur element in Prof)
             {
-                if (recherche == element._nom|| recherche == element._prenom) element.Affiche();
+                if (recherche.ToLower() == element._nom.ToLower()|| recherche.ToLower() == element._prenom.ToLower()) element.Affiche();
             }
 
             foreach (Livrable element in Livrables)
             {
-                if (recherche == element._type || recherche == element._echeance) Console.WriteLine(element.ToString());
+                if (recherche.ToLower() == element._type.ToLower() || recherche.ToLower() == element._echeance.ToLower()) Console.WriteLine(element.ToString());
             }
             
             foreach (Projet element in Projets)
             {
-                if (recherche == element._nomProjet) Console.WriteLine(element.ToString());
+                if (recherche.ToLower() == element._nomProjet.ToLower()) Console.WriteLine(element.ToString());
                 
                 double nombre;
                 if (double.TryParse(recherche, out nombre))                        //Vérification pour voir si la conversion en int est possible
