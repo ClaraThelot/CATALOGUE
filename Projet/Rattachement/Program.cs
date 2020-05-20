@@ -75,8 +75,6 @@ namespace Rattachement
         }
 
 
-
-
         static void Main(string[] args)
         {
            

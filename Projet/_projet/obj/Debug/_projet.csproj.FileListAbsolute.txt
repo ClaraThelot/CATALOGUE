@@ -30,3 +30,13 @@ C:\Users\THELOT\Desktop\CATALOGUE\Projet\_projet\obj\Debug\_projet.exe
 C:\Users\THELOT\Desktop\CATALOGUE\Projet\_projet\obj\Debug\_projet.pdb
 C:\Users\THELOT\Desktop\CATALOGUE\Projet\_projet\bin\Debug\Verification.exe
 C:\Users\THELOT\Desktop\CATALOGUE\Projet\_projet\bin\Debug\Verification.pdb
+C:\Users\Installation\Desktop\ENSC\S6\Progra avancée\CATALOGUE\CATALOGUE\CATALOGUE\Projet\_projet\bin\Debug\_projet.exe.config
+C:\Users\Installation\Desktop\ENSC\S6\Progra avancée\CATALOGUE\CATALOGUE\CATALOGUE\Projet\_projet\bin\Debug\_projet.exe
+C:\Users\Installation\Desktop\ENSC\S6\Progra avancée\CATALOGUE\CATALOGUE\CATALOGUE\Projet\_projet\bin\Debug\_projet.pdb
+C:\Users\Installation\Desktop\ENSC\S6\Progra avancée\CATALOGUE\CATALOGUE\CATALOGUE\Projet\_projet\bin\Debug\Verification.exe
+C:\Users\Installation\Desktop\ENSC\S6\Progra avancée\CATALOGUE\CATALOGUE\CATALOGUE\Projet\_projet\bin\Debug\Verification.pdb
+C:\Users\Installation\Desktop\ENSC\S6\Progra avancée\CATALOGUE\CATALOGUE\CATALOGUE\Projet\_projet\bin\Debug\Verification.exe.config
+C:\Users\Installation\Desktop\ENSC\S6\Progra avancée\CATALOGUE\CATALOGUE\CATALOGUE\Projet\_projet\obj\Debug\_projet.csprojAssemblyReference.cache
+C:\Users\Installation\Desktop\ENSC\S6\Progra avancée\CATALOGUE\CATALOGUE\CATALOGUE\Projet\_projet\obj\Debug\_projet.csproj.CopyComplete
+C:\Users\Installation\Desktop\ENSC\S6\Progra avancée\CATALOGUE\CATALOGUE\CATALOGUE\Projet\_projet\obj\Debug\_projet.exe
+C:\Users\Installation\Desktop\ENSC\S6\Progra avancée\CATALOGUE\CATALOGUE\CATALOGUE\Projet\_projet\obj\Debug\_projet.pdb

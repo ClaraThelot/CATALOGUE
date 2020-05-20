@@ -17,21 +17,16 @@ namespace _InstanceProjet
         static void Main(string[] args)
         {
         }
+
         public static List<Exterieur> RattacheExte(List<Exterieur> e, Projet p)                         // Cette fonction permet de rettacher les extérieurs à leurs projets
         {
-
             foreach (Exterieur element in e)
             {
-
                     foreach (Exterieur e1 in p._intervenants)
                     {
-                        if (e1._nom == element._nom)
-                        {
-                            element.ajoutProjet(p);
-                        }
+                        if (e1._nom == element._nom) element.ajoutProjet(p);
                     }
                 }
-            
             return e;
         }
         public static List<Professeur> RattacheProf(List<Professeur> prof, Projet p)                   // Cette fonction permet de rattacher les professeurs à leurs projets
@@ -42,13 +37,9 @@ namespace _InstanceProjet
 
                 foreach (Professeur e1 in p._professeurs)
                 {
-                    if (e1._nom == element._nom)
-                    {
-                        element.ajoutProjet(p);
-                    }
+                    if (e1._nom == element._nom) element.ajoutProjet(p);
                 }
             }
-
             return prof;
         }
 
@@ -62,7 +53,7 @@ namespace _InstanceProjet
             List<Eleve> Eleves = new List<Eleve>();
             Eleves = _InstancePersonne.Program.instancieEleve();
             List<Livrable> Livrables = new List<Livrable>();
-            Livrables = _InstanceLivrable.Program.instancieLivrable();
+            Livrables = _InstanceMatiere.Program.instancieLivrable();
             List<Exterieur> Exterieurs = new List<Exterieur>();
             Exterieurs = _InstancePersonne.Program.instancieIntervenantE();
             List<Professeur> Professeurs = new List<Professeur>();
@@ -203,7 +194,6 @@ namespace _InstanceProjet
                 prof = RattacheProf(prof, ajout);
                 Projet nouveau = new Projet(code,nom, duree, sujetlibre, note, acheve, llivrable, eparticipant, pparticipant, prof, matconcernee, chef); // Crée le projet avec les élèves reliés
                 Projets.Add(nouveau);
-                
             }
             file4.Close();
             return Projets;

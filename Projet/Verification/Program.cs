@@ -18,21 +18,11 @@ namespace Verification
             foreach (string element in possible)
             {
                 int compare = String.Compare(element, entree);                              //Compare les chaînes de carctères
-                if (compare == 0)
-                {
-                    occur++;
-                }
-
+                if (compare == 0)occur++;
             }
-            if (occur == 0) { valide = false; }
-            if (valide == false)
-            {
-                Console.WriteLine("Désolée votre entrée n'est pas valide");
-            }
+            if (occur == 0)  valide = false; 
+            if (valide == false)Console.WriteLine("Désolée votre entrée n'est pas valide");
             return valide;
         }
-
-    
-        
     }
 }

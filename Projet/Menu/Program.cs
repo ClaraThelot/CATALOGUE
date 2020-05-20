@@ -72,12 +72,12 @@ namespace Menu
                     Console.WriteLine("Voilà la liste des élèves répertoriés !");
                    List<Eleve> Eleves = new List<Eleve>();
                     Eleves = Rattachement.Program.RattacheEleve();
-                    Console.WriteLine("Souhaitez-vous voir apparaître tous les élèves par ordre alphabétique ? Tapez 1 !"); // Il faut vraiment que je trouve comment on fait
+                    Console.WriteLine("Souhaitez-vous voir apparaître tous les élèves par ordre alphabétique ? Tapez 1 !"); 
                     Console.WriteLine("Ou par année ? (1A, 2A, 3A) Dans ce cas, tapez 2");
                     possible.Add("1");
                     possible.Add("2");
                     string entree3 = Console.ReadLine();
-                    bool verification3 = Verification.Program.Verification(entree3, possible);                  //Permet de vérifier que l'entrée est la bonne
+                    bool verification3 = Verification.Program.Verification(entree3, possible);                  //Permet de vérifier que l'entrée est valide
                     if (verification3 == true)
                     {
                         List<string> choisir = new List<string>();
@@ -85,7 +85,7 @@ namespace Menu
                         {
                             case "1":
                                 _AffichageListes.Program.triAlpha(Eleves.ToList<Personne>());                       //Présente les élèves par ordre alphabétique
-                                int numero = int.Parse(Console.ReadLine()); // On convertit en un entier
+                                int numero = int.Parse(Console.ReadLine());                                         // On convertit en un entier
                                 _AffichageListes.Program.Choixnum(numero, Eleves.ToList<Personne>());
                                 return true;
                             case "2":
@@ -109,16 +109,11 @@ namespace Menu
                                 { numero = int.Parse(entree4); // On convertit en un entier
                                     _AffichageListes.Program.Choixnum(numero, Eleves.ToList<Personne>());                       //Permet d'afficher les informations concernant l'élève choisi
                                     return true; }
-                                    else
-                                { return false; }
+                                    else return false; 
                             default: return false;
                         }
                     }
-                    else
-                    {
-                        return false;
-                    }
-                    
+                    else return false;
                 
                 case "3":                                                                                                   // Permet d'afficher les intervenants extérieurs
                     Console.WriteLine("Voilà la liste des intervenants extérieurs répertoriés !");          
@@ -149,7 +144,7 @@ namespace Menu
                     {
                         List<Matiere> ToutesMat = new List<Matiere>();                                                      // Permet d'afficher par matière
                         ToutesMat = _InstanceMatiere.Program.instancieMatiere();                        
-                        foreach (Matiere toutesM in ToutesMat)
+                        foreach (Matiere toutesM in ToutesMat)                          //On cherche une correspondance entre les matières de la List<Matiere> attachée à chaque professeur et la liste qui comporte toutes les matières
                         {
                             Console.WriteLine(toutesM._nom+" :");
                             foreach (Professeur p in prof)
@@ -169,8 +164,6 @@ namespace Menu
                             int numerochoisiP = int.Parse(entree7); // On convertit en un entier
                             _AffichageListes.Program.Choixnum(numerochoisiP, prof.ToList<Personne>());
                         }
-                        else
-                        { }
                     }
                     return true;
 
@@ -191,16 +184,12 @@ namespace Menu
                     bool verification5 = Verification.Program.Verification(entree5, possible);
                     if (verification5 == true)
                     {
-
                         List<string> choisir = new List<string>();
                         int matchoix = int.Parse(entree5);
                         string choix = "";
                         foreach (Matiere m in Matieres)
                         {
-                            if (matchoix == Matieres.IndexOf(m))
-                            {
-                                choix = m._nom;
-                            }
+                            if (matchoix == Matieres.IndexOf(m)) choix = m._nom;
                         }
                         Console.Clear();
                         foreach (Projet p in Projets)                                                                       //Affiche tous les projets avec le nom et le chef de projet (avec option pour en savoir plus)
@@ -227,11 +216,9 @@ namespace Menu
                             }
                             return true;
                         }
-
-                        else { return false; }
+                        else  return false; 
                     }
-                    else { return false; }
-
+                    else return false; 
 
 
                 case "6":                                                                                                   //Permet d'afficher les projets                                                                       
@@ -278,10 +265,8 @@ namespace Menu
                                 }
                                 return true;
                             }
-                            else
-                            {
-                                return false;
-                            }
+                            else return false;
+                            
                         case "2":                                                                                                           // affichage par promo
                             Console.WriteLine("Promo 2022 :");
                             _AffichageListes.Program.ProjetparPromo(2022, Proj);
@@ -311,10 +296,7 @@ namespace Menu
                                 }
                                 return true;
                             }
-                            else
-                            {
-                                return false;
-                            }
+                            else return false;
                         default: return false;
                     }
                 default: return false;

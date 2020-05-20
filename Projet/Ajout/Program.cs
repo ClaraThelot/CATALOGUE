@@ -10,7 +10,7 @@ using _projet;
 using System.IO;
 using Creation;
 
-namespace Ajout// V Clara
+namespace Ajout
 {
     public class Program
     {
@@ -202,11 +202,7 @@ namespace Ajout// V Clara
                             }
                         }
                     }
-
-
                 }
-
-
                 else
                 {
                     int occur = 0;

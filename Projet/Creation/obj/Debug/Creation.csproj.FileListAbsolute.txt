@@ -10,3 +10,19 @@ C:\Users\THELOT\Desktop\CATALOGUE\Projet\Creation\bin\Debug\Verification.pdb
 C:\Users\THELOT\Desktop\CATALOGUE\Projet\Creation\obj\Debug\Creation.csprojResolveAssemblyReference.cache
 C:\Users\THELOT\Desktop\CATALOGUE\Projet\Creation\obj\Debug\Creation.exe
 C:\Users\THELOT\Desktop\CATALOGUE\Projet\Creation\obj\Debug\Creation.pdb
+C:\Users\Installation\Desktop\ENSC\S6\Progra avancée\CATALOGUE\CATALOGUE\CATALOGUE\Projet\Creation\bin\Debug\Creation.exe.config
+C:\Users\Installation\Desktop\ENSC\S6\Progra avancée\CATALOGUE\CATALOGUE\CATALOGUE\Projet\Creation\bin\Debug\Creation.exe
+C:\Users\Installation\Desktop\ENSC\S6\Progra avancée\CATALOGUE\CATALOGUE\CATALOGUE\Projet\Creation\bin\Debug\Creation.pdb
+C:\Users\Installation\Desktop\ENSC\S6\Progra avancée\CATALOGUE\CATALOGUE\CATALOGUE\Projet\Creation\bin\Debug\_InstanceEleve.exe
+C:\Users\Installation\Desktop\ENSC\S6\Progra avancée\CATALOGUE\CATALOGUE\CATALOGUE\Projet\Creation\bin\Debug\_projet.exe
+C:\Users\Installation\Desktop\ENSC\S6\Progra avancée\CATALOGUE\CATALOGUE\CATALOGUE\Projet\Creation\bin\Debug\Verification.exe
+C:\Users\Installation\Desktop\ENSC\S6\Progra avancée\CATALOGUE\CATALOGUE\CATALOGUE\Projet\Creation\bin\Debug\_InstanceEleve.pdb
+C:\Users\Installation\Desktop\ENSC\S6\Progra avancée\CATALOGUE\CATALOGUE\CATALOGUE\Projet\Creation\bin\Debug\_InstanceEleve.exe.config
+C:\Users\Installation\Desktop\ENSC\S6\Progra avancée\CATALOGUE\CATALOGUE\CATALOGUE\Projet\Creation\bin\Debug\_projet.pdb
+C:\Users\Installation\Desktop\ENSC\S6\Progra avancée\CATALOGUE\CATALOGUE\CATALOGUE\Projet\Creation\bin\Debug\_projet.exe.config
+C:\Users\Installation\Desktop\ENSC\S6\Progra avancée\CATALOGUE\CATALOGUE\CATALOGUE\Projet\Creation\bin\Debug\Verification.pdb
+C:\Users\Installation\Desktop\ENSC\S6\Progra avancée\CATALOGUE\CATALOGUE\CATALOGUE\Projet\Creation\bin\Debug\Verification.exe.config
+C:\Users\Installation\Desktop\ENSC\S6\Progra avancée\CATALOGUE\CATALOGUE\CATALOGUE\Projet\Creation\obj\Debug\Creation.csprojAssemblyReference.cache
+C:\Users\Installation\Desktop\ENSC\S6\Progra avancée\CATALOGUE\CATALOGUE\CATALOGUE\Projet\Creation\obj\Debug\Creation.csproj.CopyComplete
+C:\Users\Installation\Desktop\ENSC\S6\Progra avancée\CATALOGUE\CATALOGUE\CATALOGUE\Projet\Creation\obj\Debug\Creation.exe
+C:\Users\Installation\Desktop\ENSC\S6\Progra avancée\CATALOGUE\CATALOGUE\CATALOGUE\Projet\Creation\obj\Debug\Creation.pdb

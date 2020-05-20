@@ -12,7 +12,8 @@ namespace _InstanceLivrable
         static void Main(string[] args)
         {
         }
-        public static List<Livrable> instancieLivrable()                                                                   //Cette fonction permet de lire le fichier et des créer les livrables correspondants
+        
+        /*public static List<Livrable> instancieLivrable()                                                                   //Cette fonction permet de lire le fichier et des créer les livrables correspondants
         {
             char separateur = '*';
             List<Livrable> Livrables = new List<Livrable>();
@@ -32,6 +33,6 @@ namespace _InstanceLivrable
             }
             file3.Close();
             return Livrables;
-        }
+        }*/
     }
 }
