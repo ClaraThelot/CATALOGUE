@@ -28,8 +28,10 @@ namespace Menu
             string select = "";
             do
             {
+                
                 Console.WriteLine("Bienvenue dans votre application ! Aujourd'hui, si vous souhaitez faire une recherche, tapez 1");
                 Console.WriteLine("Si vous souhaitez rajouter un projet, tapez 2");
+                Console.WriteLine("************************************************************************************************************************");
                 select = Console.ReadLine();
             }
             while (!Verification.Program.Verification(select, accueil));                                        //Permet de vérifier que la valeur rentrée est bien 1 ou 2
@@ -53,15 +55,28 @@ namespace Menu
  
         static bool MenuRecherche()                                         
         {
-            Console.WriteLine("Bienvenue sur votre application de recherche de projets de l'ENSC ! \n Quel filtre souhaitez-vous ajouter à votre recherche ?\n");
-            Console.WriteLine("Si vous voulez faire une recherche libre, tapez d'abord 1 sur votre clavier numérique !");
-            Console.WriteLine("Si vous voulez parcourir les projets selon les élèves, tapez 2");
-            Console.WriteLine("Si vous voulez parcourir les projets selon les intervenants extérieurs, tapez 3");
-            Console.WriteLine("Si vous voulez parcourir les projets selon les professeurs, tapez 4");
-            Console.WriteLine("Si vous voulez parcourir les projets selon les matières, tapez 5");
-            Console.WriteLine("Si vous voulez simplement parcourir les projets, tapez 6");
-            List<string> possible = new List<string>();
-            switch (Console.ReadLine())
+            List<string> entre = new List<string>();
+            entre.Add("1");
+            entre.Add("2");
+            entre.Add("3");
+            entre.Add("4");
+            entre.Add("5");
+            entre.Add("6");
+            string menu = "";
+            do
+            {
+                Console.WriteLine("Bienvenue sur votre application de recherche de projets de l'ENSC ! \n Quel filtre souhaitez-vous ajouter à votre recherche ?\n");
+                Console.WriteLine("Si vous voulez faire une recherche libre, tapez d'abord 1 sur votre clavier numérique !");
+                Console.WriteLine("Si vous voulez parcourir les projets selon les élèves, tapez 2");
+                Console.WriteLine("Si vous voulez parcourir les projets selon les intervenants extérieurs, tapez 3");
+                Console.WriteLine("Si vous voulez parcourir les projets selon les professeurs, tapez 4");
+                Console.WriteLine("Si vous voulez parcourir les projets selon les matières, tapez 5");
+                Console.WriteLine("Si vous voulez simplement parcourir les projets, tapez 6");
+                menu = Console.ReadLine();
+            }
+            while (!Verification.Program.Verification(menu, entre));
+            List < string > possible = new List<string>();
+            switch (menu)
             {
                 case "1":                                                                                   // Permet d'accéder au menu de recherche libre
                     RechercheLibre.Program.Recherche();
@@ -104,12 +119,17 @@ namespace Menu
                                     choisir.Add(pos);
                                 }
                                 string entree4 = Console.ReadLine();
-                                bool verification4 = Verification.Program.Verification(entree4, choisir);
+                                    bool verification4 = Verification.Program.Verification(entree4, choisir);
                                     if (verification4 == true)
-                                { numero = int.Parse(entree4); // On convertit en un entier
-                                    _AffichageListes.Program.Choixnum(numero, Eleves.ToList<Personne>());                       //Permet d'afficher les informations concernant l'élève choisi
-                                    return true; }
-                                    else return false; 
+                                    {
+                                        numero = int.Parse(entree4); // On convertit en un entier
+                                        _AffichageListes.Program.Choixnum(numero, Eleves.ToList<Personne>());                       //Permet d'afficher les informations concernant l'élève choisi
+                                        return true;
+                                    }
+                                
+                        
+                                    else return false;
+                                
                             default: return false;
                         }
                     }
@@ -121,9 +141,14 @@ namespace Menu
                     Projet = _InstanceProjet.Program.instancieProjet();
                     List<Exterieur> Exte = new List<Exterieur>();
                     Exte = Rattachement.Program.ConnexionExte();
-                    _AffichageListes.Program.triAlpha(Exte.ToList<Personne>());                                              // Permet l'affichage par ordre alphabétique
-                    int numerochoisi = int.Parse(Console.ReadLine()); // On convertit en un entier
-                    _AffichageListes.Program.Choixnum(numerochoisi, Exte.ToList<Personne>());
+                    _AffichageListes.Program.triAlpha(Exte.ToList<Personne>());         // Permet l'affichage par ordre alphabétique
+                    if (Console.ReadLine() == "M")                                                              //Permet de revenir au menu
+                    { }
+                    else
+                    {
+                        int numerochoisi = int.Parse(Console.ReadLine()); // On convertit en un entier
+                        _AffichageListes.Program.Choixnum(numerochoisi, Exte.ToList<Personne>());
+                    }
                     return true;
 
                 
@@ -158,12 +183,18 @@ namespace Menu
                             }
                         }
                         string entree7 = Console.ReadLine();
-                        bool verification7 = Verification.Program.Verification(entree7, possible);
-                        if (verification7 == true)
+                        if (Console.ReadLine() == "M")
+                        { }
+                        else
                         {
-                            int numerochoisiP = int.Parse(entree7); // On convertit en un entier
-                            _AffichageListes.Program.Choixnum(numerochoisiP, prof.ToList<Personne>());
+                            bool verification7 = Verification.Program.Verification(entree7, possible);
+                            if (verification7 == true)
+                            {
+                                int numerochoisiP = int.Parse(entree7); // On convertit en un entier
+                                _AffichageListes.Program.Choixnum(numerochoisiP, prof.ToList<Personne>());
+                            }
                         }
+ 
                     }
                     return true;
 
@@ -258,7 +289,7 @@ namespace Menu
                             bool verification = Verification.Program.Verification(entree, possible);
                             if (verification==true)
                             {
-                                numerochoisi = int.Parse(entree); // On convertit en un entier
+                                int numerochoisi = int.Parse(entree); // On convertit en un entier
                                 foreach (Projet element in Proj)
                                 {
                                     if (numerochoisi == Proj.IndexOf(element)) element.Affichage(element);

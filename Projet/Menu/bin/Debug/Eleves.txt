@@ -33,3 +33,6 @@ bro*bro*1A*2020*1
 FRFRF*ERER*1A*2020*1
 Deray*Gille*6666*2020*1
 oui*non*2A*2021*1
+Didier*Non*1A*2121*1
+Fe*fe*1A*2010*1
+coucou*Clara*1A*1789*1

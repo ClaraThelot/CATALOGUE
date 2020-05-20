@@ -17,6 +17,16 @@ namespace _InstanceProjet
         static void Main(string[] args)
         {
         }
+        public static int CompteProjet()                                    //Cette fonction permet de compter le nombre de projet qu'il y a ( cela permet de créer le code d'identification du projet)                                            
+        {
+            int max = 0;
+            List<Projet> Proj = _InstanceProjet.Program.instancieProjet();
+            foreach (Projet element in Proj)
+            {
+                if (int.Parse(element._code) > max) max = int.Parse(element._code);
+            }
+            return max;
+        }
 
         public static List<Exterieur> RattacheExte(List<Exterieur> e, Projet p)                         // Cette fonction permet de rettacher les extérieurs à leurs projets
         {

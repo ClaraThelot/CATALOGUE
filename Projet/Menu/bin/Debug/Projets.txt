@@ -39,3 +39,4 @@
 38*Heyheyhey*1*true*0*false*ALicorne*EThelot*PUnno*CThelot
 39*Bouh*1*false*0*false*ALocorne*EThelot*PSorita*CThelot*MSaracco
 40*Raye le mot impossible*1*false*0*false*ALicorne*EThelot*PSorita*CThelot*MSaracco
+41*coucou*1*false*0*false*AAnglais*EThelot*PSorita*CThelot*MSolomas

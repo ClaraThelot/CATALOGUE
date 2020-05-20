@@ -36,20 +36,52 @@ namespace RechercheLibre
             Projets = _InstanceProjet.Program.instancieProjet();                                    
             List<Livrable> Livrables = new List<Livrable>();
             Livrables = _InstanceMatiere.Program.instancieLivrable();
+            List<string> possible = new List<string>();
             
-            if(recherche=="Eleves"||recherche=="Eleve")
+            if(recherche.ToLower()=="Eleves".ToLower()||recherche.ToLower()=="Eleve".ToLower())
             {
-                _AffichageListes.Program.triAlpha(Eleves.ToList<Personne>());                       //Présente les élèves par ordre alphabétique
-                int numero = int.Parse(Console.ReadLine());                                 // On convertit en un entier
-                _AffichageListes.Program.Choixnum(numero, Eleves.ToList<Personne>());           
+                foreach(Eleve element in Eleves)
+                {
+                    possible.Add(Convert.ToString(Eleves.IndexOf(element)));
+                }
+                string entree = "";
+                do
+                {
+                    _AffichageListes.Program.triAlpha(Eleves.ToList<Personne>());                                                                     //Présente les élèves par ordre alphabétique
+                    entree = Console.ReadLine();
+
+                }
+                while (!Verification.Program.Verification(entree,possible)&& entree!="M");
+                if (entree == "M")
+                { }
+                else
+                {
+                    int numero = int.Parse(entree);                                 // On convertit en un entier
+                    _AffichageListes.Program.Choixnum(numero, Eleves.ToList<Personne>());
+                }         
             }
             
-            if(recherche=="Professeurs"||recherche=="Professeur")           //On effectue la même procédure pour les professeurs
+            if(recherche.ToLower()=="Professeurs".ToLower()||recherche.ToLower()=="Professeur".ToLower())           //On effectue la même procédure pour les professeurs
             {
-                Console.WriteLine("Voici la liste des professeurs de l'école");
-                _AffichageListes.Program.triAlpha(Prof.ToList<Personne>());                                        
-                int numerochoisiP = int.Parse(Console.ReadLine()); 
-                _AffichageListes.Program.Choixnum(numerochoisiP, Prof.ToList<Personne>());
+                foreach (Professeur element in Prof)
+                {
+                    possible.Add(Convert.ToString(Prof.IndexOf(element)));
+                }
+                string entree = "";
+                do
+                {
+                    Console.WriteLine("Voici la liste des professeurs de l'école");
+                    _AffichageListes.Program.triAlpha(Prof.ToList<Personne>());
+                    entree = Console.ReadLine();
+                }
+                while(!Verification.Program.Verification(entree, possible)&&entree!="M");
+                if (entree =="M")
+                { }
+                else
+                {
+                    int numerochoisiP = int.Parse(entree);
+                    _AffichageListes.Program.Choixnum(numerochoisiP, Prof.ToList<Personne>());
+                }
             }
 
             bool elevecherche = false; //Pour l'instant, nous permet de dire qu'aucun élément élève ne répond à la recherche

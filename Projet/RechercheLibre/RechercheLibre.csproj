@@ -54,6 +54,10 @@
       <Project>{deb269bd-7d56-478c-88d7-d4e07b841fe1}</Project>
       <Name>Rattachement</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Verification\Verification.csproj">
+      <Project>{9ba23f4b-9a3d-4680-9ea1-9d0cbaa6ae47}</Project>
+      <Name>Verification</Name>
+    </ProjectReference>
     <ProjectReference Include="..\_InstanceEleve\_AffichageListes.csproj">
       <Project>{9d3b58de-9f5c-4847-994c-8b155cd1993d}</Project>
       <Name>_AffichageListes</Name>

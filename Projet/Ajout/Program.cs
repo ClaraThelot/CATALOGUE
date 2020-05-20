@@ -21,7 +21,7 @@ namespace Ajout
 
         public static bool MenuAjout()                                                                                  //Permet de créer un nouveau projet et l'ajouter dans la 'base de données'
         {
-            int codeProj = _InstanceRole.Program.CompteProjet() + 1;
+            int codeProj = _InstanceProjet.Program.CompteProjet() + 1;
             Console.WriteLine("Bienvenue sur le menu des ajouts !");
             Console.WriteLine("Vous allez pouvoir créer un projet. D'abord, saisissez-en le nom.");
             string nom = Console.ReadLine();
@@ -79,10 +79,10 @@ namespace Ajout
             {
                 possible1.Add(Convert.ToString(TousMatieres.IndexOf(element)));
             }
-            possible1.Add("000");                                                                                       
-            int NbM;
+            possible1.Add("000");
             string nombre = "";
-            while (!int.TryParse(nombre, out NbM))
+            int NbM;
+            while (!int.TryParse(nombre, out NbM)||nombre=="0")
             {
                 Console.WriteLine("Combien de matières concernent ce projet ?");            
                 nombre = Console.ReadLine();
@@ -106,13 +106,14 @@ namespace Ajout
                         saisie = Console.ReadLine();
                     }
                     while (!Verification.Program.Verification(saisie, possible1));
-                        numerochoisi = int.Parse(saisie);
-                    if (numerochoisi == 000)
+                    numerochoisi = int.Parse(saisie);
+                    if (saisie=="000")
                     {
                         ligne = ligne + Creation.Program.AjoutMatiere(TousMatieres);                                        // Permet d'ajouter une nouvelle matière
                     }
-                    if (numerochoisi != 000)
-                    {
+
+                    else
+                    { 
                         foreach (Matiere element in TousMatieres)
                         {
                             if (numerochoisi == TousMatieres.IndexOf(element))
@@ -123,9 +124,6 @@ namespace Ajout
                     }
                 }
                 else
-                {
-                                                                                                            // Permet d'ajouter la matière lorsqu'elle est rentrée directement
-                }
                 {
                     int occur = 0;
                     List<Object> objet = TousMatieres.ConvertAll(
@@ -160,9 +158,9 @@ namespace Ajout
                 possible2.Add(Convert.ToString(TousEleves2.IndexOf(element)));
             }
             possible2.Add("999");
-            int NbE;
+            int NbE ;
             nombre = "";
-            while (!int.TryParse(nombre, out NbE))
+            while (!int.TryParse(nombre, out NbE)|| nombre=="0")
             {
                 Console.WriteLine("Combien d'élèves travaillent sur ce projet ?");          // Permet de déterminer le nombre d'élève afin de pouvoir faire tourner la boucle
                 nombre = Console.ReadLine();    
@@ -219,22 +217,24 @@ namespace Ajout
                                 ligne = ligne + "E" + choixE + "*";
                             }
                         }
+                    }
                         if(occur==0)
                         {
                             ligne = ligne + Creation.Program.AjoutEleve(TousEleves2, participant);
                         }
-                    }
+                    
                 }
             }
 
             // Sélection des intervenants
-            int NbI;
             string saisie2 = "";
-            while (!int.TryParse(saisie2, out NbM))
+            int NbI;
+            while (!int.TryParse(saisie2, out NbI)||saisie2=="0")
             {
                 Console.WriteLine("Combien d'extérieurs interviennent sur ce projet ?");
                 saisie2 = Console.ReadLine();
             }
+            NbI = int.Parse(saisie2);
             List<Exterieur> TousExte = new List<Exterieur>();
             TousExte = _InstancePersonne.Program.instancieIntervenantE();
             List<string> possible3 = new List<string>();
@@ -243,7 +243,6 @@ namespace Ajout
                 possible3.Add(Convert.ToString(TousExte.IndexOf(element)));
             }
             possible3.Add("000");
-            NbI = int.Parse(saisie2);
             for (int i = 1; i < NbI + 1; i++)
             {
                 Console.WriteLine("Occupons-nous de l'intervenant extérieur n°" + i);
@@ -291,12 +290,13 @@ namespace Ajout
                             occur++;
                             if (choixI.ToLower() == element._nom.ToLower()) ligne = ligne + "P" + choixI + "*";
                         }
+                    }
                         if (occur == 0)
                         {
                             ligne = ligne + Creation.Program.AjoutIntervenant(TousExte);
                         }
 
-                    }
+                    
                     string role = _AffichageListes.Program.RecupRole(codeProj, choixI);
                         _AffichageListes.Program.CreaCode("Rôles.txt", role);
                     
@@ -327,14 +327,15 @@ namespace Ajout
             }
 
             //Séléction des Livrables
-            int NbL;
+
             string liv = "";
-            while (!int.TryParse(liv, out NbL))
+            int NbL;
+            while (!int.TryParse(liv, out NbL)||liv=="0")
             {
                 Console.WriteLine("Combien de livrables sont attendus dans ce projet ?");                       //Permet de créer les livrables
                 liv = Console.ReadLine();
             }
-             NbL = int.Parse(liv);
+            NbL = int.Parse(liv);
             for (int i = 1; i < NbL + 1; i++)
             {
                 Console.WriteLine("Quelle est la nature du livrable n° " + i + " ?");

@@ -71,3 +71,7 @@ B*38*Saracco
 2*39*Saracco
 AA*40*Sorita
 BB*40*Saracco
+Oui*41*Robert
+AOA*41*Unno
+A*41*Sorita
+B*41*Porut

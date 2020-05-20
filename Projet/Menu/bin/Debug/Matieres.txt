@@ -7,3 +7,5 @@ Introduction à la programmation*CO5SFIN0*Sciences Fondamentales
 GCCO*CO6SCCC0*Ingénierie Cognitique
 Licorne*12*ADR*
 Locorne*12*AZ*
+Bonjour*123*1*
+Prout*1*caca*

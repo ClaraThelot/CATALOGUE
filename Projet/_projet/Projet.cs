@@ -142,7 +142,7 @@ namespace _projet
         {
             Console.WriteLine("Nom du projet: " + _nomProjet + "\n");
             Console.WriteLine("Durée du projet : " + _duree + " mois \n");
-            if (_sujetLibre == true) Console.WriteLine("Sujet imposé" +"\r\n");
+            if (_sujetLibre == true) Console.WriteLine("Sujet imposé" + "\r\n");
             Console.WriteLine("Eleves participant : ");
             foreach (Eleve element in _eleves)
             {
@@ -158,7 +158,7 @@ namespace _projet
             }
             Console.WriteLine("\r\n");
             Console.WriteLine("Professeurs intervenants : \n");
-            foreach(Professeur element in _professeurs)
+            foreach (Professeur element in _professeurs)
             {
                 Console.Write(element._nom);
                 Console.WriteLine("     Si vous voulez en savoir plus sur cet intervenant, tapez 2" + _professeurs.IndexOf(element));
@@ -167,14 +167,14 @@ namespace _projet
             Role.RattacheRole(_code);
 
             Console.WriteLine(" \r\nMatières concernées :");
-            foreach(Matiere element in _matieres)
-            { Console.WriteLine(element._nom); } 
+            foreach (Matiere element in _matieres)
+            { Console.WriteLine(element._nom); }
             Console.WriteLine("\r\n");
-            Console.WriteLine("Chef de projet : "+_chefprojet._nom+ "     Si vous voulez en savoir plus sur cet élève, tapez 0" + _eleves.IndexOf(_chefprojet));
-            Console.WriteLine("Les livrables sont les suivants : "); 
+            Console.WriteLine("Chef de projet : " + _chefprojet._nom + "     Si vous voulez en savoir plus sur cet élève, tapez 0" + _eleves.IndexOf(_chefprojet));
+            Console.WriteLine("Les livrables sont les suivants : ");
             foreach (Livrable element in _livrables)
             {
-                Console.WriteLine(element._type+" ("+element._echeance+")");
+                Console.WriteLine(element._type + " (" + element._echeance + ")");
             }
             Console.WriteLine("\n");
             if (_sujetAcheve == true)
@@ -184,36 +184,44 @@ namespace _projet
             }
             else { Console.WriteLine("Statut du sujet : en cours"); }
 
+            Console.WriteLine("Pour revenir au menu, appuyer sur M !");
             string saisienum = Console.ReadLine();
-            string determiner = saisienum.Substring(0,1);
-            saisienum = saisienum.Substring(1);
-            int numerochoisi = int.Parse(saisienum);
-            if (determiner == "0")
+            if (saisienum == "M")
+            { }
+            else
             {
-                foreach (Eleve element in _eleves)
-                {if (numerochoisi == _eleves.IndexOf(element)) element.Affiche();  }
-            }
+                string determiner = saisienum.Substring(0, 1);
+                saisienum = saisienum.Substring(1);
+                int numerochoisi = int.Parse(saisienum);
 
-            else 
-            {
-                if (determiner =="1")
+                if (determiner == "0")
                 {
-                    foreach (Exterieur element in _intervenants)
-                    {  if (numerochoisi == _intervenants.IndexOf(element)) element.Affiche();  }
+                    foreach (Eleve element in _eleves)
+                    { if (numerochoisi == _eleves.IndexOf(element)) element.Affiche(); }
                 }
+
                 else
                 {
-                    if (determiner == "2")
+                    if (determiner == "1")
                     {
-                        foreach (Professeur element in _professeurs)
-                        {  
-                            if (numerochoisi == _professeurs.IndexOf(element)) element.Affiche();  }
+                        foreach (Exterieur element in _intervenants)
+                        { if (numerochoisi == _intervenants.IndexOf(element)) element.Affiche(); }
                     }
+                    else
+                    {
+                        if (determiner == "2")
+                        {
+                            foreach (Professeur element in _professeurs)
+                            {
+                                if (numerochoisi == _professeurs.IndexOf(element)) element.Affiche();
+                            }
+                        }
 
-                    else Console.WriteLine("Désolée, nous ne pouvons afficher cela, vous avez du faire une erreur !");
+                        else Console.WriteLine("Désolée, nous ne pouvons afficher cela, vous avez du faire une erreur !");
+                    }
                 }
+
             }
-            
         }
 
         public void AffichageDepuisListe(object obj, List<object> List)
