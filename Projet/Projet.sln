@@ -17,8 +17,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_InstanceProjet", "_Instanc
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Menu", "Menu\Menu.csproj", "{E38251CF-75F3-4C93-A871-56086F9C326F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_InstanceRole", "_InstanceRole\_InstanceRole.csproj", "{440A892A-D89B-4E63-87FF-2B863A4B3608}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RechercheLibre", "RechercheLibre\RechercheLibre.csproj", "{611535BB-6C83-4CB5-B941-58ED976DA93A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rattachement", "Rattachement\Rattachement.csproj", "{DEB269BD-7D56-478C-88D7-D4E07B841FE1}"
@@ -63,10 +61,6 @@ Global
 		{E38251CF-75F3-4C93-A871-56086F9C326F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E38251CF-75F3-4C93-A871-56086F9C326F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E38251CF-75F3-4C93-A871-56086F9C326F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{440A892A-D89B-4E63-87FF-2B863A4B3608}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{440A892A-D89B-4E63-87FF-2B863A4B3608}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{440A892A-D89B-4E63-87FF-2B863A4B3608}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{440A892A-D89B-4E63-87FF-2B863A4B3608}.Release|Any CPU.Build.0 = Release|Any CPU
 		{611535BB-6C83-4CB5-B941-58ED976DA93A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{611535BB-6C83-4CB5-B941-58ED976DA93A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{611535BB-6C83-4CB5-B941-58ED976DA93A}.Release|Any CPU.ActiveCfg = Release|Any CPU

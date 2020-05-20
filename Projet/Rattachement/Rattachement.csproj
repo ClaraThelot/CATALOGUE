@@ -66,10 +66,6 @@
       <Project>{7b0e5a82-11a8-42ab-8d0f-b07074e7d90d}</Project>
       <Name>_InstanceProjet</Name>
     </ProjectReference>
-    <ProjectReference Include="..\_InstanceRole\_InstanceRole.csproj">
-      <Project>{440a892a-d89b-4e63-87ff-2b863a4b3608}</Project>
-      <Name>_InstanceRole</Name>
-    </ProjectReference>
     <ProjectReference Include="..\_projet\_projet.csproj">
       <Project>{0a02fe91-42b8-40e2-85f9-9b960c2eabcc}</Project>
       <Name>_projet</Name>
