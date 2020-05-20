@@ -1,77 +1,24 @@
 Client*0*Lajoie*Info
 Tuteur*0*Delanoix*Info
 Professeur*0*Solomas*Info
-Client*19*Sorita*Rôles
-Monstre*20*Sorita*BOOOO
-Monstre*20*Sorita*BOOO
-Monstre*20*Sorita*Boo
-Médecin*21*Basvert*TestJ
-Prof*21*Saracco*TestJ
-Regarder*22*Baptiste*nvTest
-Manger des noix*22*Delanoix*nvTest
-Prof*22*Favier*nvTest
-Directeur ?*22*Leblanc*nvTest
-Flop*23*Lajoie
-Prof*23*Solomas
-Manger des pommes*24*Lajoie
-Rire*24*Favier
-bleuh*23*Delanoix
-tester*23*Unno
-RIRE*23*Arsac
-Danser le flamenco*23*Solomas
-Gogo danseur*24*Sorita
-Spectateur*24*Solomas
-OUI*25*Sorita
-AIDJA*25*Solomas
-Client*26*Lajoie
-Oui*26*Solomas
-OUIII*27*Sorita
-BOU*27*Sorita
-AS*27*Sorita
-Boh*27*Solomas
-Magicien*28*Sorita
-Présent*28*Aries
-BLEUH*29*Sorita
-ASA*29*Solomas
-Client*30*Sorita
-Prof*30*Solomas
-Clientissime*31*Sorita
-Clientissime*31*Sorita
-Clientissime*31*Sorita
-Clientissimem*31*Sorita
-*31*Sorita
-*31*Sorita
-*31*Sorita
-*31*Sorita
-*31*Sorita
-*31*Sorita
-*31*Sorita
-*31*Sorita
-Clientissime*31*Sorita
-Clientissimo*31*Sorita
-Client de mon coeur*31*Sorita
-Profissime*31*JVA¨JA
-Poeur*32*Sorita
-SESEE*32*Solomas
-SESDE*33*Sorita
-OUI*33*Solomas
-Prout*34*Unno
-1*34*Sorita
-oui*34*Sorita
-non*34*Solomas
-Brillantissime*35*Sorita
-Excellent*35*Solomas
-AB*36*AEUSONBAC
-AS*36*Aries
-SED*37*AEUSONBAC
-ASA*37*Saracco
-A*38*Unno
-B*38*Saracco
-1*39*Sorita
-2*39*Saracco
-AA*40*Sorita
-BB*40*Saracco
-Oui*41*Robert
-AOA*41*Unno
-A*41*Sorita
-B*41*Porut
+Aider*9*McAvoy
+Professeur*9*Favier
+Parler anglais*10*Unno
+Professeur*10*Solomas
+Donner des anecdotes*11*Basvert
+Professeur*11*Solomas
+Donner des infos statistiques*12*Gilloni
+Enseigner*12*Saracco
+Noter*14*Basvert
+Donner les consignes*14*Lespinet
+Noter*14*4
+Client*16*Albret
+Regarder*16*Lopez
+Professeur*16*Mougin
+Tuteur*16*Solomas
+Cliente*17*Lespinet
+Professeur*17*Arsac
+Assister*18*Prestant
+Acheter le produit*18*10
+Tuteur*18*Leblanc
+Professeur*18*Lespinet

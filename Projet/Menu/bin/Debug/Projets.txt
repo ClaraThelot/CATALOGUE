@@ -1,42 +1,19 @@
-0*Info*3*false*18*true*AProbabilités*EPradal*EThelot*PLajoie*PDelanoix*CPradal*MSolomas
-1*Maths*1*true*12*false*AProbabilités*EThelot*PBertrand*CThelot*MMougin
-2*GCCO*2*true*0*false*AAnglais*EThelot*PDelanoix*CThelot*MSolomas
-3*RAO*4*false*0*true*AGCCo*EPradal*EPetit*EVincent*CPradal*MAriès
-4*PFE*6*true*18*true*ASignaux et systèmes*EHache*CHache*PGillon*MMougin
-5*PFE*6*false*0*false*ASignaux et systèmes*ESimmonet*CSimmonet*PUnno*MMougin
-6*Info Individuel*3*true*18*true*ASignaux et systèmes*EPradal*CPradal*PBasvert*MFavier
-7*Essai*2*false*0*false*ACommunication Web*EThelot*EPradal*PSorita*CThelot*L2020/05/04*MSolomas
-8*Essai9*2*true*0*false*EToniutti*PSorita*CToniutti*MAries
-9*EssaiEncore*2*false*0*false*AProgrammation avancée*ERabii*PSorita*CRabii*MLespinet
-10*Projet*2*true*0*false*ACommunication Web*EHache*PSorita*CHache*MAries
-11*2NE1*1*true*0*false*AAnglais*ACommunication Web*EThelot*PLajoie*CThelot*MSaracco
-12*Testf*2*true*0*false*AAnglais*AProbabilités*EThelot*EPradal*PLajoie*CThelot*MFavier
-13*TestM*2*true*0*false*ABrosserdeslicornes*EThelot*EPradal*PLajoie*CThelot*MSolomas
-14*Tesma*1*true*0*false*AChevaucherLicornes*AAnglais*AAnglais*EPetit*PUnno*CPetit*MFavier
-15*TestPics*40*false*0*false*ABases de la cognition*EPicsou*EThelot*EHache*PSorita*CPicsou*MArsac
-16*tes*2*false*0*false*AGCCo*AProgrammation avancée*ED'Arc*EThelot*PSorita*CD'Arc*MFaïta-Ainseba
-17*CLARA*2*true*0*false*AFH, UX et utilisabilité*AFlirter*EThelot*PBaptiste*CThelot*MSolomas
-18*16/05*2*false*12*true*ABases de la cognition*AConnaissance et représentation*EPradal*EThelot*PUnno*PSorita*CPradal*MLespinet
-19*Rôles*2*true*0*false*AAnglais*EPradal*PSorita*CPradal*MSolomas
-20*Boo*1*true*0*false*AAnglais*EPradal*PSorita*CPradal*MFavier
-21*TestJ*3*true*0*false*AFH, UX et utilisabilité*ABingewatching*ESimonnet*EFlop*EThelot*PBasvert*CSimonnet*MSaracco
-22*nvTest*98*true*0*false*AAnglais*ABingewatching*EDilleman*PBaptiste*PDelanoix*CDilleman
-23*tst*2*true*0*false*AConnaissance et représentation*ELanusse-Malhéné*EBinet*CBinet
-24*Réussi*1*false*0*false*AAnglais*EThelot*PSorita*CThelot*MSolomas
-25*Coucou*1*false*0*false*AProbabilités*EPradal*PSorita*CPradal*MSolomas
-26*Aujourd'hui*2*false*0*false*ABases Biologie Humaine*ERoger*EThelot*PRobert*CRoger*MSolomas
-27*NON*4*false*12*true*AAnglais*EFRFRF*EFRFRF*PSorita*CFRFRF*MSolomas
-28*Coucou*2*false*0*false*AAnglais*EDeray*EDeray*PSorita*CDeray*MAries
-29*Non*1*true*0*false*AAnglais*Eoui*PSorita*Coui*MSolomas
-30*Hope*1*false*0*false*ALicorne*EThelot*PSorita*CThelot*MSolomas
-31*Joie*1*false*0*false*AAnglais*EThelot*PSorita*CThelot
-32*COUCOU*1*false*0*false*AAnglais*EThelot*PSorita*CThelot*MSolomas
-33*DODO*1*false*0*false*AAnglais*EThelot*PSorita*CThelot*MSolomas
-34*coucou*1*true*0*false*ALicorne*EThelot*PSorita*CThelot
-35*Coucou*1*false*12*true*ALicorne*EThelot*PSorita*CThelot
-36*couco*1*false*0*false*ALicorne*EPradal*CPradal
-37*Coucoutoi*1*false*12*true*ALicorne*EThelot*CThelot
-38*Heyheyhey*1*true*0*false*ALicorne*EThelot*PUnno*CThelot
-39*Bouh*1*false*0*false*ALocorne*EThelot*PSorita*CThelot*MSaracco
-40*Raye le mot impossible*1*false*0*false*ALicorne*EThelot*PSorita*CThelot*MSaracco
-41*coucou*1*false*0*false*AAnglais*EThelot*PSorita*CThelot*MSolomas
+0*Info*3*false*18*true*AIntroduction à la programmation*EPradal*EThelot*PLajoie*PDelanoix*CPradal*MFavier
+1*Projet R*1*true*12*false*AProbabilités*ELemoigne*PBertrand*CLemoigne*MSaracco
+2*GCCO*2*true*0*false*AGCCO*EThelot*PDelanoix*CThelot*MAries
+3*RAO*4*false*0*true*AGestion de projet*EPradal*EPetit*EVincent*CPradal*MAries
+4*PFE*6*true*18*true*ASPréparation à la vie active*EHache*CHache*PGilloni*MMougin
+5*PFE*6*false*0*false*APréparation à la vie active*ESimonnet*CSimonnet*PUnno*MMougin
+6*Info Individuel*3*true*18*true*AIntroduction à la programmation*EDillman*CDillman*PBasvert*MFavier
+7*Info Individuel*3*false*0*false*AIntroduction à la programmation*EMontaut*PSorita*CMontaut*MFavier
+8*Vidéo anglais*2*true*0*false*EToniutti*PSorita*CToniutti*MAries*AAnglais
+9*Info*3*false*12*true*AIntroduction à la programmation*EPerrier*EJuaneda*PMcAvoy*CJuaneda*MFavier
+10*Vidéo*1*true*0*false*AAnglais*EThelot*EBinet*EPerrier*EPetit*PUnno*CBinet*MSoloma
+11*Vidéo *1*true*10*true*AAnglais*EMahaut*ENDiaye*PBasvert*CNDiaye*MSoloma
+12*Projet R*2*true*0*false*AProbabilités*ENDiaye*PGilloni*CNDiaye*MSaracc
+13*Projet STAPS*4*false*13*true*ASignaux et systèmes*ABases de la cognition*EDugast*ETreister*EMahaut*PUnno*CTreister*MFaïta-Ainseba*MArsa
+14*Etude*1*false*18*true*AFH, UX et utilisabilité*ABases Biologie Humaine*ECadic*ETreister*EDugast*PBasvert*CDugast*MLespinet*MLeblanc
+15*Transpromo*6*true*16*true*AGestion de projet*ABases Biologie Humaine*ETreister*EJuaneda*EMahaut*ETouzet*PGilloni*CJuaneda*MFaïta-Ainseba
+16*Transdi*9*true*0*false*AFH, UX et utilisabilité*AGestion de projet*APréparation à la vie active*ETouzet*EPradal*ECarliez*PAlbret*PLopez*CCarliez*MMougin*MSoloma
+17*Transdi*9*true*16*true*AGestion de projet*ABases de la cognition*EThelot*ELanusse-Malhéné*EGass*PPrestant*CLanusse-Malhéné*MLespinet*MArsa
+18*Transpromo*6*true*19*true*AGestion de projet*AFH, UX et utilisabilité*ESonja Haddad*ERabii*ELemoigne*EDillman*PPrestant*PCliente*CDillman*MLeblancMLespine

@@ -1,9 +1,9 @@
-Solomas*Sophie*Anglais*Flamenco
+Solomas*Sophie*Anglais
 Saracco*Jerome*Probabilités
 Favier*Pierre-Alexandre*Introduction à la programmation
 Lespinet*Véronique*FH, UX et utilisabilité
-Leblanc*Benoît*Connaissance et représentation
-Arsac*Laurent*Bases Biologie Humaine
-Mougin*Fleur*Connaissance et représentation
+Leblanc*Benoît*FH, UX et utilisabilité
+Arsac*Laurent*Bases Biologie Humaine*Signaux et systèmes
+Mougin*Fleur*Gestion de projet
 Faïta-Ainseba*Frédérique*Bases de la cognition
-Aries*Serge*GCCO
+Aries*Serge*GCCO*Préparation à la vie active

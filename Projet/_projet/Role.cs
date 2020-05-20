@@ -13,8 +13,6 @@ namespace _projet
         public string _code;
         public string _personne;
         
-
-
         public Role(string nom, string code)
         {
             _nom = nom;

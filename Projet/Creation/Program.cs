@@ -18,7 +18,6 @@ namespace Creation
         {
             Console.WriteLine("C'est parti pour la création de matière !");
             int totalLignesM = File.ReadLines("Matieres.txt").Count();
-            Console.WriteLine(totalLignesM);
             Console.WriteLine("Comment s'appelle cette nouvelle matière ?");
             string nvlLigneM = Console.ReadLine();
             string nomchoisiM = nvlLigneM;
@@ -30,7 +29,6 @@ namespace Creation
             nvlLigneM = nvlLigneM + "*" + UE + "*";
             Matiere nvlMatiere = new Matiere(nomchoisiM, num, UE);
             liste.Add(nvlMatiere);
-            Console.WriteLine(nvlLigneM);
             _AffichageListes.Program.CreaCode("Matieres.txt", nvlLigneM);                            // Ecriture de la ligne dans le fichier Matieres.Tct
             String ajout ="A" + nomchoisiM + "*";
             return ajout;

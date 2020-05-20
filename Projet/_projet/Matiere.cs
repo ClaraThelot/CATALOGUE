@@ -22,9 +22,7 @@ namespace _projet
 
         public void Affichage(object obj)
         {
-            Console.WriteLine("Si vous souhaitez afficher le détail, tapez 1");
-            string s = (Console.ReadLine());
-            if (s == "1") Console.WriteLine(obj.ToString());
+            Console.WriteLine(obj.ToString());
         }
 
         public void AffichageDepuisListe(object obj, List<object> liste)
@@ -36,8 +34,8 @@ namespace _projet
 
         public override string ToString()
         {
-            string res = " ";
-            res = res + "La matière " + _nom + " dont le code est " + _code + "fait partie de l'UE " + _UE;
+            string res = "";
+            res = res + "La matière " + _nom + " dont le code est " + _code + " fait partie de l'UE " + _UE;
             return res;
         }
         public static Object conversion(Matiere m)
@@ -51,13 +49,9 @@ namespace _projet
             int occur = 0;
             foreach(Matiere element in liste)
             {
-                if(element._nom==entree)
-                {
-                    occur++;
-                }
+                if(element._nom==entree) occur++;
             }
-            if(occur==0)
-            { return false; }
+            if(occur==0)return false; 
             else
             { return true; }
         }

@@ -8,7 +8,6 @@ using _InstancePersonne;
 using _InstanceLivrable;
 using _InstanceMatiere;
 using _InstanceProjet;
-using _InstanceRole;
 using _projet;
 using RechercheLibre;
 using Rattachement;
@@ -126,10 +125,7 @@ namespace Menu
                                         _AffichageListes.Program.Choixnum(numero, Eleves.ToList<Personne>());                       //Permet d'afficher les informations concernant l'élève choisi
                                         return true;
                                     }
-                                
-                        
                                     else return false;
-                                
                             default: return false;
                         }
                     }
@@ -206,8 +202,7 @@ namespace Menu
                     Console.Clear();
                     foreach (Matiere element in Matieres)
                     {
-                        Console.WriteLine(element._nom + " si vous voulez afficher les projets de cette matière, tapez " + Matieres.IndexOf(element));
-                        Console.WriteLine("\n");
+                        Console.WriteLine(element._nom + " : si vous voulez afficher les projets de cette matière, tapez " + Matieres.IndexOf(element));
                         string pos = Convert.ToString(Matieres.IndexOf(element));
                         possible.Add(pos);
                     }

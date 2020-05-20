@@ -68,15 +68,10 @@ namespace _projet
             int occur = 0;
             foreach (Professeur element in liste)
             {
-                if (element._nom == entree)
-                {
-                    occur++;
-                }
+                if (element._nom == entree)occur++;
             }
-            if (occur == 0)
-            { return false; }
-            else
-            { return true; }
+            if (occur == 0)return false; 
+            else return true; 
         }
 
     }

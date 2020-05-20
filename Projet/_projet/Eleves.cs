@@ -39,8 +39,7 @@ namespace _projet
                     occur++;
                 }
             }
-            if (occur == 0)
-            { return false; }
+            if (occur == 0)return false; 
             else
             { return true; }
         }
@@ -52,7 +51,7 @@ namespace _projet
                 int place = 0;
                 foreach (Projet element in _projet)
                 {
-                    if (_projet[i] == P1) { place = i; }
+                    if (_projet[i] == P1) place = i; 
                     i++;
                 }
                 _projet[place] = null;
@@ -99,10 +98,8 @@ namespace _projet
                     occur++;
                 }
             }
-            if (occur == 0)
-            { return false; }
-            else
-            { return true; }
+            if (occur == 0)return false; 
+            else  return true; 
         }
 
     }

@@ -60,11 +60,7 @@ namespace _projet
             _projet.Add(P1);
         }
 
-        public void AffichageDepuisListe(object obj, List<object> List)
-        {
-            int numero = int.Parse(Console.ReadLine());
-           if (numero == 1) Console.WriteLine(obj.ToString());
-        }
+       
 
     }
 

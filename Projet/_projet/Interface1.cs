@@ -9,7 +9,7 @@ namespace _projet
     interface IAffichable
     {
         void Affichage(Object obj);
-        void AffichageDepuisListe(Object obj, List<Object> List);
+       
         
     }
 }

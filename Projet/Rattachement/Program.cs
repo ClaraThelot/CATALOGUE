@@ -8,7 +8,6 @@ using _InstanceProjet;
 using _projet;
 using _InstancePersonne;
 using _InstanceMatiere;
-using _InstanceRole;
 
 namespace Rattachement
 {

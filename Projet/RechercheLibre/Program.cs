@@ -8,7 +8,6 @@ using _InstancePersonne;
 using _InstanceLivrable;
 using _InstanceMatiere;
 using _InstanceProjet;
-using _InstanceRole;
 using _projet;
 using Rattachement;
 
@@ -104,20 +103,20 @@ namespace RechercheLibre
                     elevecherche = true;
                 }
             }
-           
 
             foreach (Exterieur element in Exte)                                             // Recherche de l'élément de la liste d'extérieurs
             {
                 if (recherche.ToLower() == element._nom.ToLower() || recherche.ToLower() ==element._prenom.ToLower() || recherche.ToLower() ==element._metier.ToLower() || recherche.ToLower() ==element._entreprise.ToLower()) element.Affiche();
             }
 
+            
             foreach (Matiere element in Matieres)                                           // Recherche de l'élément dans les matières
             {   
                 if (recherche.ToLower() == element._nom.ToLower() || recherche.ToLower() == element._code.ToLower()|| recherche.ToLower() == element._UE.ToLower())
                 {
-                    element.Affichage(element);
-                    Console.WriteLine("Si vous voulez voir s'afficher les professeurs enseignant cette matière, tapez 1");
-                    Console.WriteLine("Si vous voulez voir s'afficher les projets de cette matière, tapez 2");
+                    Console.WriteLine(element.ToString()); 
+                    Console.WriteLine(" Si vous voulez voir s'afficher les professeurs enseignant cette matière, tapez 1");
+                    Console.WriteLine(" Si vous voulez voir s'afficher les projets de cette matière, tapez 2");
                     int choix = int.Parse(Console.ReadLine());
                     if(choix==1)
                     {
@@ -159,17 +158,25 @@ namespace RechercheLibre
                     }
                 }
             }
+            
             bool projcherche = false;
             List<Projet> Projcherche = new List<Projet>(); // Sur le même principe que pour les élèves, création d'une liste des projets concernés, que l'on affichera à la fin
-            
             foreach (Projet element in Projets)
             {
-                if (recherche.ToLower() == element._nomProjet.ToLower()) element.Affichage(element);
+                if (recherche.ToLower() == element._nomProjet.ToLower())
+                {
+                    Projcherche.Add(element); 
+                    projcherche=true;
+                }
                 
                 double nombre;
                 if (double.TryParse(recherche, out nombre))                        //Vérification pour voir si la conversion en int est possible
                 {
-                    if (double.Parse(recherche) == element._duree|| double.Parse(recherche) == element._note) element.Affichage(element);
+                    if (double.Parse(recherche) == element._duree || double.Parse(recherche) == element._note)
+                    {
+                        projcherche = true;
+                        Projcherche.Add(element);
+                    }
                 }
 
                 if (recherche == "Sujet achevé" && element._sujetAcheve == true)
@@ -196,10 +203,8 @@ namespace RechercheLibre
             {
                 foreach (Projet element in Projcherche)
                 {
-                    
                     Console.Write(element._nomProjet + " (Chef de projet :" + element._chefprojet._nom + ")");
                     Console.WriteLine("     Si vous voulez en savoir plus sur ce projet, tapez " + Projcherche.IndexOf(element));
-                    
                 }
                 int numerochoisip = int.Parse(Console.ReadLine());
                 foreach (Projet element in Projcherche)

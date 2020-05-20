@@ -106,7 +106,6 @@ C:\Users\Installation\Desktop\ENSC\S6\Progra avancée\CATALOGUE\CATALOGUE\CATALO
 C:\Users\Installation\Desktop\ENSC\S6\Progra avancée\CATALOGUE\CATALOGUE\CATALOGUE\Projet\Rattachement\bin\Debug\_InstanceExterieur.exe
 C:\Users\Installation\Desktop\ENSC\S6\Progra avancée\CATALOGUE\CATALOGUE\CATALOGUE\Projet\Rattachement\bin\Debug\_InstanceMatiere.exe
 C:\Users\Installation\Desktop\ENSC\S6\Progra avancée\CATALOGUE\CATALOGUE\CATALOGUE\Projet\Rattachement\bin\Debug\_InstanceProjet.exe
-C:\Users\Installation\Desktop\ENSC\S6\Progra avancée\CATALOGUE\CATALOGUE\CATALOGUE\Projet\Rattachement\bin\Debug\_InstanceRole.exe
 C:\Users\Installation\Desktop\ENSC\S6\Progra avancée\CATALOGUE\CATALOGUE\CATALOGUE\Projet\Rattachement\bin\Debug\_projet.exe
 C:\Users\Installation\Desktop\ENSC\S6\Progra avancée\CATALOGUE\CATALOGUE\CATALOGUE\Projet\Rattachement\bin\Debug\Verification.exe
 C:\Users\Installation\Desktop\ENSC\S6\Progra avancée\CATALOGUE\CATALOGUE\CATALOGUE\Projet\Rattachement\bin\Debug\_InstanceEleve.pdb
@@ -117,8 +116,6 @@ C:\Users\Installation\Desktop\ENSC\S6\Progra avancée\CATALOGUE\CATALOGUE\CATALO
 C:\Users\Installation\Desktop\ENSC\S6\Progra avancée\CATALOGUE\CATALOGUE\CATALOGUE\Projet\Rattachement\bin\Debug\_InstanceMatiere.exe.config
 C:\Users\Installation\Desktop\ENSC\S6\Progra avancée\CATALOGUE\CATALOGUE\CATALOGUE\Projet\Rattachement\bin\Debug\_InstanceProjet.pdb
 C:\Users\Installation\Desktop\ENSC\S6\Progra avancée\CATALOGUE\CATALOGUE\CATALOGUE\Projet\Rattachement\bin\Debug\_InstanceProjet.exe.config
-C:\Users\Installation\Desktop\ENSC\S6\Progra avancée\CATALOGUE\CATALOGUE\CATALOGUE\Projet\Rattachement\bin\Debug\_InstanceRole.pdb
-C:\Users\Installation\Desktop\ENSC\S6\Progra avancée\CATALOGUE\CATALOGUE\CATALOGUE\Projet\Rattachement\bin\Debug\_InstanceRole.exe.config
 C:\Users\Installation\Desktop\ENSC\S6\Progra avancée\CATALOGUE\CATALOGUE\CATALOGUE\Projet\Rattachement\bin\Debug\_projet.pdb
 C:\Users\Installation\Desktop\ENSC\S6\Progra avancée\CATALOGUE\CATALOGUE\CATALOGUE\Projet\Rattachement\bin\Debug\_projet.exe.config
 C:\Users\Installation\Desktop\ENSC\S6\Progra avancée\CATALOGUE\CATALOGUE\CATALOGUE\Projet\Rattachement\bin\Debug\Verification.pdb

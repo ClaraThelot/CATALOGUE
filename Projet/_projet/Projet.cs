@@ -54,63 +54,7 @@ namespace _projet
             _sujetAcheve = sujetAcheve;
             _note = note;
         }
-        public void ajoutEleve (Eleve E1)
-        {
-            
-        }
-        public void supprimeEleve(Eleve E1)
-        {
-            int counter = 0;
-            foreach (Eleve element in _eleves)
-            { if (element == E1) { _eleves[counter] = null; }
-                counter++;
-            } // Supprime un élève, par contre laisse un trou dans le tableau à l'endroit considéré
-        }
-
-   
-        public void ajoutIntervenant(Exterieur Ex1)
-        {
-            int counter = 0;
-            foreach(Exterieur element in _intervenants)
-            {
-                if (element != null) { _intervenants[counter] = Ex1;
-                    counter++;
-                }
-            }
-        }
-
-        public void supprimeIntervenant(Exterieur Ex1)
-        {
-            int counter = 0;
-            foreach(Personne element in _intervenants)
-            { if (element == Ex1) _intervenants[counter] = null;
-                counter++;
-            }
-        }
-
-        public void ajoutLivrable(Livrable L1)
-        {
-            int counter = 0;
-            foreach (Livrable element in _livrables)
-            {
-                if (element != null)
-                {
-                    _livrables[counter] = L1;
-                    counter++;
-                }
-            }
-        }
-
-        public void supprimeLivrable(Livrable L1)
-        {
-            int counter = 0;
-            foreach (Livrable element in _livrables)
-            {
-                if (element == L1) _livrables[counter] = null;
-                counter++;
-            }
-        }
-
+        
         public override string ToString()
         {
             string res = "";
@@ -224,9 +168,6 @@ namespace _projet
             }
         }
 
-        public void AffichageDepuisListe(object obj, List<object> List)
-        {
-            throw new NotImplementedException();
-        }
+        
     }
 }
