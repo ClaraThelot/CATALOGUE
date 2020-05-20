@@ -22,3 +22,4 @@ Assister*18*Prestant
 Acheter le produit*18*10
 Tuteur*18*Leblanc
 Professeur*18*Lespinet
+Client*19*Favier

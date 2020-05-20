@@ -229,7 +229,7 @@ namespace Ajout
             // Sélection des intervenants
             string saisie2 = "";
             int NbI;
-            while (!int.TryParse(saisie2, out NbI)||saisie2=="0")
+            while (!int.TryParse(saisie2, out NbI))
             {
                 Console.WriteLine("Combien d'extérieurs interviennent sur ce projet ?");
                 saisie2 = Console.ReadLine();

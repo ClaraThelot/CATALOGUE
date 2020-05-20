@@ -17,3 +17,4 @@
 16*Transdi*9*true*0*false*AFH, UX et utilisabilité*AGestion de projet*APréparation à la vie active*ETouzet*EPradal*ECarliez*PAlbret*PLopez*CCarliez*MMougin*MSoloma
 17*Transdi*9*true*16*true*AGestion de projet*ABases de la cognition*EThelot*ELanusse-Malhéné*EGass*PPrestant*CLanusse-Malhéné*MLespinet*MArsa
 18*Transpromo*6*true*19*true*AGestion de projet*AFH, UX et utilisabilité*ESonja Haddad*ERabii*ELemoigne*EDillman*PPrestant*PCliente*CDillman*MLeblancMLespine
+19*Final*1*false*0*false*AIntroduction à la programmation*EPradal*EThelot*CPradal*MFavier

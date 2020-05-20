@@ -138,13 +138,9 @@ namespace Menu
                     List<Exterieur> Exte = new List<Exterieur>();
                     Exte = Rattachement.Program.ConnexionExte();
                     _AffichageListes.Program.triAlpha(Exte.ToList<Personne>());         // Permet l'affichage par ordre alphabétique
-                    if (Console.ReadLine() == "M")                                                              //Permet de revenir au menu
-                    { }
-                    else
-                    {
-                        int numerochoisi = int.Parse(Console.ReadLine()); // On convertit en un entier
-                        _AffichageListes.Program.Choixnum(numerochoisi, Exte.ToList<Personne>());
-                    }
+                        int numerochoisie = int.Parse(Console.ReadLine()); // On convertit en un entier
+                        _AffichageListes.Program.Choixnum(numerochoisie, Exte.ToList<Personne>());
+                    
                     return true;
 
                 
@@ -179,10 +175,6 @@ namespace Menu
                             }
                         }
                         string entree7 = Console.ReadLine();
-                        if (Console.ReadLine() == "M")
-                        { }
-                        else
-                        {
                             bool verification7 = Verification.Program.Verification(entree7, possible);
                             if (verification7 == true)
                             {
@@ -191,7 +183,7 @@ namespace Menu
                             }
                         }
  
-                    }
+                    
                     return true;
 
                 case "5":                                                                                   //permet d'afficher les projets par matieres
